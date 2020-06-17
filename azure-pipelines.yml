@@ -1,0 +1,13 @@
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+- task: AzureFileCopy@4
+  inputs:
+    SourcePath: 'site/*'
+    azureSubscription: 'Pay-As-You-Go Dev/Test (527c48dc-5944-45cc-926e-5b6983e43d4f)'
+    Destination: 'AzureBlob'
+    storage: 'dtaplaybook'
+    ContainerName: '$web'
