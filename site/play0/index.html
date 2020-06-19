@@ -9,7 +9,7 @@
 	<html class="no-js ie9" lang="en">
 <![endif]-->
 <!--[if !(IE)]><!-->
-	<html class="no-js" lang="en">
+<html class="no-js" lang="en">
 <!--<![endif]-->
 
 <head>
@@ -20,8 +20,10 @@
 	<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
 	<link rel="schema.AGLSTERMS" href="http://www.agls.gov.au/agls/terms/" />
 	<meta name="DCTERMS.title" content="Content page template - Australian Government Design System" />
-	<meta ... scheme="AGLSTERMS.AglsAgent" content="corporateName=Digital Transformation Agency, Australia; address=50 Marcus Clarke St Canberra ACT 2601; contact=+61 427 136 791" />
-	<meta name="DCTERMS.publisher" scheme="AGLSTERMS.AglsAgent" content="corporateName=Digital Transformation Agency, Australia; address=50 Marcus Clarke St Canberra ACT 2601; contact=+61 427 136 791" />
+	<meta ... scheme="AGLSTERMS.AglsAgent"
+		content="corporateName=Digital Transformation Agency, Australia; address=50 Marcus Clarke St Canberra ACT 2601; contact=+61 427 136 791" />
+	<meta name="DCTERMS.publisher" scheme="AGLSTERMS.AglsAgent"
+		content="corporateName=Digital Transformation Agency, Australia; address=50 Marcus Clarke St Canberra ACT 2601; contact=+61 427 136 791" />
 	<meta name="DCTERMS.description" content="Content pages display information clearly" />
 	<meta name="DCTERMS.modified" scheme="DCTERMS.ISO8601" content="2010-07-29T12:05:44+10:00" />
 	<meta name="DCTERMS.subject" content="design system, templates" />
@@ -41,14 +43,16 @@
 	<meta name="twitter:title" content="Australian Government Design System" />
 	<meta name="twitter:description" content="Content pages display information clearly" />
 	<meta name="twitter:site" content="@DTA" />
-	<meta name="twitter:image" content="https://govau.github.io/design-system-starter/assets/favicons/designsystem.jpg" />
+	<meta name="twitter:image"
+		content="https://govau.github.io/design-system-starter/assets/favicons/designsystem.jpg" />
 
 	<!-- OPENGRAPH -->
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Content page template - Australian Government Design System" />
 	<meta property="og:site_name" content="Australian Government Design System" />
 	<meta property="og:description" content="Content pages display information clearly" />
-	<meta property="og:image" content="https://govau.github.io/design-system-starter/assets/favicons/designsystem.jpg" />
+	<meta property="og:image"
+		content="https://govau.github.io/design-system-starter/assets/favicons/designsystem.jpg" />
 	<meta property="og:url" content="https://designsystem.gov.au" />
 	<meta property="article:published_time" content="2019-05-15" />
 	<meta property="article:tag" content="design system" />
@@ -63,7 +67,16 @@
 	<link rel="icon" href="../assets/favicons/favicon.ico">
 	<link type="text/css" rel="stylesheet" href="../css/main.css">
 	<link type="text/css" rel="stylesheet" href="../App.css">
+	<style>
+		a {
+			text-align: left;
+			color: blue;
+		}
 
+		.active {
+			background-color: #135E70;
+		}
+	</style>
 	<!-- These are shivs to help modern html work in older internet explorer browsers -->
 	<!--[if lt IE 9]>
 		<script>
@@ -80,6 +93,7 @@
 
 <!-- BODY -->
 <!-- GRID-12 -->
+
 <body class="au-grid">
 
 	<!-- SKIP-LINKS -->
@@ -89,87 +103,145 @@
 	</nav>
 
 	<!-- HEADER -->
-	<header class="au-header au-header--dark" role="banner">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-8">
-					<a class="au-header__brand" href="#">
-						<img class="au-header__brand-image" alt="Insert alternate text here" src="../assets/img/header-logo-agov.png">
-						<div class="au-header__text">
-						<h1 class="au-header__heading">Digital Transformation Agency</h1>
-						<div class="au-header__subline">Playbook</div>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</header>
 
-	<!-- MAIN BODY -->
-	<main>
-		<!--CONTENT-->
-		<section class="au-body">
-			<div class="container-fluid"></div>
-				
-				<!-- CONTENT BODY-->
-				<div class="row">
-					<div class="col-sm-8" id="content">
-						<nav class="au-breadcrumbs" aria-label="breadcrumb">
-							<ul class="au-link-list au-link-list--inline">
-								<li><a href="../">Home</a></li>
-								<li>Play 0: Understand the context</li>
-							</ul>
-						</nav> 
-						<!-- Play 0: Understand the context -->
+	<main class="au-grid">
+		<!-- <div class="container"> -->
+		<div class="row ">
+			<!-- HEADER-->
+			<div class="col-1"></div>
+			<div class="col-10">
+				<header class="au-grid au-header au-header--dark" role="banner">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-9">
+								<a class="au-header__brand" href="#">
+									<img class="au-header__brand-image" alt="Insert alternate text here"
+										src="../assets/img/header-logo-agov.png">
+									<div class="au-header__text">
+										<h1 class="au-header__heading">Digital Transformation Agency</h1>
+										<div class="au-header__subline">Playbook</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</header>
+				<nav class="au-main-nav au-main-nav--dark" aria-label="main">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<div id="main-nav-default" class="au-main-nav__content">
+									<button aria-controls="main-nav-default" aria-expanded="false"
+										class="au-main-nav__toggle au-main-nav__toggle--open"
+										onClick="return AU.mainNav.Toggle( this )">
+										Menu
+									</button>
+									<div class="au-main-nav__menu">
+										<div class="au-main-nav__menu-inner">
+											<div class="au-main-nav__focus-trap-top"></div>
+											<button aria-controls="main-nav-default"
+												class="au-main-nav__toggle au-main-nav__toggle--close"
+												onClick="return AU.mainNav.Toggle( this )">
+												Close
+											</button>
+											<ul class="au-link-list">
+												<li><a href="/index.html">About</a></li>
+												<li><a href="/contents.html">Contents</a></li>
+												<li class="active"><a href="/contents.html" class=>Plays</a></li>
+												<li><a href="/casestudies.html">Case Studies</a></li>
+												<li><a href="/linksandtemplates.html">Links and Templates</a></li>
+												<li><a href="/glossary.html">Glossary</a></li>
+											</ul>
+
+										</div>
+									</div>
+									<div class="au-main-nav__overlay" aria-controls="main-nav-default"
+										onClick="return AU.mainNav.Toggle( this )">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+			<div class="col-1"></div>
+		</div>
+
+		<!-- MAIN BODY -->
+		<div class="container">
+			<section class="content">
+				<div class="container-fluid">
+
+					<!-- CONTENT BODY-->
+					<div class="row">
+						<div class="col-sm-8" id="content">
+							<nav class="au-breadcrumbs" aria-label="breadcrumb">
+								<ul class="au-link-list au-link-list--inline">
+									<li><a href="../">Home</a></li>
+									<li>Play 0: Understand the context</li>
+								</ul>
+							</nav>
+							<!-- Play 0: Understand the context -->
 							<h1 class="center-title">Play 0: Understand the context</h1>
-							<hr/>
+							<hr />
 							<p>Assemble a multi-disciplinary Team (MDT)</p>
 							<div class="grid-content">
-							<h3>Actions</h3>
-							<div>
-							<ul>
-								<li>Undertake discovery and research.</li>
-								<li>Make sure that you have a good understanding of the business and policy problems you are trying to address.</li>
-								<li>Understand user needs and wants – both for the specific service and in the broader context.</li>
-								<li>Quantify the issues – i.e. develop baseline metrics of our benefits.</li>
-							</ul>
-							</div>
+								<h3>Actions</h3>
+								<div>
+									<ul>
+										<li>Undertake discovery and research.</li>
+										<li>Make sure that you have a good understanding of the business and
+											policy problems you are trying to address.</li>
+										<li>Understand user needs and wants – both for the specific service and
+											in the broader context.</li>
+										<li>Quantify the issues – i.e. develop baseline metrics of our benefits.
+										</li>
+									</ul>
+								</div>
 								<h3>Supporting materials</h3>
 								<div>
 									<ul>
-										<a href="https://dta-www-drupal-20180130215411153400000001.s3.ap-southeast-2.amazonaws.com/s3fs-public/files/little-book-of-digital-dta-2019.pdf" target="_blank">
+										<a href="https://dta-www-drupal-20180130215411153400000001.s3.ap-southeast-2.amazonaws.com/s3fs-public/files/little-book-of-digital-dta-2019.pdf"
+											target="_blank">
 											<li>DTA Little Book of Digital</li>
 										</a>
-										<a href="https://www.finance.gov.au/sites/default/files/2019-11/ICT_Business_Case_Guide.pdf" target="_blank">
+										<a href="https://www.finance.gov.au/sites/default/files/2019-11/ICT_Business_Case_Guide.pdf"
+											target="_blank">
 											<li>Department of Finance Business Case Guide</li>
 										</a>
-										<a href="https://www.treasury.nsw.gov.au/sites/default/files/2018-09/TPP18-06 NSW Government Business Case Guidelines -pdf.pdf" target="_blank">
+										<a href="https://www.treasury.nsw.gov.au/sites/default/files/2018-09/TPP18-06 NSW Government Business Case Guidelines -pdf.pdf"
+											target="_blank">
 											<li>New South Wales Government Business Case Guidelines</li>
 										</a>
 										<li>Example templates:</li>
 										<!-- Change dot point styling for these two -->
-										<a href="https://www.finance.gov.au/government/assurance-reviews-risk-assessment/ict-investment-approval-process" target="_blank">
+										<a href="https://www.finance.gov.au/government/assurance-reviews-risk-assessment/ict-investment-approval-process"
+											target="_blank">
 											<li>Two Pass business case development process</li>
 										</a>
 										<li>Business case on a page</li>
-										<a href="https://www.vic.gov.au/sites/default/files/2019-08/PM-GUIDE-03-End-to-End-Project-Delivery-Framework.pdf" target="_blank">
+										<a href="https://www.vic.gov.au/sites/default/files/2019-08/PM-GUIDE-03-End-to-End-Project-Delivery-Framework.pdf"
+											target="_blank">
 											<li>Victorian Government End-to-end project delivery framework</li>
 										</a>
 										<li>Developing the Business Cases using AGILE project methodologies</li>
 									</ul>
-									<p><b>Steps</b></p>
+									<h3>Steps</h3>
 									<ul>
 										<li>Define the business problem and supporting drivers for change.</li>
 										<li>Identify the key stakeholder group impacted.</li>
-										<li>Establish consensus of business need across identified stakeholder groups.</li>
-										<li>Develop an overview of the current state environment for the organisation, including strategic priorities and policy context.</li>
+										<li>Establish consensus of business need across identified stakeholder
+											groups.</li>
+										<li>Develop an overview of the current state environment for the
+											organisation, including strategic priorities and policy context.
+										</li>
 									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+		</div>
 		</section>
 		<!--END CONTENT-->
 	</main>
@@ -189,7 +261,10 @@
 				<section class="col-sm-12">
 					<div class="au-footer__end">
 						<p>
-							© Commonwealth of Australia. With the exception of the Commonwealth Coat of Arms and where otherwise noted, this work is licensed under the <a href="https://github.com/govau/design-system-starter/blob/master/LICENSE" rel="external">MIT license</a>
+							© Commonwealth of Australia. With the exception of the Commonwealth Coat of Arms and where
+							otherwise noted, this work is licensed under the <a
+								href="https://github.com/govau/design-system-starter/blob/master/LICENSE"
+								rel="external">MIT license</a>
 						</p>
 					</div>
 				</section>

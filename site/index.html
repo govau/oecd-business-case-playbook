@@ -10,7 +10,7 @@
 	<html class="no-js ie9" lang="en">
 <![endif]-->
 <!--[if !(IE)]><!-->
-	<html class="no-js" lang="en">
+<html class="no-js" lang="en">
 <!--<![endif]-->
 
 <head>
@@ -21,8 +21,10 @@
 	<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
 	<link rel="schema.AGLSTERMS" href="http://www.agls.gov.au/agls/terms/" />
 	<meta name="DCTERMS.title" content="Content page template - Australian Government Design System" />
-	<meta ... scheme="AGLSTERMS.AglsAgent" content="corporateName=Digital Transformation Agency, Australia; address=50 Marcus Clarke St Canberra ACT 2601; contact=+61 427 136 791" />
-	<meta name="DCTERMS.publisher" scheme="AGLSTERMS.AglsAgent" content="corporateName=Digital Transformation Agency, Australia; address=50 Marcus Clarke St Canberra ACT 2601; contact=+61 427 136 791" />
+	<meta ... scheme="AGLSTERMS.AglsAgent"
+		content="corporateName=Digital Transformation Agency, Australia; address=50 Marcus Clarke St Canberra ACT 2601; contact=+61 427 136 791" />
+	<meta name="DCTERMS.publisher" scheme="AGLSTERMS.AglsAgent"
+		content="corporateName=Digital Transformation Agency, Australia; address=50 Marcus Clarke St Canberra ACT 2601; contact=+61 427 136 791" />
 	<meta name="DCTERMS.description" content="Content pages display information clearly" />
 	<meta name="DCTERMS.modified" scheme="DCTERMS.ISO8601" content="2010-07-29T12:05:44+10:00" />
 	<meta name="DCTERMS.subject" content="design system, templates" />
@@ -42,14 +44,16 @@
 	<meta name="twitter:title" content="Australian Government Design System" />
 	<meta name="twitter:description" content="Content pages display information clearly" />
 	<meta name="twitter:site" content="@DTA" />
-	<meta name="twitter:image" content="https://govau.github.io/design-system-starter/assets/favicons/designsystem.jpg" />
+	<meta name="twitter:image"
+		content="https://govau.github.io/design-system-starter/assets/favicons/designsystem.jpg" />
 
 	<!-- OPENGRAPH -->
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Content page template - Australian Government Design System" />
 	<meta property="og:site_name" content="Australian Government Design System" />
 	<meta property="og:description" content="Content pages display information clearly" />
-	<meta property="og:image" content="https://govau.github.io/design-system-starter/assets/favicons/designsystem.jpg" />
+	<meta property="og:image"
+		content="https://govau.github.io/design-system-starter/assets/favicons/designsystem.jpg" />
 	<meta property="og:url" content="https://designsystem.gov.au" />
 	<meta property="article:published_time" content="2019-05-15" />
 	<meta property="article:tag" content="design system" />
@@ -64,6 +68,16 @@
 	<link rel="icon" href="../assets/favicons/favicon.ico">
 	<link type="text/css" rel="stylesheet" href="../css/main.css">
 	<link type="text/css" rel="stylesheet" href="../App.css">
+	<style>
+		a {
+			text-align: left;
+			color: blue;
+		}
+
+		.active {
+			background-color: #135E70;
+		}
+	</style>
 
 	<!-- These are shivs to help modern html work in older internet explorer browsers -->
 	<!--[if lt IE 9]>
@@ -79,26 +93,75 @@
 </head>
 
 <!-- BODY -->
-<body class="main">
-	<!-- HEADER-->
-	<header class="au-header au-header--dark" role="banner">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-8">
-					<a class="au-header__brand" href="#">
-						<img class="au-header__brand-image" alt="Insert alternate text here" src="../assets/img/header-logo-agov.png">
-						<div class="au-header__text">
-						<h1 class="au-header__heading">Digital Transformation Agency</h1>
-						<div class="au-header__subline">Playbook</div>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</header>
 
-	<!-- MAIN NAVIGATION -->
-	<!-- <nav class="au-main-nav au-main-nav--dark" id="mainmenu" aria-label="main">
+<body class="main">
+	<main class="au-grid">
+		<!-- <div class="container"> -->
+		<div class="row ">
+			<!-- HEADER-->
+			<div class="col-1"></div>
+			<div class="col-10">
+				<header class="au-grid au-header au-header--dark" role="banner">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-9">
+								<a class="au-header__brand" href="#">
+									<img class="au-header__brand-image" alt="Insert alternate text here"
+										src="../assets/img/header-logo-agov.png">
+									<div class="au-header__text">
+										<h1 class="au-header__heading">Digital Transformation Agency</h1>
+										<div class="au-header__subline">Playbook</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</header>
+				<nav class="au-main-nav au-main-nav--dark" aria-label="main">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12">
+									<div id="main-nav-default" class="au-main-nav__content">
+										<button aria-controls="main-nav-default" aria-expanded="false"
+											class="au-main-nav__toggle au-main-nav__toggle--open"
+											onClick="return AU.mainNav.Toggle( this )">
+											Menu
+										</button>
+										<div class="au-main-nav__menu">
+											<div class="au-main-nav__menu-inner">
+												<div class="au-main-nav__focus-trap-top"></div>
+												<button aria-controls="main-nav-default"
+													class="au-main-nav__toggle au-main-nav__toggle--close"
+													onClick="return AU.mainNav.Toggle( this )">
+													Close
+												</button>
+												<ul class="au-link-list">
+													<li class='active'><a href="/index.html">About</a></li>
+													<li><a href="/contents.html">Contents</a></li>
+													<li><a href="/contents.html">Plays</a></li>
+													<li><a href="/casestudies.html">Case Studies</a></li>
+													<li><a href="/linksandtemplates.html">Links and Templates</a></li>
+													<li><a href="/glossary.html">Glossary</a></li>
+												</ul>
+												<div class="au-main-nav__focus-trap-bottom"></div>
+											</div>
+										</div>
+										<div class="au-main-nav__overlay" aria-controls="main-nav-default"
+											onClick="return AU.mainNav.Toggle( this )">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</nav>
+			</div>
+			<div class="col-1"></div>
+		</div>
+		<!-- </div> -->
+
+
+		<!-- MAIN NAVIGATION -->
+		<!-- <nav class="au-main-nav au-main-nav--dark" id="mainmenu" aria-label="main">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-12">
@@ -108,106 +171,103 @@
 			</div>
 		</div>
 	</nav> -->
-	
 
-	<!-- MAIN BODY -->
-	<main>
+
+		<!-- MAIN BODY -->
+
 		<!--CONTENT-->
 		<div class="container">
-		<section class="content">
-			<div class="container-fluid">
-				
-				<!-- CONTENT BODY-->
-				<div class="row">
-					<div class="col-sm-8" id="content">
-						<!-- Introduction - Purpose -->
+			<section class="content">
+				<div class="container-fluid">
+
+					<!-- CONTENT BODY-->
+					<div class="row">
+						<div class="col-sm-8" id="content">
+							<!-- Introduction - Purpose -->
 							<h1>Introduction - Purpose</h1>
-							<p>The purpose of this Playbook is to help government agencies identify and adopt best practice in building a 
-								business case for public sector transformation, while adopting digital technologies and approaches.</p>
-							<p>While principles-based, it lists the mandatory requirements when constructing a Digital or ICT-enabled business 
-								case, with a focus on building a compelling argument for the proposal to be approved and funded.</p>
-							<h3>Positioning for Success</h3>
-							<ul>
-								<li>Understand and/or establish a governance framework, including executive sponsor support to ensure timely decision making on critical issues / dependencies and the appropriate levels of sign-off are achieved both internally and externally (e.g. Central Agencies).</li>
-								<li>Engage early and frequently with central and partner agencies to gain support for the Government submission.</li>
-								<li>Ensure the business case team has access to the right information and inputs to develop the cost and benefits models, with reference to the relevant budget process and operations</li>
-								<li>Set realistic timeframes and scheduling for business case delivery and review points.</li>
-								<li>Ensure on-going engagement with key stakeholders to ensure a collaborative approach is taken and support is maintained.</li>
-								<li>Obtain stakeholder consensus on the strategic narrative and iterate as required, ensuring changes are applied throughout business case as required.</li>
-							</ul>
-						<!-- Start Play Grid -->
-						<div class="grid-container">
-							<div class="grid-content">
-								<a href="play0/index.html"><span></span>
-									<img src="images/play0.png" alt="play0Logo" class="center">
-									<h1 class="center">Play 0</h1>
-									<p class="center">Understand the context</p>
-								</span></a>
+							<p>The purpose of this Playbook is to help government agencies identify and adopt best
+								practice in building a
+								business case for public sector transformation, while adopting digital technologies and
+								approaches.</p>
+							<p>While principles-based, it lists the mandatory requirements when constructing a Digital
+								or ICT-enabled business
+								case, with a focus on building a compelling argument for the proposal to be approved and
+								funded.</p>
+							<p>The Playbook itself is a living document and will be refined through continuous improvements.</p>
+							<!-- Start Play Grid -->
+							<div class="grid-container">
+								<div class="grid-content">
+									<a href="play0/index.html"><span></span>
+										<img src="images/play0.png" alt="play0Logo" class="center">
+										<h1 class="center">Play 0</h1>
+										<p class="center">Understand the context</p>
+										</span>
+									</a>
+								</div>
+								<div class="grid-content">
+									<a href="play1/index.html"><span></span>
+										<img src="images/play1.png" alt="play1Logo" class="center">
+										<h1 class="center">Play 1</h1>
+										<p class="center">Setting the strategic context</p>
+									</a>
+								</div>
+								<div class="grid-content">
+									<a href="play2/index.html"><span></span>
+										<img src="images/play2.png" alt="play2Logo" class="center">
+										<h1 class="center">Play 2</h1>
+										<p class="center">Define your goal</p>
+									</a>
+								</div>
+								<div class="grid-content">
+									<a href="play3/index.html"><span></span>
+										<img src="images/play3.png" alt="play3Logo" class="center">
+										<h1 class="center">Play 3</h1>
+										<p class="center">Outline the options</p>
+									</a>
+								</div>
+								<div class="grid-content">
+									<a href="play4/index.html"><span></span>
+										<img src="images/play4.png" alt="play4Logo" class="center">
+										<h1 class="center">Play 4</h1>
+										<p class="center">Understand the costs and benefits</p>
+									</a>
+								</div>
+								<div class="grid-content">
+									<a href="play2/index.html"><span></span>
+										<img src="images/play5.png" alt="play5Logo" class="center">
+										<h1 class="center">Play 5</h1>
+										<p class="center">Understand risk</p>
+									</a>
+								</div>
+								<div class="grid-content">
+									<a href="play6/index.html"><span></span>
+										<img src="images/play6.png" alt="play6Logo" class="center">
+										<h1 class="center">Play 6</h1>
+										<p class="center">Proposing a preferred option</p>
+									</a>
+								</div>
+								<div class="grid-content">
+									<a href="play7/index.html"><span></span>
+										<img src="images/play7.png" alt="play7Logo" class="center">
+										<h1 class="center">Play 7</h1>
+										<p class="center">How to manage implementation</p>
+									</a>
+								</div>
+								<div class="grid-content">
+									<a href="play8/index.html"><span></span>
+										<img src="images/play0.png" alt="play8Logo" class="center">
+										<h1 class="center">Play 8</h1>
+										<p class="center">Play 8 filler if needed</p>
+									</a>
+								</div>
 							</div>
-							<div class="grid-content">
-								<a href="play1/index.html"><span></span>
-									<img src="images/play1.png" alt="play1Logo" class="center">
-									<h1 class="center">Play 1</h1>
-									<p class="center">Setting the strategic context</p>
-								</a>
-							</div>
-							<div class="grid-content">
-								<a href="play2/index.html"><span></span>
-									<img src="images/play2.png" alt="play2Logo" class="center">
-									<h1 class="center">Play 2</h1>
-									<p class="center">Define your goal</p>
-								</a>
-							</div>
-							<div class="grid-content">
-								<a href="play3/index.html"><span></span>
-									<img src="images/play3.png" alt="play3Logo" class="center">
-									<h1 class="center">Play 3</h1>
-									<p class="center">Outline the options</p>
-								</a>
-							</div>
-							<div class="grid-content">
-								<a href="play4/index.html"><span></span>
-									<img src="images/play4.png" alt="play4Logo" class="center">
-									<h1 class="center">Play 4</h1>
-									<p class="center">Understand the costs and benefits</p>
-								</a>
-							</div>
-							<div class="grid-content">
-								<a href="play2/index.html"><span></span>
-									<img src="images/play5.png" alt="play5Logo" class="center">
-									<h1 class="center">Play 5</h1>
-									<p class="center">Understand risk</p>
-								</a>
-							</div>
-							<div class="grid-content">
-								<a href="play6/index.html"><span></span>
-									<img src="images/play6.png" alt="play6Logo" class="center">
-									<h1 class="center">Play 6</h1>
-									<p class="center">Proposing a preferred option</p>
-								</a>
-							</div>
-							<div class="grid-content">
-								<a href="play7/index.html"><span></span>
-									<img src="images/play7.png" alt="play7Logo" class="center">
-									<h1 class="center">Play 7</h1>
-									<p class="center">How to manage implementation</p>
-								</a>
-							</div>
-							<div class="grid-content">
-								<a href="content.html"><span></span>
-									<img src="images/play0.png" alt="play8Logo" class="center">
-									<h1 class="center">Play 8</h1>
-									<p class="center">Play 8 filler if needed</p>
-								</a>
-							</div>
+							<!-- End Play grid -->
 						</div>
-						<!-- End Play grid -->
-					</div>	
-						
+
+					</div>
 				</div>
-			</div>
-		</section>
-		<!--END CONTENT-->
+			</section>
+			<!--END CONTENT-->
 	</main>
 	</div>
 	<!-- END MAIN BODY -->
@@ -226,7 +286,10 @@
 				<section class="col-sm-12">
 					<div class="au-footer__end">
 						<p>
-							© Commonwealth of Australia. With the exception of the Commonwealth Coat of Arms and where otherwise noted, this work is licensed under the <a href="https://github.com/govau/design-system-starter/blob/master/LICENSE" rel="external">MIT license</a>
+							© Commonwealth of Australia. With the exception of the Commonwealth Coat of Arms and where
+							otherwise noted, this work is licensed under the <a
+								href="https://github.com/govau/design-system-starter/blob/master/LICENSE"
+								rel="external">MIT license</a>
 						</p>
 					</div>
 				</section>
@@ -235,4 +298,5 @@
 	<!-- The javascript from pancake to open and close side nav on desktop -->
 	<script type="text/javascript" src="../js/script.min.js"></script>
 </body>
+
 </html>

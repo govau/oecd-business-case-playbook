@@ -63,6 +63,16 @@
 	<link rel="icon" href="../assets/favicons/favicon.ico">
 	<link type="text/css" rel="stylesheet" href="../css/main.css">
 	<link type="text/css" rel="stylesheet" href="../App.css">
+	<style>
+		a {
+			text-align: left;
+			color: blue;
+		}
+
+		.active {
+			background-color: #135E70;
+		}
+	</style>
 
 	<!-- These are shivs to help modern html work in older internet explorer browsers -->
 	<!--[if lt IE 9]>
@@ -88,28 +98,74 @@
 		<a class="au-skip-link__link" href="#mainmenu">Skip to main navigation</a>
 	</nav>
 
-	<!-- HEADER -->
-	<header class="au-header au-header--dark" role="banner">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-8">
-					<a class="au-header__brand" href="#">
-						<img class="au-header__brand-image" alt="Insert alternate text here" src="../assets/img/header-logo-agov.png">
-						<div class="au-header__text">
-						<h1 class="au-header__heading">Digital Transformation Agency</h1>
-						<div class="au-header__subline">Playbook</div>
+	
+	<main class="au-grid">
+			<!-- <div class="container"> -->
+			<div class="row ">
+				<!-- HEADER-->
+				<div class="col-1"></div>
+				<div class="col-10">
+					<header class="au-grid au-header au-header--dark" role="banner">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-md-9">
+									<a class="au-header__brand" href="#">
+										<img class="au-header__brand-image" alt="Insert alternate text here"
+											src="../assets/img/header-logo-agov.png">
+										<div class="au-header__text">
+											<h1 class="au-header__heading">Digital Transformation Agency</h1>
+											<div class="au-header__subline">Playbook</div>
+										</div>
+									</a>
+								</div>
+							</div>
 						</div>
-					</a>
+					</header>
+					<nav class="au-main-nav au-main-nav--dark" aria-label="main">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12">
+									<div id="main-nav-default" class="au-main-nav__content">
+										<button aria-controls="main-nav-default" aria-expanded="false"
+											class="au-main-nav__toggle au-main-nav__toggle--open"
+											onClick="return AU.mainNav.Toggle( this )">
+											Menu
+										</button>
+										<div class="au-main-nav__menu">
+											<div class="au-main-nav__menu-inner">
+												<div class="au-main-nav__focus-trap-top"></div>
+												<button aria-controls="main-nav-default"
+													class="au-main-nav__toggle au-main-nav__toggle--close"
+													onClick="return AU.mainNav.Toggle( this )">
+													Close
+												</button>
+												<ul class="au-link-list">
+													<li><a href="/index.html">About</a></li>
+													<li><a href="/contents.html">Contents</a></li>
+													<li class="active"><a href="/contents.html" class=>Plays</a></li>
+													<li><a href="/casestudies.html">Case Studies</a></li>
+													<li><a href="/linksandtemplates.html">Links and Templates</a></li>
+													<li><a href="/glossary.html">Glossary</a></li>
+												</ul>
+	
+											</div>
+										</div>
+										<div class="au-main-nav__overlay" aria-controls="main-nav-default"
+											onClick="return AU.mainNav.Toggle( this )">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</nav>
 				</div>
+				<div class="col-1"></div>
 			</div>
-		</div>
-	</header>
-
-	<!-- MAIN BODY -->
-	<main>
-		<!--CONTENT-->
-		<section class="au-body">
-			<div class="container-fluid"></div>
+	
+			<!-- MAIN BODY -->
+			<div class="container">
+				<section class="content">
+					<div class="container-fluid">
 				
 				<!-- CONTENT BODY-->
 				<div class="row">
