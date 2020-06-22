@@ -91,3 +91,42 @@ h3 {
   margin-left: 5px;
   vertical-align: middle;
 }
+
+img {
+  height: 50px;
+}
+
+.margin-style {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* Play content */
+.grid-play-header-content{
+  display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 10px;
+  padding: 10px;
+}
+.heading-text{
+  color:#135E70;
+}
+.play-layout-container{
+  text-align: center;
+}
+.grid-play-layout {
+  display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 10px;
+    padding: 10px;
+}
+.grid-content-play {
+   grid-gap: 10px;
+  padding: 10px;
+}
+li {
+  text-align: left;
+}
+p.play-body {
+  text-align: left;
+}
