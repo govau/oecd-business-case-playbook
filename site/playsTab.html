@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<script src="index.js"></script>
 <!--[if lt IE 8]>
 	<html class="no-js lt-ie8 lt-ie9" lang="en">
 <![endif]-->
@@ -64,13 +65,18 @@
 	<link type="text/css" rel="stylesheet" href="../css/main.css">
 	<link type="text/css" rel="stylesheet" href="../App.css">
 	<style>
-		a {
+		.aNavBar {
 			text-align: left;
 			color: blue;
 		}
 
 		.active {
 			background-color: #135E70;
+		}
+		.au-header__subline{
+			max-width:42em;
+			text-align: left;
+			color:#636363
 		}
 	</style>
 
@@ -85,13 +91,10 @@
 			!function(a){"use strict";a.matchMedia=a.matchMedia||function(a){var b,c=a.documentElement,d=c.firstElementChild||c.firstChild,e=a.createElement("body"),f=a.createElement("div");return f.id="mq-test-1",f.style.cssText="position:absolute;top:-100em",e.style.background="none",e.appendChild(f),function(a){return f.innerHTML='&shy;<style media="'+a+'"> #mq-test-1 { width: 42px; }</style>',c.insertBefore(e,d),b=42===f.offsetWidth,c.removeChild(e),{matches:b,media:a}}}(a.document)}(this),function(a){"use strict";function b(){u(!0)}var c={};a.respond=c,c.update=function(){};var d=[],e=function(){var b=!1;try{b=new a.XMLHttpRequest}catch(c){b=new a.ActiveXObject("Microsoft.XMLHTTP")}return function(){return b}}(),f=function(a,b){var c=e();c&&(c.open("GET",a,!0),c.onreadystatechange=function(){4!==c.readyState||200!==c.status&&304!==c.status||b(c.responseText)},4!==c.readyState&&c.send(null))};if(c.ajax=f,c.queue=d,c.regex={media:/@media[^\{]+\{([^\{\}]*\{[^\}\{]*\})+/gi,keyframes:/@(?:\-(?:o|moz|webkit)\-)?keyframes[^\{]+\{(?:[^\{\}]*\{[^\}\{]*\})+[^\}]*\}/gi,urls:/(url\()['"]?([^\/\)'"][^:\)'"]+)['"]?(\))/g,findStyles:/@media *([^\{]+)\{([\S\s]+?)$/,only:/(only\s+)?([a-zA-Z]+)\s?/,minw:/\([\s]*min\-width\s*:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/,maxw:/\([\s]*max\-width\s*:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/},c.mediaQueriesSupported=a.matchMedia&&null!==a.matchMedia("only all")&&a.matchMedia("only all").matches,!c.mediaQueriesSupported){var g,h,i,j=a.document,k=j.documentElement,l=[],m=[],n=[],o={},p=30,q=j.getElementsByTagName("head")[0]||k,r=j.getElementsByTagName("base")[0],s=q.getElementsByTagName("link"),t=function(){var a,b=j.createElement("div"),c=j.body,d=k.style.fontSize,e=c&&c.style.fontSize,f=!1;return b.style.cssText="position:absolute;font-size:1em;width:1em",c||(c=f=j.createElement("body"),c.style.background="none"),k.style.fontSize="100%",c.style.fontSize="100%",c.appendChild(b),f&&k.insertBefore(c,k.firstChild),a=b.offsetWidth,f?k.removeChild(c):c.removeChild(b),k.style.fontSize=d,e&&(c.style.fontSize=e),a=i=parseFloat(a)},u=function(b){var c="clientWidth",d=k[c],e="CSS1Compat"===j.compatMode&&d||j.body[c]||d,f={},o=s[s.length-1],r=(new Date).getTime();if(b&&g&&p>r-g)return a.clearTimeout(h),h=a.setTimeout(u,p),void 0;g=r;for(var v in l)if(l.hasOwnProperty(v)){var w=l[v],x=w.minw,y=w.maxw,z=null===x,A=null===y,B="em";x&&(x=parseFloat(x)*(x.indexOf(B)>-1?i||t():1)),y&&(y=parseFloat(y)*(y.indexOf(B)>-1?i||t():1)),w.hasquery&&(z&&A||!(z||e>=x)||!(A||y>=e))||(f[w.media]||(f[w.media]=[]),f[w.media].push(m[w.rules]))}for(var C in n)n.hasOwnProperty(C)&&n[C]&&n[C].parentNode===q&&q.removeChild(n[C]);n.length=0;for(var D in f)if(f.hasOwnProperty(D)){var E=j.createElement("style"),F=f[D].join("\n");E.type="text/css",E.media=D,q.insertBefore(E,o.nextSibling),E.styleSheet?E.styleSheet.cssText=F:E.appendChild(j.createTextNode(F)),n.push(E)}},v=function(a,b,d){var e=a.replace(c.regex.keyframes,"").match(c.regex.media),f=e&&e.length||0;b=b.substring(0,b.lastIndexOf("/"));var g=function(a){return a.replace(c.regex.urls,"$1"+b+"$2$3")},h=!f&&d;b.length&&(b+="/"),h&&(f=1);for(var i=0;f>i;i++){var j,k,n,o;h?(j=d,m.push(g(a))):(j=e[i].match(c.regex.findStyles)&&RegExp.$1,m.push(RegExp.$2&&g(RegExp.$2))),n=j.split(","),o=n.length;for(var p=0;o>p;p++)k=n[p],l.push({media:k.split("(")[0].match(c.regex.only)&&RegExp.$2||"all",rules:m.length-1,hasquery:k.indexOf("(")>-1,minw:k.match(c.regex.minw)&&parseFloat(RegExp.$1)+(RegExp.$2||""),maxw:k.match(c.regex.maxw)&&parseFloat(RegExp.$1)+(RegExp.$2||"")})}u()},w=function(){if(d.length){var b=d.shift();f(b.href,function(c){v(c,b.href,b.media),o[b.href]=!0,a.setTimeout(function(){w()},0)})}},x=function(){for(var b=0;b<s.length;b++){var c=s[b],e=c.href,f=c.media,g=c.rel&&"stylesheet"===c.rel.toLowerCase();e&&g&&!o[e]&&(c.styleSheet&&c.styleSheet.rawCssText?(v(c.styleSheet.rawCssText,e,f),o[e]=!0):(!/^([a-zA-Z:]*\/\/)/.test(e)&&!r||e.replace(RegExp.$1,"").split("/")[0]===a.location.host)&&("//"===e.substring(0,2)&&(e=a.location.protocol+e),d.push({href:e,media:f})))}w()};x(),c.update=x,c.getEmValue=t,a.addEventListener?a.addEventListener("resize",b,!1):a.attachEvent&&a.attachEvent("onresize",b)}}(this);
 		</script>
 	<![endif]-->
-
 </head>
 
 <!-- BODY -->
-<!-- GRID-12 -->
 <body class="au-grid">
-
 	<main class="au-grid">
 		<!-- <div class="container"> -->
 		<div class="row ">
@@ -155,130 +158,99 @@
 			<div class="col-1"></div>
 		</div>
 	
-			<!-- MAIN BODY -->
-			<div class="container">
-				<section class="content">
-					<div class="container-fluid">
-
-						<br>
-						<!-- Alpha version Heading Tag -->
-						<div class="grid-container-Alpha">
-							<div style="width:80px;height:30px;background-color:#135e70;color:white;text-align:center;
-								font-size:20px;font-family: Calibri, sans-serif;font-weight: lighter;">Alpha</div>
-							<div style="width:100%;height:30px;text-align:left;font-size:18px;font-family: Calibri, sans-serif;font-weight: lighter;">
-							This playbook is under active development and your feedback will help us improve it.</div>
-						</div>
-				
-				<!-- CONTENT BODY-->
-				<div class="row">
-					<div class="col-sm-8" id="content">
-						<nav class="au-breadcrumbs" aria-label="breadcrumb">
-							<ul class="au-link-list au-link-list--inline">
-								<li><a href="../">Home</a></li>
-								<li><a href="../contents.html">Critical Success Factors</a></li>
-								<li>Play 3: Outline the options</li>
-							</ul>
-						</nav> 
-						<div class="play-layout-container">
-							<div class="grid-play-header-content">
-								<div class="grid-content-play">
-									<img src="../images/play3.png" alt="play3" class="center">
+		<!--CONTENT-->
+		<div class="container">
+			<section class="content">
+				<div class="container-fluid">
+					<br>
+					<!-- Alpha version Heading Tag -->
+					<div class="grid-container-Alpha">
+						<div style="width:80px;height:30px;background-color:#135e70;color:white;text-align:center;
+							font-size:20px;font-family: Calibri, sans-serif;font-weight: lighter;">Alpha</div>
+						<div style="width:100%;height:30px;text-align:left;font-size:18px;font-family: Calibri, sans-serif;font-weight: lighter;">
+						This playbook is under active development and your feedback will help us improve it.</div>
+					</div>
+					<!-- CONTENT BODY-->
+					<div class="row">
+						<div class="col-sm-8" id="content">
+							<nav class="au-breadcrumbs" aria-label="breadcrumb">
+								<ul class="au-link-list au-link-list--inline">
+									<li><a class="aNavBar" href="../">Home</a></li>
+									<li>Plays</li>
+                                </ul>
+                                
+							<!-- Start Play Grid -->
+							<div class="grid-container">
+								<div class="grid-content">
+									<a href="play0/index.html"><span></span>
+										<img src="images/play0.png" alt="play0Logo" class="center">
+										<h1 class="center">Play 0</h1>
+										<p class="center">Have a plan</p>
+									</span></a>
 								</div>
-								<div class="grid-content-play">
-									<h1>Play 3: Outline the options</h1>
-									<p class="play-body">Identify and outline the need/opportunity that will be addressed by the business case.</p>
+								<div class="grid-content">
+									<a href="play1/index.html"><span></span>
+										<img src="images/play1.png" alt="play1Logo" class="center">
+										<h1 class="center">Play 1</h1>
+										<p class="center">Define the business problem/opportunity and organisational context</p>
+									</a>
+								</div>
+								<div class="grid-content">
+									<a href="play2/index.html"><span></span>
+										<img src="images/play2.png" alt="play2Logo" class="center">
+										<h1 class="center">Play 2</h1>
+										<p class="center">Define the desired outcome</p>
+									</a>
+								</div>
+								<div class="grid-content">
+									<a href="play3/index.html"><span></span>
+										<img src="images/play3.png" alt="play3Logo" class="center">
+										<h1 class="center">Play 3</h1>
+										<p class="center">Outline the options</p>
+									</a>
+								</div>
+								<div class="grid-content">
+									<a href="play4/index.html"><span></span>
+										<img src="images/play4.png" alt="play4Logo" class="center">
+										<h1 class="center">Play 4</h1>
+										<p class="center">Understand the costs and benefits</p>
+									</a>
+								</div>
+								<div class="grid-content">
+									<a href="play2/index.html"><span></span>
+										<img src="images/play5.png" alt="play5Logo" class="center">
+										<h1 class="center">Play 5</h1>
+										<p class="center">Understand risk</p>
+									</a>
+								</div>
+								<div class="grid-content">
+									<a href="play6/index.html"><span></span>
+										<img src="images/play6.png" alt="play6Logo" class="center">
+										<h1 class="center">Play 6</h1>
+										<p class="center">Proposing a preferred option</p>
+									</a>
+								</div>
+								<div class="grid-content">
+									<a href="play7/index.html"><span></span>
+										<img src="images/play7.png" alt="play7Logo" class="center">
+										<h1 class="center">Play 7</h1>
+										<p class="center">How to manage implementation</p>
+									</a>
 								</div>
 							</div>
-							<div class="grid-play-layout">
-								<div class="grid-content-play">
-									<img src="../images/principles.png" alt="Principles" class="center">
-									<h3 class="heading-text">Principles</h3>
-								</div>
-								<div class="grid-content-play">
-									<ul>
-										<li>Identify the business / policy outcome which will be achieved via delivery of the proposal – policy outcome, deliver better outcomes.</li>
-										<li>Align the proposal to the broader strategic direction of government  - whole of government strategy/alignment , ICT platform.</li>
-									</ul>
-									<p class="play-body">What is your business future state accross people/process/tech</p>
-									<ul>
-										<li>Identify the future state business architecture.</li>
-										<li>Identify the future state technical architecture.</li>
-										<li>Provide a view of benefits which will be achieved – benefits outcome: e.g. quantum of policy outcome.</li>
-									</ul>
-								</div>
-							</div>
-							<hr/>
-							<div class="grid-play-layout">
-								<div class="grid-content-play">
-									<img src="../images/consideration.png" alt="consideration" class="center">
-									<h3 class="heading-text">Considerations</h3>
-								</div>
-								<div class="grid-content-play">
-									<ul>
-										<li>Odior resciae perumqu idelluptaqui officae ne volupta  dolo bersped molorum rectae dionsequam que escipie  ndamus magnatem volorro viditatur? </li>
-										<li>Quias pos elent,  sintur, que atur mosanit voloris nobis et escia doluptam  et aut dolorehenis asit ut ommoloris modis experum  quiatemporae volut et haruptur?</li>
-									</ul>
-								</div>
-								<div class="grid-content-play">
-									<img src="../images/links-guidance.png" alt="links-guidance" class="center">
-									<h3 class="heading-text">Links / Guidance</h3>
-								</div>
-								<div class="grid-content-play">
-									<p class="play-body">ICT Business Case Guide:</p>
-									<ul>
-										<li><a hrfe="#" target="_blank">Link Here</a></li>
-										<li><a hrfe="#" target="_blank">Link Here</a></li>
-									</ul>
-									<p class="play-body">Addressing funding and project Approval in an AGILE context:</p>
-									<ul>
-										<li><a hrfe="#" target="_blank">Link Here</a></li>
-										<li><a hrfe="#" target="_blank">Link Here</a></li>
-									</ul>
-								</div>						
-							</div>		
-						</div>		
+							<!-- End Play grid -->
+						</div>	
+							
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 		<!--END CONTENT-->
 	</main>
+	</div>
 	<!-- END MAIN BODY -->
 
-	<style>
-		.grid-play-header-content{
-			display: grid;
-  			grid-template-columns: 1fr 3fr;
-  			grid-gap: 10px;
-  			padding: 10px;
-		}
-		.heading-text{
-			color:#135E70;
-		}
-		.play-layout-container{
-			text-align: center;
-		}
-		.grid-play-layout {
-			display: grid;
-  			grid-template-columns: 1fr 3fr;
-  			grid-gap: 10px;
-  			padding: 10px;
-		}
-		.grid-content-play {
-  			display: grid;
- 			grid-gap: 10px;
-  			padding: 10px;
-		}
-		li {
-			text-align: left;
-		}
-		p.play-body {
-			text-align: left;
-		}
-	</style>
-
 	<!--FOOTER -->
-	<footer class="au-footer au-footer--dark au-body au-body--dark" role="contentinfo" style='padding-left:5%'>
+	<footer class="au-footer au-footer--dark au-body au-body--dark" role="contentinfo">
 		<div class="container-fluid">
 			<div class="row">
 				<nav class="col-md-12" aria-label="footer">
@@ -297,9 +269,7 @@
 				</section>
 			</div>
 	</footer>
-
 	<!-- The javascript from pancake to open and close side nav on desktop -->
 	<script type="text/javascript" src="../js/script.min.js"></script>
 </body>
-
 </html>
