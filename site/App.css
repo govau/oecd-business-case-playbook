@@ -1,3 +1,11 @@
+/* Alpha tag grid */
+.grid-container-Alpha {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
 /* Grid for home page contents */
 .grid-container {
   display: grid;
@@ -44,29 +52,42 @@ a {
   color: black;
   text-decoration: none;
   text-align: center;
+  font-family: "Calibri", sans-serif;
+  font-weight: lighter;
 }
 
-/* Accordions */
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  font-size: 50px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
+/* Calibri Light Font */
+.calib-font {
+  font-family: "Calibri", sans-serif;
+  font-weight: lighter;
 }
 
-.active, .accordion:hover {
-  background-color: #ccc;
+p {
+  font-family: "Calibri", sans-serif;
+  font-weight: lighter;
 }
 
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  display: none;
-  overflow: hidden;
+h1 {
+  font-family: "Calibri", sans-serif;
+  font-weight: bold;
+}
+
+h4 {
+  font-family: "Calibri", sans-serif;
+  font-weight: bold;
+}
+
+li {
+  font-family: "Calibri", sans-serif;
+  font-weight: lighter;
+}
+
+h3 {
+  font-family: "Calibri", sans-serif;
+  font-weight: bold;
+}
+
+.explanation {
+  margin-left: 5px;
+  vertical-align: middle;
 }
