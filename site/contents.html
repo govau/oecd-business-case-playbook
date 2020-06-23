@@ -102,52 +102,56 @@
 			<div class="col-1"></div>
 			<div class="col-10">
 				<header class="au-grid au-header au-header--dark" role="banner">
-					<div class="container-fluid">
-						<div class="row">
-							<div class="col-md-9">
-								<a class="au-header__brand" href="#">
-									<img class="au-header__brand-image" alt="Insert alternate text here"
-										src="../assets/img/header-logo-agov.png">
-									<div class="au-header__text">
-										<h1 class="au-header__heading calib-font"><b>Digital Transformation Agency</b></h1>
-										<div class="au-header__subline calib-font">Business case playbook</div>
-									</div>
-								</a>
+					<div class="container">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-md-9">
+									<a class="au-header__brand" href="#">
+										<img class="au-header__brand-image" alt="Insert alternate text here"
+											src="../assets/img/header-logo-agov.png">
+										<div class="au-header__text">
+											<h1 class="au-header__heading calib-font"><b>Digital Transformation Agency</b></h1>
+											<div class="au-header__subline calib-font">Business case playbook</div>
+										</div>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</header>
 				<nav class="au-main-nav au-main-nav--dark" aria-label="main">
 						<div class="container">
-							<div class="row">
-								<div class="col-md-12">
-									<div id="main-nav-default" class="au-main-nav__content">
-										<button aria-controls="main-nav-default" aria-expanded="false"
-											class="au-main-nav__toggle au-main-nav__toggle--open"
-											onClick="return AU.mainNav.Toggle( this )">
-											Menu
-										</button>
-										<div class="au-main-nav__menu">
-											<div class="au-main-nav__menu-inner">
-												<div class="au-main-nav__focus-trap-top"></div>
-												<button aria-controls="main-nav-default"
-													class="au-main-nav__toggle au-main-nav__toggle--close"
-													onClick="return AU.mainNav.Toggle( this )">
-													Close
-												</button>
-												<ul class="au-link-list">
-													<li><a href="/index.html">About</a></li>
-													<li class='active'><a href="/contents.html">Critical Success Factors</a></li>
-													<li><a href="/playsTab.html">Plays</a></li>
-													<li><a href="/casestudies.html">Case Studies</a></li>
-													<li><a href="/linksandtemplates.html">Links and Templates</a></li>
-													<li><a href="/glossary.html">Glossary</a></li>
-												</ul>
-												<div class="au-main-nav__focus-trap-bottom"></div>
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-12">
+										<div id="main-nav-default" class="au-main-nav__content">
+											<button aria-controls="main-nav-default" aria-expanded="false"
+												class="au-main-nav__toggle au-main-nav__toggle--open"
+												onClick="return AU.mainNav.Toggle( this )">
+												Menu
+											</button>
+											<div class="au-main-nav__menu">
+												<div class="au-main-nav__menu-inner">
+													<div class="au-main-nav__focus-trap-top"></div>
+													<button aria-controls="main-nav-default"
+														class="au-main-nav__toggle au-main-nav__toggle--close"
+														onClick="return AU.mainNav.Toggle( this )">
+														Close
+													</button>
+													<ul class="au-link-list">
+														<li><a href="/index.html">About</a></li>
+														<li class='active'><a href="/contents.html">Critical Success Factors</a></li>
+														<li><a href="/playsTab.html">Plays</a></li>
+														<li><a href="/casestudies.html">Case Studies</a></li>
+														<li><a href="/linksandtemplates.html">Links and Templates</a></li>
+														<li><a href="/glossary.html">Glossary</a></li>
+													</ul>
+													<div class="au-main-nav__focus-trap-bottom"></div>
+												</div>
 											</div>
-										</div>
-										<div class="au-main-nav__overlay" aria-controls="main-nav-default"
-											onClick="return AU.mainNav.Toggle( this )">
+											<div class="au-main-nav__overlay" aria-controls="main-nav-default"
+												onClick="return AU.mainNav.Toggle( this )">
+											</div>
 										</div>
 									</div>
 								</div>
@@ -179,23 +183,11 @@
 									<li>Critical Success Factors</li>
 								</ul>
 							</nav>
-								<h1>Contents</h1>
-								<p>Endis id ma sitionest ius exerem. Sedit laute et quatibus net laborem ius. Is as sit, omnimoluptae  poria volo etus. 
-									Dolori que estis aperore rfercil lectat que liam ullupis qui nonsequos endam inum-  quas utas</p>
-								<p><b>##INSERT DIAGRAM HERE##</b></p>
-								<h2>Critical success factors</h2>
-								<ul>
-									<li>Understand and/or establish a governance framework, including executive sponsor support to ensure timely decision 
-										making on critical issues / dependencies and the appropriate levels of sign-off are achieved both internally and externally (e.g. Central Agencies).</li>
-									<li>Engage early and frequently with central and partner agencies to gain support for the Government submission.</li>
-									<li>Ensure the business case team has access to the right information and inputs to develop the cost and benefits models, with reference to the relevant budget process and operations.</li>
-									<li>Set realistic timeframes and scheduling for business case delivery and review points.</li>
-									<li>Ensure on-going engagement with key stakeholders to ensure a collaborative approach is taken and support is maintained at all levels of government.</li>
-									<li>Develop, test and iterate your business case and the supporting strategic narrative.</li>
-									<li>Obtain stakeholder consensus on the strategic narrative and iterate as required, ensuring changes are applied throughout the business case as required.</li>
-								</ul>    
-						</div>	
-							
+								<h1>Critical Success Factors</h1>
+								<p>Throughout the business case development process, 
+									there are some working principles that are applicable to each play and may be helpful to keep in mind.</p>
+								<img src="images/critical_success_factor_diagram.png" alt="critical_success_factor_diagram" class="center image-contents">	
+						</div>							
 					</div>
 				</div>
 			</section>
@@ -203,7 +195,11 @@
 	</main>
 	</div>
 	<!-- END MAIN BODY -->
-
+	<style>
+		.image-contents{
+			height: auto;
+		}
+	</style>
 	<!--FOOTER -->
 	<footer class="au-footer au-footer--dark au-body au-body--dark" role="contentinfo">
 		<div class="container-fluid">
