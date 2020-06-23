@@ -19,7 +19,6 @@
   grid-gap: 10px;
   padding: 10px;
   border: 2px solid #135e70;
-
 }
 
 span { 
@@ -31,9 +30,9 @@ span {
   z-index: 1;
 }   
 
-.center {
+.playTabGrid {
   margin: auto;
-  text-align: center;
+  text-align: left;
   vertical-align: bottom;
 }
 
@@ -94,6 +93,7 @@ h3 {
 
 img {
   height: 50px;
+  float: left;
 }
 
 .margin-style {
