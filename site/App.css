@@ -81,6 +81,11 @@ li {
   font-weight: lighter;
 }
 
+h2 {
+  font-family: "Calibri", sans-serif;
+  font-weight: bold;
+}
+
 h3 {
   font-family: "Calibri", sans-serif;
   font-weight: bold;
@@ -108,7 +113,8 @@ img {
   padding: 10px;
 }
 .heading-text{
-  color:#135E70;
+  /* color:#135E70; */
+  color: black
 }
 .play-layout-container{
   text-align: center;
