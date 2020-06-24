@@ -69,6 +69,12 @@ p {
 h1 {
   font-family: "Calibri", sans-serif;
   font-weight: bold;
+  
+}
+
+.h1title {
+  font-size: 30px;
+  margin-bottom: 0px;
 }
 
 h4 {
@@ -134,4 +140,20 @@ li {
 }
 p.play-body {
   text-align: left;
+}
+
+/* Images */
+img {
+  height: 50px;
+}
+
+.imgPlayTabGrid {
+  float: left;
+  padding-right: 10px;
+  height: auto;
+  width: auto;
+}
+.imgheader {
+  height: auto;
+  width: auto;
 }
