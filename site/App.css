@@ -64,12 +64,12 @@ a {
 p {
   font-family: "Calibri", sans-serif;
   font-weight: lighter;
+  line-height: 1.5;
 }
 
 h1 {
   font-family: "Calibri", sans-serif;
   font-weight: bold;
-  
 }
 
 .h1title {
@@ -198,29 +198,24 @@ img {
   background-color: #eee;
 }
 
-/* On mouse-over, add a grey background color */
 .checkContainer:hover input ~ .checkmark {
   background-color: #ccc;
 }
 
-/* When the checkbox is checked, add a blue background */
 .checkContainer input:checked ~ .checkmark {
   background-color: #135e70;
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-/* Show the checkmark when checked */
 .checkContainer input:checked ~ .checkmark:after {
   display: block;
 }
 
-/* Style the checkmark/indicator */
 .checkContainer .checkmark:after {
   left: 9px;
   top: 5px;
