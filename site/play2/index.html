@@ -179,46 +179,54 @@
 							<ul class="au-link-list au-link-list--inline">
 								<li><a href="../">Home</a></li>
 								<li><a href="../playsTab.html">Plays</a></li>
-								<li>Play 2: Define your future state</li>
+								<li>Play 2: Define your desired outcomes and future state</li>
 							</ul>
 						</nav> 
-						<h1 class="margin-style h1title"style="margin-top: 20px;">Play 2: Define your future state</h1>
-						<p class="play-body">Outline how the future state will address the business problem. Your future state may transform as you develop your options. Make sure you demonstrate how the business case will support relevant strategic priorities.</p>
+						<h1 class="margin-style h1title"style="margin-top: 20px;">Play 2: Define your desired outcomes and future state</h1>
+						<p class="play-body">Define the outcomes which will address your business problem. The future state will need to deliver on these outcomes. Keep in mind the future state design will transform as you develop and select your options (Refer Play 3).</p>
 						<br>
 
 						<h2 class="heading-text" style="margin-top: 0px;">Key activities</h2>
 						<hr/>
-						<p class="play-body margin-style"><b>Know your user</b></p>
-						<p class="margin-style">Design the future state with the user need in mind. The business case should identify who the users are and what their ICT requirements are. Engage the people who will be using the ICT system throughout business case development.</p>
+						<p class="play-body margin-style"><b>Design with the user at the centre</b></p>
+						<p class="margin-style">Design the future state with the user need in mind. The business case should identify who are the users and what they need the most. Engage the people who will be using the service.</p>
 						<br>
 
-						<p class="play-body margin-style"><b>Define the future experience</b></p>
-						<p class="margin-style">The future user experience can be achieved in various ways. Think about how you can change functions across your organisation to meet the needs of the user. This includes functions relating to people, processes and technology.</p>
+						<p class="play-body margin-style"><b>Know the objectives of your organisation</b></p>
+						<p class="margin-style">Your business case must align to the objectives of your organisation. Define how the outcomes and future state to be delivered by the option/s aligns to the objectives.</p>
 						<br>
 
-						<p class="play-body margin-style"><b>Know the goals of your organisation</b></p>
-						<p class="margin-style">Your business case must align to the goals of your organisation. Describe how your future state will help the organisation achieve its goals.</p>
+						<p class="play-body margin-style"><b>Know the priorities of your government</b></p>
+						<p class="margin-style">Identify relevant policies and priorities (especially those relating to ICT). Align your options and implementation approach to the priorities to strengthen your business case.</p>
 						<br>
 						
-						<p class="play-body margin-style"><b>Know the priorities of your OECD member state</b></p>
-						<p class="margin-style" style="margin-bottom: 30px;">Identify relevant policies and priorities (especially those relating to ICT). Aligning your options and implementation approach to the priorities will strengthen your business case.</p>
+						<p class="play-body margin-style"><b>Define the future experience</b></p>
+						<p class="margin-style" style="margin-bottom: 30px;">The future user experience can be achieved in various ways. Think about how you can change functions across your organisation to meet the needs of the user. This includes functions relating to people, processes and technology.</p>
 
 						<h2 class="heading-text margin-style">Considerations</h2>
 						<hr/>
-						<label class="checkContainer">What are the priority user needs and how are you planning to address these?
+						<label class="checkContainer">What government outcomes is your organisation delivering?
 							<input type="checkbox" id="p2_c1" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
-						<label class="checkContainer">What does the user experience look like?
+						<label class="checkContainer">What is the strategic direction of government?
 							<input type="checkbox" id="p2_c2" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
-						<label class="checkContainer">What do your people, process and technology needs look like to enable an improved user experience?
+						<label class="checkContainer">How does the future state help achieve government outcomes and organisational objectives?
 							<input type="checkbox" id="p2_c3" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
-						<label class="checkContainer">How are your OECD member states future outcomes supported by the achievement of the business case objectives and priorities?
+						<label class="checkContainer">What are the priority user needs and how are you planning to address these?
 							<input type="checkbox" id="p2_c4" onclick="save(id)">
+							<span class="checkmark"></span>
+						</label>
+						<label class="checkContainer">What does the future user experience look like?
+							<input type="checkbox" id="p2_c5" onclick="save(id)">
+							<span class="checkmark"></span>
+						</label>
+						<label class="checkContainer">What do your people, process and technology need to look like to the future user experience?
+							<input type="checkbox" id="p2_c6" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<br>
@@ -226,17 +234,10 @@
 						<h2 class="heading-text margin-style">Links / Guidance</h2>
 						<hr/>
 
-						<p class="play-body margin-style">The reference materials provided below expand on the principles and considerations above. 
-							Use these to further your understanding of the Play and to assist with your own business case development.</p>
+						<p class="play-body margin-style">The reference materials provided expand on the principles and considerations above. Use these to further your understanding of the Play and to assist with your own business case development.</p>
 						<br>
 						
-						<p class="play-body margin-style">Australia’s Digital Service Standard provides a set of 13 best practice principles for designing a delivering government services</p>
-						<ul class="margin-style" style="margin-bottom: 50px;">
-							<li><a href="https://www.dta.gov.au/help-and-advice/about-digital-service-standard 
-								" target="_blank">Australia’s Digital Service Standard</a></li>
-							<li>[example of journey map or service design]</li>
-							<li>[example of policy / government alignment]</li>
-						</ul>
+						<p style="margin-bottom: 50px;"><a href="https://www.dta.gov.au/help-and-advice/about-digital-service-standard" target="_blank">Digital Service Standard Criteria</a> – Provides detail across Australia’s Digital Service Standard criteria which is made up of 13 best practice principles for designing and delivering government services.</p>
 					</div>
 				</div>
 			</div>
@@ -252,10 +253,15 @@
 			console.log("Saving ID:" + id + " checked:" + checkbox.checked);
 		}
 	
-		for(var i = 1; i < 4; i++){
+		for(var i = 1; i < 6; i++){
 			var checked = JSON.parse(localStorage.getItem("p2_c" + i));
 			document.getElementById("p2_c" + i).checked = checked;
-	}
+		}
+
+		window.onunload = () => {
+			// Clear the local storage
+			window.localStorage.clear()
+		}
 	</script>
 
 	<!--FOOTER -->

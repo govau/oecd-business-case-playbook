@@ -179,26 +179,22 @@
 							<ul class="au-link-list au-link-list--inline">
 								<li><a href="../">Home</a></li>
 								<li><a href="../playsTab.html">Plays</a></li>
-								<li>Play 6: Justify preferred option</li>
+								<li>Play 6: Justify the preferred option</li>
 							</ul>
 						</nav> 
-						<h1 class="margin-style h1title" style="margin-top: 20px;">Play 6: Justify preferred option</h1>
+						<h1 class="margin-style h1title" style="margin-top: 20px;">Play 6: Justify the preferred option</h1>
 						<p class="play-body">A preferred business case option will need to resolve the business problem and provide value for money.</p>
 						<br>
 						
 						<h2 class="heading-text" style="margin-top: 0px;">Key activities</h2>
 						<hr/>
 
-						<p class="play-body margin-style"><b>Understand your deciding factors</b></p>
-						<p class="margin-style">Identify what represents value for money. Your business problem and context may determine the value placed on benefits, risks, costs and timeframes.</p>
+						<p class="play-body margin-style"><b>Compare your options</b></p>
+						<p class="margin-style">Identify what represents value for money. Your business problem and context may determine the value placed on benefits, risks, costs and timeframes. Summarise and compare your options with your deciding factors in mind.</p>
 						<br>
 
-						<p class="play-body margin-style"><b>Summarise and compare your options</b></p>
-						<p class="margin-style">Compare each option with the deciding factors in mind. There are many frameworks available to help you do this.</p>
-						<br>
-					
 						<p class="play-body margin-style"><b>Justify your preferred option</b></p>
-						<p class="margin-style" style="margin-bottom: 30px;">Determine which option provides the best outcome for users and value for money. Summarise why it is the best option and highlight the key benefits. Explain why the other options are not preferred. You should complete more detailed analysis of the costs and benefits for your preferred option.</p>
+						<p class="margin-style" style="margin-bottom: 30px;">Determine which option provides the best outcome and value for money. Summarise why it is the best option and highlight the key benefits. Explain why the other options are not preferred. You should complete a more detailed analysis of the costs, benefits and implementation approach for your preferred option.</p>
 
 						<h2 class="heading-text margin-style">Considerations</h2>
 						<hr/>
@@ -206,16 +202,20 @@
 							<input type="checkbox" id="p6_c1" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
-						<label class="checkContainer">Why are the other options not preferred?
+						<label class="checkContainer">Why does the option need to be pursued now and what is the impact if it is not?
 							<input type="checkbox" id="p6_c2" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
-						<label class="checkContainer">Who will deliver the preferred option? How will the preferred option be delivered? 
+						<label class="checkContainer">Why are the other options not preferred?
 							<input type="checkbox" id="p6_c3" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
-						<label class="checkContainer">Does your OECD member state have the capacity and capability to deliver this option?
+						<label class="checkContainer">Who will deliver the preferred option? How will the preferred option be delivered? 
 							<input type="checkbox" id="p6_c4" onclick="save(id)">
+							<span class="checkmark"></span>
+						</label>
+						<label class="checkContainer">Does your OECD member state have the capacity and capability to deliver this option?
+							<input type="checkbox" id="p6_c5" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<br>
@@ -223,14 +223,10 @@
 						<h2 class="heading-text margin-style">Links / Guidance</h2>
 						<hr/>
 						
-						<p class="play-body margin-style">The reference materials provided below expand on the principles and considerations above. 
-							Use these to further your understanding of the Play and to assist with your own business case development.</p>
+						<p class="play-body margin-style">The reference materials provided expand on the principles and considerations above. Use these to further your understanding of the Play and to assist with your own business case development.</p>
 						<br>
 
-						<ul class="margin-style" style="margin-bottom: 50px;">
-							<li><a href="#" target="_blank">Link Here</a></li>
-							<li><a href="#" target="_blank">Link Here</a></li>
-						</ul>	
+						<p style="margin-bottom: 50px;"><a href="https://www.atap.gov.au/sites/default/files/f4_business_case_for_proposed_initiatives.pdf" target="_blank">Detailed business case of preferred option</a> - This document provides guidance on the steps and the detail proposed to justify the preferred option.</p>
 					</div>
 				</div>
 			</div>
@@ -246,9 +242,14 @@
 			console.log("Saving ID:" + id + " checked:" + checkbox.checked);
 		}
 	
-		for(var i = 1; i < 4; i++){
+		for(var i = 1; i < 5; i++){
 			var checked = JSON.parse(localStorage.getItem("p6_c" + i));
 			document.getElementById("p6_c" + i).checked = checked;
+		}
+
+		window.onunload = () => {
+			// Clear the local storage
+			window.localStorage.clear()
 		}
 	</script>
 
