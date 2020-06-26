@@ -217,35 +217,35 @@
 						<h2 class="heading-text margin-style">Considerations</h2>
 						<hr/>
 						<label class="checkContainer">Who can help with developing costs models?
-							<input type="checkbox">
+							<input type="checkbox" id="p4_c1" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">What are the current ICT support and maintenance costs?
-							<input type="checkbox">
+							<input type="checkbox" id="p4_c2" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">How complex are the business requirements and the ICT capability?
-							<input type="checkbox">
+							<input type="checkbox" id="p4_c3" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">How much do staff cost and how long will they be required for?
-							<input type="checkbox">
+							<input type="checkbox" id="p4_c4" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">How long are staff are required over the implementation period?
-							<input type="checkbox">
+							<input type="checkbox" id="p4_c5" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">How many people will use the new ICT capability?
-							<input type="checkbox">
+							<input type="checkbox" id="p4_c6" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">What will be required to maintain and support the new ICT capability once it is implemented?
-							<input type="checkbox">
+							<input type="checkbox" id="p4_c7" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">Have you agreed the benefits with the relevant stakeholders?
-							<input type="checkbox">
+							<input type="checkbox" id="p4_c8" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<br>
@@ -276,6 +276,19 @@
 		<!--END CONTENT-->
 	</main>
 	<!-- END MAIN BODY -->
+
+	<script>
+		function save(id) {	
+			var checkbox = document.getElementById(id);
+			localStorage.setItem(id, checkbox.checked);
+			console.log("Saving ID:" + id + " checked:" + checkbox.checked);
+		}
+	
+		for(var i = 1; i < 8; i++){
+			var checked = JSON.parse(localStorage.getItem("p4_c" + i));
+			document.getElementById("p4_c" + i).checked = checked;
+		}
+	</script>
 
 	<!--FOOTER -->
 	<footer class="au-footer au-footer--dark au-body au-body--dark" role="contentinfo" style='padding-left:5%'>

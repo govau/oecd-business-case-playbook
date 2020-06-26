@@ -220,51 +220,51 @@
 						<h2 class="heading-text margin-style">Considerations</h2>
 						<hr/>
 						<label class="checkContainer">What delivery method allows you to manage risk and stakeholder expectations effectively?
-							<input type="checkbox">
+							<input type="checkbox" id="p7_c1" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">What internal and external factors may impact implementation?
-							<input type="checkbox">
+							<input type="checkbox" id="p7_c2" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">What are your key milestones? When are your key milestones? 
-							<input type="checkbox">
+							<input type="checkbox" id="p7_c3" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">What skills and capability are required to deliver the project? How long do you need these people for? 
-							<input type="checkbox">
+							<input type="checkbox" id="p7_c4" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">Are there any tools or frameworks to help you assess capacity and capability?
-							<input type="checkbox">
+							<input type="checkbox" id="p7_c5" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">How will you source and implement the ICT solution? 
-							<input type="checkbox">
+							<input type="checkbox" id="p7_c6" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">Are you in compliance with your organisation's requirements?
-							<input type="checkbox">
+							<input type="checkbox" id="p7_c7" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">Have you defined your benefits and how you are going to measure them in consultation with your stakeholders?
-							<input type="checkbox">
+							<input type="checkbox" id="p7_c8" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">How can you design your implementation to deliver benefits early?
-							<input type="checkbox">
+							<input type="checkbox" id="p7_c9" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">How ready is your organisation for change?
-							<input type="checkbox">
+							<input type="checkbox" id="p7_c10" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">Who will be impacted by the project?
-							<input type="checkbox">
+							<input type="checkbox" id="p7_c11" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">Who will have influence over the success of the project?
-							<input type="checkbox">
+							<input type="checkbox" id="p7_c12" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<br>
@@ -298,6 +298,19 @@
 		<!--END CONTENT-->
 	</main>
 	<!-- END MAIN BODY -->
+
+	<script>
+		function save(id) {	
+			var checkbox = document.getElementById(id);
+			localStorage.setItem(id, checkbox.checked);
+			console.log("Saving ID:" + id + " checked:" + checkbox.checked);
+		}
+	
+		for(var i = 1; i < 12; i++){
+			var checked = JSON.parse(localStorage.getItem("p7_c" + i));
+			document.getElementById("p7_c" + i).checked = checked;
+		}
+	</script>
 
 	<!--FOOTER -->
 	<footer class="au-footer au-footer--dark au-body au-body--dark" role="contentinfo" style='padding-left:5%'>
