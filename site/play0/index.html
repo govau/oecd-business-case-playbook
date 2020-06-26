@@ -141,7 +141,6 @@
 														<li class='active'><a href="/playsTab.html">Plays</a></li>
 														<li><a href="/casestudies.html">Case Studies</a></li>
 														<li><a href="/linksandtemplates.html">Links and Templates</a></li>
-														<li><a href="/glossary.html">Glossary</a></li>
 													</ul>
 													<div class="au-main-nav__focus-trap-bottom"></div>
 												</div>
@@ -213,39 +212,39 @@
 								<span class="checkmark"></span>
 							</label>
 							<label class="checkContainer">What user need is not being fulfilled?
-								<input type="checkbox">
+								<input type="checkbox" id="p0_c2" onclick="save(id)">
 								<span class="checkmark"></span>
 							</label>
 							<label class="checkContainer">What outcome does your OECD member state wish to deliver?
-								<input type="checkbox">
+								<input type="checkbox" id="p0_c3" onclick="save(id)">
 								<span class="checkmark"></span>
 							</label>
-							<label class="checkContainer">When do you need to submit the business case for decision and what is the plan to meet that timeframe?
+							<label class="checkContainer" id="p0_c4" onclick="save(id)">When do you need to submit the business case for decision and what is the plan to meet that timeframe?
 								<input type="checkbox">
 								<span class="checkmark"></span>
 							</label>
 							<label class="checkContainer">Who needs to sponsor and review your business case?
-								<input type="checkbox">
+								<input type="checkbox" id="p0_c5" onclick="save(id)">
 								<span class="checkmark"></span>
 							</label>
 							<label class="checkContainer">Who do you need input from?
-								<input type="checkbox">
+								<input type="checkbox" id="p0_c6" onclick="save(id)">
 								<span class="checkmark"></span>
 							</label>
 							<label class="checkContainer">What capability and experience do you need in the people who will contribute to the business case?
-								<input type="checkbox">
+								<input type="checkbox" id="p0_c7" onclick="save(id)">
 								<span class="checkmark"></span>
 							</label>
 							<label class="checkContainer">How will your business case be structured and developed?
-								<input type="checkbox">
+								<input type="checkbox" id="p0_c8" onclick="save(id)">
 								<span class="checkmark"></span>
 							</label>
 							<label class="checkContainer">How will your business case be structured and developed?
-								<input type="checkbox">
+								<input type="checkbox" id="p0_c9" onclick="save(id)">
 								<span class="checkmark"></span>
 							</label>
 							<label class="checkContainer" style="margin-bottom: 30px;">Who can you seek advice from on the business case process and content?
-								<input type="checkbox">
+								<input type="checkbox" id="p0_c10" onclick="save(id)">
 								<span class="checkmark"></span>
 							</label>
 							
@@ -284,15 +283,16 @@
 </style>
 <script>
 	function save(id) {	
-	var checkbox = document.getElementById(id);
-    localStorage.setItem(id, checkbox.checked);
-	console.log("Saving ID:" + id + " checked:" + checkbox.checked);
+		var checkbox = document.getElementById(id);
+		localStorage.setItem(id, checkbox.checked);
+		console.log("Saving ID:" + id + " checked:" + checkbox.checked);
 	}
 
-	function retrieve(id)
-	var storage = localStorage.getItem(id, checkbox.checked);
-	console.log("Retrieving ID:" + id + " checked:" + checkbox.checked);
+	for(var i = 1; i < 10; i++){
+	var checked = JSON.parse(localStorage.getItem("p0_c" + i));
+    document.getElementById("p0_c" + i).checked = checked;}
 </script>
+
 	<!--FOOTER -->
 	<footer class="au-footer au-footer--dark au-body au-body--dark" role="contentinfo" style='padding-left:5%'>
 		<div class="container-fluid">
