@@ -183,35 +183,30 @@
 							</ul>
 						</nav> 
 						<h1 class="margin-style h1title" style="margin-top: 20px;"> Play 7: Plan for implementation</h1>
-						<p class="play-body">Plan how you will implement each option as a project (or program). Identify all the resources needed to manage and support the implementation. The implementation approach will vary based on factors such as the complexity of the proposed ICT solution and any OECD member state requirements.</p>
-						<p class="play-body">Getting the detail right:</p>
-						<ul class="margin-style">
-							<li>For options analysis: Describe the implementation variations for each identified option in enough detail to inform a comparative analysis.</li>
-							<li>For the preferred option: Develop a detailed view of the implementation plan for the preferred option to inform detailed costs and project initiation.</li>
-						</ul>	
+						<p class="play-body">Plan how you will implement each option as a project (or program). Identify all the resources needed to manage and support the implementation. The implementation approach will vary based on factors such as the complexity of the proposed ICT solution and government requirements. You should be able to use the artefacts developed as a part of this as soon as you commence implementation.</p>
 						<br>
 						
 						<h2 class="heading-text" style="margin-top: 0px;">Key activities</h2>
 						<hr/>
 						
 						<p class="play-body margin-style"><b>Break up the work into manageable pieces</b></p>
-						<p class="margin-style">Separate the work into smaller phases to achieve the desired outcome. This will help you set timeframes for delivery and plan for critical review points. It will also help show that you have done your due diligence.</p>
+						<p class="margin-style">Choose the appropriate delivery method for the project (e.g. agile, waterfall or blended). Plan out the key milestones and how and when they will be achieved. You will also need to consider how risks and dependencies will be managed. For example, the completion of related projects.</p>
 						<br>
 
 						<p class="play-body margin-style"><b>Determine the organisational capacity and capability</b></p>
-						<p class="margin-style">Determine the existing skills of your workforce and their availability to participate when you need them. Plan what and when key skills are required and factor in training requirements.</p>
+						<p class="margin-style">Determine the existing skills of your workforce and their availability to participate when needed. Plan what and when key skills are required and plan for training requirements. </p>
 						<br>
 
 						<p class="play-body margin-style"><b>Factor in technology procurement</b></p>
-						<p class="margin-style">Determine how you will source technology capability (if needed). Make sure you engage relevant stakeholders early as it is often a complex process.</p>
+						<p class="margin-style">Determine how you will source technology capability (if needed). This can be complex depending on your government and legislative requirements.</p>
 						<br>
 
 						<p class="play-body margin-style"><b>Set up governance and manage risk</b></p>
-						<p class="margin-style">Identify who will be responsible for how key decisions will be made and how issues will be resolved. You may have already identified who these people are as part of setting up governance for decisions related to the business case (refer Critical Success Factor XX).  Refer Play 5 for more detail on managing risks.</p>
+						<p class="margin-style">Identify who will be responsible for how key decisions will be made and how issues will be resolved. You may have already identified who these people are as part of setting up governance for decisions related to the business case.  Refer Play 5 for more detail on managing risks.</p>
 						<br>
 						
 						<p class="play-body margin-style"><b>Define and measure success</b></p>
-						<p class="margin-style">Use a measurement tool that works for your project and organisation to determine the success of the project. Set up checkpoints to ensure the project is on track to deliver agreed outcomes. This will provide confidence to the decision maker that identified benefits will be closely monitored. Ensure you continue to review benefits (if needed) and demonstrate achievement of benefits as early as possible to maintain support from stakeholders.</p>
+						<p class="margin-style">Define measurement criteria which will be used to determine the success of the project. Set up checkpoints to ensure the project is on track to deliver agreed outcomes. This will provide confidence to the decision maker that identified outcomes and benefits will be closely monitored. Demonstrate achievement of benefits as early as possible.</p>
 						<br>
 
 						<p class="play-body margin-style"><b>Have a plan for change</b></p>
@@ -243,7 +238,7 @@
 							<input type="checkbox" id="p7_c6" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
-						<label class="checkContainer">Are you in compliance with your organisation's requirements?
+						<label class="checkContainer">Are you complying with the requirements of your organisation?
 							<input type="checkbox" id="p7_c7" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
@@ -272,25 +267,12 @@
 						<h2 class="heading-text margin-style">Links / Guidance</h2>
 						<hr/>
 
-						<p class="play-body margin-style">The reference materials provided below expand on the principles and considerations above. 
-							Use these to further your understanding of the Play and to assist with your own business case development.</p>
+						<p class="play-body margin-style">The reference materials provided expand on the principles and considerations above. Use these to further your understanding of the Play and to assist with your own business case development.</p>
 						<br>
 
 
-						<p class="play-body margin-style">Addressing funding and approval in an agile context</p>
-						<ul class="margin-style" style="margin-bottom: 10px;">
-							<li><a href="https://www.vic.gov.au/our-services-supporting-victorian-government-innovate 
-								" target="_blank">vic.gov.au</a></li>
-						</ul>
-						<p class="play-body margin-style">Assurance Reviews Process Overview</p>
-						<ul class="margin-style" style="margin-bottom: 10px;">
-							<li><a href="https://www.finance.gov.au/government/assurance-reviews-risk-assessment/assurance-reviews-process-overview 
-								" target="_blank">finance.gov.au</a></li>
-						</ul>
-
-						<p class="play-body margin-style">[Add link – P3M3 assessment]</p>
-						<p class="play-body margin-style">[Add link WBS or Agile scheduling example]</p>
-						<p class="play-body margin-style">[Add change readiness assessment example]</p>
+						<p class="play-body margin-style" style="margin-bottom: 50px;"><a href="https://www.finance.gov.au/government/assurance-reviews-risk-assessment/assurance-reviews-process-overview 
+							" target="_blank">Assurance Reviews Process Overview</a> - This is a guide on assurance practices that help capture important considerations in program delivery.</p>
 					</div>
 				</div>
 			</div>
@@ -309,6 +291,11 @@
 		for(var i = 1; i < 12; i++){
 			var checked = JSON.parse(localStorage.getItem("p7_c" + i));
 			document.getElementById("p7_c" + i).checked = checked;
+		}
+
+		window.onunload = () => {
+			// Clear the local storage
+			window.localStorage.clear()
 		}
 	</script>
 

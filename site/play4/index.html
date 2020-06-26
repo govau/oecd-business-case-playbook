@@ -183,23 +183,18 @@
 							</ul>
 						</nav> 
 						<h1 class="margin-style h1title" style="margin-top: 20px;">Play 4: Define the Costs and Benefits</h1>
-						<p class="play-body">Listing the costs and benefits will help decision makers understand the different business case options. It is important to be clear how you will measure these for each option.</p>
+						<p class="play-body">Calculating the costs and benefits of the program will help decision-makers understand the different business case options. It is important to be clear how you will measure the costs and benefits for each option.</p>
 						<br>
 						
 						<h2 class="heading-text" style="margin-top: 0px;">Key activities</h2>
 						<hr/>
 
-						<p class="play-body margin-style"><b>Decide how you will work out the cost</b></p>
-						<p class="margin-style">There is no single best approach for costing. The size and complexity of each business case will be different and so getting the level of analysis right is important. Seek advice if in doubt.</p>
-						<p class="margin-style" style="margin-top: 10px;">Should be somewhat procedural – follow methodology at a high level</p>
-						<p class="margin-style" style="margin-top: 10px;">Detail is there, is the methodology, is how we go about it, shape and define the costs, until you know boundaries and assumptions of what to go and get, where do you get data and go about getting data</p>
+						<p class="play-body margin-style"><b>Decide how you will calculate the cost</b></p>
+						<p class="margin-style">There is no single best approach for costing. The size, complexity and desired outcomes may determine whether you use an agile or waterfall funding model. Seek advice if in doubt and outline any assumptions you make.</p>
 						<br>
 
 						<p class="play-body margin-style"><b>A variety of people and subject matter experts inform your costs</b></p>
-						<p class="margin-style">Talk to the people who will be reading the business case to understand what they want to see covered. Relevant groups within your organisation can also help you establish the costs of internal services and resources. Subject matter experts and other stakeholders outside your organisation are another good source of costing advice.</p>
-						<p class="margin-style" style="margin-top: 10px;">Talk about internal finance team, go to CFO branch or equivalent – peer review, QA, various options</p>
-						<p class="margin-style" style="margin-top: 10px;">Boundaries assumptions, will move as you outline the options – how do the costs move with options</p>
-						<p class="margin-style" style="margin-top: 10px;">Scenarios within these assumptions</p>
+						<p class="margin-style">Talk to the people who will be reading the business case to understand what they want to be included. Relevant groups within your organisation can also help you establish the costs of internal services and resources. Subject matter experts and other stakeholders outside your organisation are another good source of costing advice.</p>
 						<br>
 
 						<p class="play-body margin-style"><b>Cost based on scope and implementation approach</b></p>
@@ -207,11 +202,11 @@
 						<br>
 
 						<p class="play-body margin-style"><b>Quantitative and qualitative measurements of benefits</b></p>
-						<p class="margin-style">Give a broad overview of the benefits each option will deliver and include both quantitative and qualitative measurements of its outcome. For example you might intend to measure changes in staff hours (quantitative) and gauge customer experience through a survey (qualitative). Work with the people who will be implementing the project to define the metrics they find most valuable.</p>
+						<p class="margin-style">Give a broad overview of the benefits each option will deliver and include both quantitative and qualitative measurements of the outcomes. For example, you might intend to measure changes in staff hours (quantitative) and gain feedback on customer experience through a survey (qualitative). Work with the people who will be implementing the project to define the metrics they find most valuable.</p>
 						<br>
 
 						<p class="play-body margin-style"><b>Conduct detailed cost and benefit analysis of the preferred option</b></p>
-						<p class="margin-style" style="margin-bottom: 30px;">Perform a more detailed analysis of the costs and benefits once decision makers have agreed with the preferred option. Your aim is to get a deeper understanding of the original findings and help guide your planning.</p>
+						<p class="margin-style" style="margin-bottom: 30px;">Perform a more detailed analysis of the costs and benefits once decision makers have agreed with the preferred option. Your aim is to get a deeper understanding of the original findings to help guide your planning.</p>
 						<br>
 
 						<h2 class="heading-text margin-style">Considerations</h2>
@@ -248,27 +243,20 @@
 							<input type="checkbox" id="p4_c8" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
+						<label class="checkContainer">How are you going to measure the size and complexity of the problem?
+							<input type="checkbox" id="p4_c9" onclick="save(id)">
+							<span class="checkmark"></span>
+						</label>
 						<br>
 						
 						<h2 class="heading-text margin-style">Links / Guidance</h2>
 						<hr/>
 
-						<p class="play-body margin-style">The reference materials provided below expand on the principles and considerations above. 
-							Use these to further your understanding of the Play and to assist with your own business case development.</p>
-						<br>
-
-						<p class="play-body margin-style">Further information about Cost Estimation:</p>
-						<ul class="margin-style" style="margin-bottom: 10px;">
-							<li><a href="https://webarchive.nla.gov.au/awa/20080726194641/http://www.finance.gov.au/publications/finance-circulars/2006/01.html
-								" target="_blank">finance.gov.au</a></li>
-						</ul>
-
-						<p class="play-body margin-style">More detailed guidance about why cost-benefit analysis is important:</p>
-						<ul class="margin-style" style="margin-bottom: 50px;">
-							<li><a href="https://www.pmc.gov.au/resource-centre/regulation/cost-benefit-analysis-guidance-note 
-								" target="_blank">pmc.gov.au</a></li>
-						</ul>
-						<p class="play-body margin-style">[link to benefit logic map]</p>
+						<p class="play-body margin-style"><a href="https://www.finance.gov.au/government/commonwealth-investment-framework/commonwealth-investments-toolkit/cost-estimation" target="_blank">Cost Estimation Guide</a> – This is a guide to allow robust costing to occur as there are a number of principles that should be covered when they are estimated.</p>
+						<p class="play-body margin-style"><a href="https://www.pmc.gov.au/resource-centre/regulation/cost-benefit-analysis-guidance-note
+							" target="_blank">Cost-Benefit analysis document</a> – Guidance on why cost-benefit analysis is important.</p>
+						<p class="play-body margin-style" style="margin-bottom: 50px;"><a href="https://www.pmc.gov.au/sites/default/files/publications/cost-benefit-analysis_0.pdf
+							" target="_blank">Cost-benefit analysis document</a> – Detailed guidance on how to use cost-benefit analysis to assess proposals.</p>
 					</div>
 				</div>
 			</div>
@@ -284,9 +272,14 @@
 			console.log("Saving ID:" + id + " checked:" + checkbox.checked);
 		}
 	
-		for(var i = 1; i < 8; i++){
+		for(var i = 1; i < 9; i++){
 			var checked = JSON.parse(localStorage.getItem("p4_c" + i));
 			document.getElementById("p4_c" + i).checked = checked;
+		}
+
+		window.onunload = () => {
+			// Clear the local storage
+			window.localStorage.clear()
 		}
 	</script>
 
