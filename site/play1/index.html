@@ -141,7 +141,6 @@
 														<li class='active'><a href="/playsTab.html">Plays</a></li>
 														<li><a href="/casestudies.html">Case Studies</a></li>
 														<li><a href="/linksandtemplates.html">Links and Templates</a></li>
-														<li><a href="/glossary.html">Glossary</a></li>
 													</ul>
 													<div class="au-main-nav__focus-trap-bottom"></div>
 												</div>
@@ -207,23 +206,23 @@
 						<h2 class="heading-text margin-style">Considerations</h2>
 						<hr/>
 						<label class="checkContainer">What issues needs to be addressed in the current environment?
-							<input type="checkbox">
+							<input type="checkbox" id="p1_c1" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">What is the problem that the business case is trying to solve?
-							<input type="checkbox">
+							<input type="checkbox" id="p1_c2" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">What is the context in which the problem occurs? Think about political, financial, environmental etc factors at play?
-							<input type="checkbox">
+							<input type="checkbox" id="p1_c3" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">What are the OECD member states strategic priorities?
-							<input type="checkbox">
+							<input type="checkbox" id="p1_c4" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">Who are the stakeholders impacted?
-							<input type="checkbox">
+							<input type="checkbox" id="p1_c5" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<br>
@@ -248,6 +247,18 @@
 		<!--END CONTENT-->
 	</main>
 	<!-- END MAIN BODY -->
+
+	<script>
+		function save(id) {	
+			var checkbox = document.getElementById(id);
+			localStorage.setItem(id, checkbox.checked);
+			console.log("Saving ID:" + id + " checked:" + checkbox.checked);
+		}
+	
+		for(var i = 1; i < 5; i++){
+		var checked = JSON.parse(localStorage.getItem("p1_c" + i));
+		document.getElementById("p1_c" + i).checked = checked;}
+	</script>
 
 	<!--FOOTER -->
 	<footer class="au-footer au-footer--dark au-body au-body--dark" role="contentinfo" style='padding-left:5%'>
