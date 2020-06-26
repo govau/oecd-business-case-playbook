@@ -206,19 +206,19 @@
 						<h2 class="heading-text margin-style">Considerations</h2>
 						<hr/>
 						<label class="checkContainer">What are the priority user needs and how are you planning to address these?
-							<input type="checkbox">
+							<input type="checkbox" id="p2_c1" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">What does the user experience look like?
-							<input type="checkbox">
+							<input type="checkbox" id="p2_c2" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">What do your people, process and technology needs look like to enable an improved user experience?
-							<input type="checkbox">
+							<input type="checkbox" id="p2_c3" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">How are your OECD member states future outcomes supported by the achievement of the business case objectives and priorities?
-							<input type="checkbox">
+							<input type="checkbox" id="p2_c4" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<br>
@@ -244,6 +244,19 @@
 		<!--END CONTENT-->
 	</main>
 	<!-- END MAIN BODY -->
+
+	<script>
+		function save(id) {	
+			var checkbox = document.getElementById(id);
+			localStorage.setItem(id, checkbox.checked);
+			console.log("Saving ID:" + id + " checked:" + checkbox.checked);
+		}
+	
+		for(var i = 1; i < 4; i++){
+			var checked = JSON.parse(localStorage.getItem("p2_c" + i));
+			document.getElementById("p2_c" + i).checked = checked;
+	}
+	</script>
 
 	<!--FOOTER -->
 	<footer class="au-footer au-footer--dark au-body au-body--dark" role="contentinfo" style='padding-left:5%'>

@@ -203,19 +203,19 @@
 						<h2 class="heading-text margin-style">Considerations</h2>
 						<hr/>
 						<label class="checkContainer">Why is the preferred option worth pursuing?
-							<input type="checkbox">
+							<input type="checkbox" id="p6_c1" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">Why are the other options not preferred?
-							<input type="checkbox">
+							<input type="checkbox" id="p6_c2" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">Who will deliver the preferred option? How will the preferred option be delivered? 
-							<input type="checkbox">
+							<input type="checkbox" id="p6_c3" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">Does your OECD member state have the capacity and capability to deliver this option?
-							<input type="checkbox">
+							<input type="checkbox" id="p6_c4" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<br>
@@ -238,6 +238,19 @@
 		<!--END CONTENT-->
 	</main>
 	<!-- END MAIN BODY -->
+
+	<script>
+		function save(id) {	
+			var checkbox = document.getElementById(id);
+			localStorage.setItem(id, checkbox.checked);
+			console.log("Saving ID:" + id + " checked:" + checkbox.checked);
+		}
+	
+		for(var i = 1; i < 4; i++){
+			var checked = JSON.parse(localStorage.getItem("p6_c" + i));
+			document.getElementById("p6_c" + i).checked = checked;
+		}
+	</script>
 
 	<!--FOOTER -->
 	<footer class="au-footer au-footer--dark au-body au-body--dark" role="contentinfo" style='padding-left:5%'>

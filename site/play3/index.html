@@ -203,35 +203,35 @@
 						<h2 class="heading-text margin-style">Considerations</h2>
 						<hr/>
 						<label class="checkContainer">What are all the possible options?
-							<input type="checkbox">
+							<input type="checkbox" id="p3_c1" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">Have you considered options ranging from minimal technology upgrades to more innovative ICT solutions?  This includes those that may challenge your current ICT planning and service delivery habits.
-							<input type="checkbox">
+							<input type="checkbox" id="p3_c2" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">What are the criteria you will assess each option against?
-							<input type="checkbox">
+							<input type="checkbox" id="p3_c3" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">How will each option impact identified stakeholder groups?
-							<input type="checkbox">
+							<input type="checkbox" id="p3_c4" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">What are the costs and associated benefits of delivering each option?
-							<input type="checkbox">
+							<input type="checkbox" id="p3_c5" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">What are the likely consequences of delivering each option?
-							<input type="checkbox">
+							<input type="checkbox" id="p3_c6" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">Have you considered all the costs, benefits and risks associated with the business case across the lifecycle of the investment (financial and non-financial)?
-							<input type="checkbox">
+							<input type="checkbox" id="p3_c7" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">How do the options align to your OECD member states objectives and priorities?
-							<input type="checkbox">
+							<input type="checkbox" id="p3_c8" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<br>
@@ -254,6 +254,19 @@
 		<!--END CONTENT-->
 	</main>
 	<!-- END MAIN BODY -->
+
+	<script>
+		function save(id) {	
+			var checkbox = document.getElementById(id);
+			localStorage.setItem(id, checkbox.checked);
+			console.log("Saving ID:" + id + " checked:" + checkbox.checked);
+		}
+	
+		for(var i = 1; i < 8; i++){
+			var checked = JSON.parse(localStorage.getItem("p3_c" + i));
+			document.getElementById("p3_c" + i).checked = checked;
+		}
+	</script>
 
 	<!--FOOTER -->
 	<footer class="au-footer au-footer--dark au-body au-body--dark" role="contentinfo" style='padding-left:5%'>
