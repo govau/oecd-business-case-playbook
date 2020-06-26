@@ -207,38 +207,39 @@
 						<h2 class="heading-text margin-style">Considerations</h2>
 						<hr/>
 						<label class="checkContainer">What’s happening within your OECD member state/industry/globally that might affect your business case?
-							<input type="checkbox">
+							<input type="checkbox" id="p5_c1" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">When, where, why and how are things likely to divert from your proposed outcome? Think about categories of risk: e.g. operational, strategic, reputational, ICT and infrastructure, stakeholder relationships, contracts and procurement, the public, workforce capability and capacity.
-							<input type="checkbox">
+							<input type="checkbox" id="p5_c2" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">Are these risks internal or external? 
-							<input type="checkbox">
+							<input type="checkbox" id="p5_c3" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">Who might be involved or affected if something goes wrong?
-							<input type="checkbox">
+							<input type="checkbox" id="p5_c4" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">Are there any risk dependencies (will treating one risk impact your determination of another risk)?
-							<input type="checkbox">
+							<input type="checkbox" id="p5_c5" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">Are you regularly engaging stakeholders to ensure visibility of the risks stays up-to-date?
-							<input type="checkbox">
+							<input type="checkbox" id="p5_c6" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">Have you considered privacy risks?
+							<input type="checkbox" id="p5_c7" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">Have you considered cyber security risks?
-							<input type="checkbox">
+							<input type="checkbox" id="p5_c8" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<label class="checkContainer">Have you considered OECD member state legal, Constitutional or regional impact risks associated with the business case?
-							<input type="checkbox">
+							<input type="checkbox" id="p5_c9" onclick="save(id)">
 							<span class="checkmark"></span>
 						</label>
 						<br>
@@ -277,6 +278,19 @@
 		<!--END CONTENT-->
 	</main>
 	<!-- END MAIN BODY -->
+
+	<script>
+		function save(id) {	
+			var checkbox = document.getElementById(id);
+			localStorage.setItem(id, checkbox.checked);
+			console.log("Saving ID:" + id + " checked:" + checkbox.checked);
+		}
+	
+		for(var i = 1; i < 9; i++){
+			var checked = JSON.parse(localStorage.getItem("p5_c" + i));
+			document.getElementById("p5_c" + i).checked = checked;
+		}
+	</script>
 
 	<!--FOOTER -->
 	<footer class="au-footer au-footer--dark au-body au-body--dark" role="contentinfo" style='padding-left:5%'>
