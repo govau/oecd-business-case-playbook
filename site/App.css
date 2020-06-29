@@ -14,11 +14,17 @@
   padding: 10px;
 }
 
-.grid-content {
+/* .grid-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 10px;
   border: 2px solid #135e70;
+} */
+
+.border {
+  border-radius: 25px;
+  border: 2px solid #135e70;
+  padding: 20px;
 }
 
 span { 
@@ -41,7 +47,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid rgb(0, 0, 0);
+  border-top: 2px solid #135e70;
   margin: 1em 0;
   padding: 0;
 }
@@ -111,6 +117,13 @@ label {
   font-weight: lighter;
 }
 
+.rotated-text {
+  writing-mode: tb-rl;
+  transform: rotate(-180deg);
+  text-align: right;
+  color: #135E70;
+}
+
 .margin-style {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -119,10 +132,21 @@ label {
 /* Play content */
 .grid-play-header-content{
   display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-gap: 10px;
+  grid-template-columns: 1fr 9fr;
+  grid-gap: 0px;
   padding: 10px;
 }
+
+/* Tick list */
+.tlList {
+  list-style: none;
+}
+
+tl li:before {
+  content: '✓';
+}
+
+
 .heading-text{
   /* color:#135E70; */
   color: black
