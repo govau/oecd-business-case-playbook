@@ -91,6 +91,7 @@ h4 {
 li {
   font-family: "Calibri", sans-serif;
   font-weight: lighter;
+  text-align: left;
 }
 
 h2 {
@@ -128,23 +129,33 @@ label {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-
 /* Play content */
-.grid-play-header-content{
+.grid-play-template {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.grid-play-body-content{
   display: grid;
   grid-template-columns: 1fr 9fr;
+  grid-gap: 0px;
+  margin-left: 60px;
+  padding: 10px;
+}
+
+
+.grid-play-header-content{
+  display: grid;
+  grid-template-columns: 1fr 6fr;
   grid-gap: 0px;
   padding: 10px;
 }
 
 /* Tick list */
-.tlList {
-  list-style: none;
+dd {
+  list-style-position: outside;
 }
 
-tl li:before {
-  content: '✓';
-}
 
 
 .heading-text{
@@ -169,9 +180,6 @@ tl li:before {
   padding: 10px;
 }
 
-li {
-  text-align: left;
-}
 p.play-body {
   text-align: left;
 }
