@@ -185,7 +185,8 @@
 							</ul>
 						</nav>
 						<h1 class="h1title">ICT BUSINESS CASE PLAYS</h1>
-						<p>Eight plays have been developed, each of which is an essential element of an ICT business case. The plays are broken down into three parts; key activities, questions for consideration; and links to reference materials. The Playbook is structured in way that allows the user to click directly to the plays that are relevant to them. Business case development is not a linear process, you will need to refer to each play at multiple points throughout the development of your business case. Click the numbered icons to view more.</p>
+						<hr/>
+						<p>Eight plays have been developed, each of which is an essential element of an ICT business case. The plays are broken down into three parts; key activities, questions for consideration; and links to reference materials. The Playbook is structured in way that allows the user to click directly to the plays that are relevant to them. Business case development is not a linear process; you will need to refer to each play at multiple points throughout the development of your document. Click the numbered icons to view more.</p>
 						<br>
 												
 						<div class="grid-playTab-layout" style="margin-bottom: 50px;">
@@ -349,7 +350,7 @@
 		}
 		.grid-playTab-layout {
 			display: grid;
-			grid-template-columns: 400px 400px;
+			grid-template-columns: 1fr 1fr;
 			grid-gap: 30px;
 			padding: 0px;
 			width: auto;
@@ -367,6 +368,11 @@
 			grid-template-columns: 50px 1fr;
 			padding-left: 0px;
 			padding-right: 0px;
+		}
+		.play-grid-template {
+			display: grid;
+			grid-gap: 20px;
+			grid-template-columns: 1fr;
 		}
 
 		.playTabBorder {
@@ -387,28 +393,21 @@
 			text-align: left;
 		}
 
-		/* .image-contents{
-			height: 50px;
-			width: auto;
-  			transform: translate(0%, 0%);
-		} */
 	</style>
 
 	<!--FOOTER -->
-	<footer class="au-footer au-footer--dark au-body au-body--dark" role="contentinfo">
+	<footer class="au-footer au-footer--dark au-body au-body--dark" role="contentinfo" style='padding-left:5%'>
 		<div class="container-fluid">
 			<div class="row">
 				<nav class="col-md-12" aria-label="footer">
-					<ul class="au-link-list au-link-list--inline">
-						<li><a href="#">Privacy</a></li>
-						<li><a href="#">Need Help?</a></li>
-						<li><a href="#">Accessibility</a></li>
-					</ul>
 				</nav>
 				<section class="col-sm-12">
 					<div class="au-footer__end">
 						<p>
-							© Commonwealth of Australia. With the exception of the Commonwealth Coat of Arms and where otherwise noted, this work is licensed under the <a href="https://github.com/govau/design-system-starter/blob/master/LICENSE" rel="external">MIT license</a>
+							© Commonwealth of Australia. With the exception of the Commonwealth Coat of Arms and where
+							otherwise noted, this work is licensed under the <a
+								href="https://github.com/govau/design-system-starter/blob/master/LICENSE"
+								rel="external">MIT license</a>
 						</p>
 					</div>
 				</section>
@@ -417,4 +416,5 @@
 	<!-- The javascript from pancake to open and close side nav on desktop -->
 	<script type="text/javascript" src="../js/script.min.js"></script>
 </body>
+
 </html>
