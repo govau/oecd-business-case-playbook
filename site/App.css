@@ -134,7 +134,7 @@ label {
   display: grid;
   grid-template-columns: 1fr 6fr;
   grid-gap: 0px;
-  padding: 10px;
+  padding: 0px;
   align-items: end;
 }
 
@@ -164,4 +164,10 @@ img {
 .imgheader {
   height: auto;
   width: auto;
+}
+
+/* Disable horizontal srolling */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
