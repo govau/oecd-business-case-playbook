@@ -45,7 +45,7 @@ This workspace is using Node.js . It can be installed using the npm or yarn comm
 * "postcss-cli": "^6.0.0",
 * "pug": "^3.0.0"
 
-## Licencse
+## Licence
 ISC
 
 ## Notes
