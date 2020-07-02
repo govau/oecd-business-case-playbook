@@ -173,5 +173,10 @@ html, body {
 }
 
 /* Mobile view hide content */
-.mobileHide
-{ display: none;}
+.mobileContent {
+  display: none;
+}
+
+.desktopContent{
+  display: none;
+}
