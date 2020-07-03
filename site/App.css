@@ -171,12 +171,3 @@ html, body {
   max-width: 100%;
   overflow-x: hidden;
 }
-
-/* Mobile view hide content */
-.mobileContent {
-  display: none;
-}
-
-.desktopContent{
-  display: none;
-}
