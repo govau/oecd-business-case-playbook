@@ -7,7 +7,7 @@ jobs:
   build-and-test:
     docker:
       - image: circleci/node:8.12.0
-    working_directory: ~/ds-starter
+    working_directory: ~/oecd
     steps:
       - run:
           name: Set environment variables for build
@@ -22,9 +22,9 @@ jobs:
           name: Generate static assets
           command: npm run build
       - persist_to_workspace:
-          root: ~/ds-starter
+          root: ~/oecd
           paths:
-            - docs/
+            - site/
             - .deploy/
 
   deploy-staging:
@@ -32,47 +32,44 @@ jobs:
       - image: govau/cf-cli
     steps:
       - attach_workspace:
-          at: ~/ds-starter
+          at: ~/oecd
       - run:
           name: Deploy staging to cloudgov.au
           command: |
-            cd ~/ds-starter
-            mkdir -p deploy/
-            mv docs/ deploy/
-            mv .deploy/manifest-staging.yml deploy/
-            mv .deploy/Staticfile.auth deploy/docs/
-            cd deploy/
+            cd ~/oecd
+            cp .deploy/manifest-staging.yml site/
+            cd site/
             cf login -a $CF_API_STAGING -o $CF_ORG -s $CF_SPACE -u $CF_USERNAME -p $CF_PASSWORD_STAGING
-            cf zero-downtime-push ds-starter -f manifest-staging.yml
+            cf zero-downtime-push oecd -f manifest-staging.yml
 
   deploy-test:
     docker:
       - image: govau/cf-cli
     steps:
       - attach_workspace:
-          at: ~/ds-starter
+          at: ~/oecd
       - run:
           name: Deploy test to cloudgov.au
           command: |
-            cd ~/ds-starter
+            cd ~/oecd
             mkdir -p deploy/
             mv docs/ deploy/
             mv .deploy/manifest-test.yml deploy/
             mv .deploy/Staticfile.auth deploy/docs/
             cd deploy/
             cf login -a $CF_API_STAGING -o $CF_ORG -s $CF_SPACE -u $CF_USERNAME -p $CF_PASSWORD_STAGING
-            cf zero-downtime-push ds-starter-$CIRCLE_BRANCH -f manifest-test.yml
+            cf zero-downtime-push oecd-$CIRCLE_BRANCH -f manifest-test.yml
 
   deploy-prod:
     docker:
       - image: govau/cf-cli
     steps:
       - attach_workspace:
-          at: ~/ds-starter
+          at: ~/oecd
       - run:
           name: Deploy prod to cloudgov.au
           command: |
-            cd ~/ds-starter
+            cd ~/oecd
             mkdir -p deploy/
             mv docs/ deploy/
             mv .deploy/manifest-prod.yml deploy/
