@@ -52,11 +52,8 @@ jobs:
           name: Deploy test to cloudgov.au
           command: |
             cd ~/oecd
-            mkdir -p deploy/
-            mv docs/ deploy/
-            mv .deploy/manifest-test.yml deploy/
-            mv .deploy/Staticfile.auth deploy/docs/
-            cd deploy/
+            cp .deploy/manifest-test.yml site/
+            cd site/
             cf login -a $CF_API_STAGING -o $CF_ORG -s $CF_SPACE -u $CF_USERNAME -p $CF_PASSWORD_STAGING
             cf zero-downtime-push oecd-$CIRCLE_BRANCH -f manifest-test.yml
 
@@ -70,10 +67,8 @@ jobs:
           name: Deploy prod to cloudgov.au
           command: |
             cd ~/oecd
-            mkdir -p deploy/
-            mv docs/ deploy/
-            mv .deploy/manifest-prod.yml deploy/
-            cd deploy/
+            cp .deploy/manifest-prod.yml site/
+            cd site/
             cf login -a $CF_API_PROD -o $CF_ORG -s $CF_SPACE -u $CF_USERNAME -p $CF_PASSWORD_PROD
             cf zero-downtime-push design-system-starter -f manifest-prod.yml
 
