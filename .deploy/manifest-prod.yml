@@ -6,3 +6,6 @@ instances: 1
 applications:
 - name: oecd
   path: .
+
+routes:
+  - route: businesscaseplaybook.service.gov.au
