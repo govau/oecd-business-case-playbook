@@ -1,11 +1,11 @@
 ---
 buildpack: staticfile_buildpack
-memory: 256M
+memory: 64M
 instances: 1
 env:
   NODE_MODULES_CACHE: false
 
 
 applications:
-- name: ds-starter
+- name: oecd
   path: ./docs
