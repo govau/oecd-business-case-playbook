@@ -7,5 +7,5 @@ env:
 path: ./
 
 applications:
-- name: ds-starter
-  path: ./docs
+- name: oecd
+  path: .
