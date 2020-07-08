@@ -4,5 +4,5 @@ memory: 256M
 instances: 1
 
 applications:
-- name: design-system-starter
+- name: oecd
   path: ./docs
