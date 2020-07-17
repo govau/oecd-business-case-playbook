@@ -1,271 +1,214 @@
 <!DOCTYPE html>
-<script src="index.js"></script>
-<!--[if lt IE 8]>
-	<html class="no-js lt-ie8 lt-ie9" lang="en">
-<![endif]-->
-<!--[if IE 8]>
-	<html class="no-js lt-ie9 ie8" lang="en">
-<![endif]-->
-<!--[if IE 9 ]>
-	<html class="no-js ie9" lang="en">
-<![endif]-->
+<!--[if lt IE 8]><html class="no-js lt-ie8 lt-ie9" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9 ie8" lang="en"><![endif]-->
+<!--[if IE 9 ]><html class="no-js ie9" lang="en"><![endif]-->
 <!--[if !(IE)]><!-->
 <html class="no-js" lang="en">
 <!--<![endif]-->
-
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-
-	<!-- AGLS Metadata -->
-	<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
-	<link rel="schema.AGLSTERMS" href="http://www.agls.gov.au/agls/terms/" />
-	<meta name="DCTERMS.title" content="Content page template - Australian Government Design System" />
-	<meta ... scheme="AGLSTERMS.AglsAgent"
-		content="corporateName=Digital Transformation Agency, Australia; address=50 Marcus Clarke St Canberra ACT 2601; contact=+61 427 136 791" />
-	<meta name="DCTERMS.publisher" scheme="AGLSTERMS.AglsAgent"
-		content="corporateName=Digital Transformation Agency, Australia; address=50 Marcus Clarke St Canberra ACT 2601; contact=+61 427 136 791" />
-	<meta name="DCTERMS.description" content="Content pages display information clearly" />
-	<meta name="DCTERMS.modified" scheme="DCTERMS.ISO8601" content="2010-07-29T12:05:44+10:00" />
-	<meta name="DCTERMS.subject" content="design system, templates" />
-	<meta name="DCTERMS.language" scheme="DCTERMS.RFC4646" content="en-AU" />
-	<meta name="DCTERMS.type" content="Content page template" />
-	<meta name="DCTERMS.coverage" content="Australia" />
-	<meta name="DCTERMS.spatial" content="Australia" />
-	<meta name="AGLSTERMS.documentType" content="text" />
-	<meta name="msapplication-TileColor" content="#ffffff" />
-	<meta name="theme-color" content="#ffffff" />
-	<meta name="robots" content="index, follow" />
-	<meta name="author" content="Digital Transformation Agency" />
-	<meta name="description" content="Content pages display information clearly" />
-
-	<!-- TWITTER CARD -->
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Australian Government Design System" />
-	<meta name="twitter:description" content="Content pages display information clearly" />
-	<meta name="twitter:site" content="@DTA" />
-	<meta name="twitter:image"
-		content="https://govau.github.io/design-system-starter/assets/favicons/designsystem.jpg" />
-
-	<!-- OPENGRAPH -->
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content="Content page template - Australian Government Design System" />
-	<meta property="og:site_name" content="Australian Government Design System" />
-	<meta property="og:description" content="Content pages display information clearly" />
-	<meta property="og:image"
-		content="https://govau.github.io/design-system-starter/assets/favicons/designsystem.jpg" />
-	<meta property="og:url" content="https://designsystem.gov.au" />
-	<meta property="article:published_time" content="2019-05-15" />
-	<meta property="article:tag" content="design system" />
-	<meta property="article:tag" content="templates" />
-
-	<title>Australian Government Design System | Content</title>
-
-	<script type="text/javascript">
-		var $html = document.documentElement; if ($html.classList) $html.classList.remove("no-js"), $html.classList.add("js"); else { var className = "no-js"; $html.className = $html.className.replace(new RegExp("(^|\\b)" + className.split(" ").join("|") + "(\\b|$)", "gi"), " "), $html.className += " js" }
-	</script>
-
-	<link rel="icon" href="../assets/favicons/favicon.ico">
-	<link type="text/css" rel="stylesheet" href="../css/main.css">
-	<link type="text/css" rel="stylesheet" href="../App.css">
-	<style>
-		a {
-			text-align: left;
-			color: blue;
-		}
-
-		.active {
-			background-color: #135E70;
-		}
-	</style>
-
-	<!-- These are shivs to help modern html work in older internet explorer browsers -->
-	<!--[if lt IE 9]>
-		<script>
-			/* https://github.com/aFarkas/html5shiv HTML5 Shiv 3.7.3 | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed */
-			!function(a,b){function c(a,b){var c=a.createElement("p"),d=a.getElementsByTagName("head")[0]||a.documentElement;return c.innerHTML="x<style>"+b+"</style>",d.insertBefore(c.lastChild,d.firstChild)}function d(){var a=t.elements;return"string"==typeof a?a.split(" "):a}function e(a,b){var c=t.elements;"string"!=typeof c&&(c=c.join(" ")),"string"!=typeof a&&(a=a.join(" ")),t.elements=c+" "+a,j(b)}function f(a){var b=s[a[q]];return b||(b={},r++,a[q]=r,s[r]=b),b}function g(a,c,d){if(c||(c=b),l)return c.createElement(a);d||(d=f(c));var e;return e=d.cache[a]?d.cache[a].cloneNode():p.test(a)?(d.cache[a]=d.createElem(a)).cloneNode():d.createElem(a),!e.canHaveChildren||o.test(a)||e.tagUrn?e:d.frag.appendChild(e)}function h(a,c){if(a||(a=b),l)return a.createDocumentFragment();c=c||f(a);for(var e=c.frag.cloneNode(),g=0,h=d(),i=h.length;i>g;g++)e.createElement(h[g]);return e}function i(a,b){b.cache||(b.cache={},b.createElem=a.createElement,b.createFrag=a.createDocumentFragment,b.frag=b.createFrag()),a.createElement=function(c){return t.shivMethods?g(c,a,b):b.createElem(c)},a.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+d().join().replace(/[\w\-:]+/g,function(a){return b.createElem(a),b.frag.createElement(a),'c("'+a+'")'})+");return n}")(t,b.frag)}function j(a){a||(a=b);var d=f(a);return!t.shivCSS||k||d.hasCSS||(d.hasCSS=!!c(a,"article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}template{display:none}")),l||i(a,d),a}var k,l,m="3.7.3",n=a.html5||{},o=/^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i,p=/^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i,q="_html5shiv",r=0,s={};!function(){try{var a=b.createElement("a");a.innerHTML="<xyz></xyz>",k="hidden"in a,l=1==a.childNodes.length||function(){b.createElement("a");var a=b.createDocumentFragment();return"undefined"==typeof a.cloneNode||"undefined"==typeof a.createDocumentFragment||"undefined"==typeof a.createElement}()}catch(c){k=!0,l=!0}}();var t={elements:n.elements||"abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video",version:m,shivCSS:n.shivCSS!==!1,supportsUnknownElements:l,shivMethods:n.shivMethods!==!1,type:"default",shivDocument:j,createElement:g,createDocumentFragment:h,addElements:e};a.html5=t,j(b),"object"==typeof module&&module.exports&&(module.exports=t)}("undefined"!=typeof window?window:this,document);
-		</script>
-		<script>
-			/* https://github.com/scottjehl/Respond Respond.js v1.4.2: min/max-width media query polyfill * Copyright 2013 Scott Jehl Licensed under https://github.com/scottjehl/Respond/blob/master/LICENSE-MIT */
-			!function(a){"use strict";a.matchMedia=a.matchMedia||function(a){var b,c=a.documentElement,d=c.firstElementChild||c.firstChild,e=a.createElement("body"),f=a.createElement("div");return f.id="mq-test-1",f.style.cssText="position:absolute;top:-100em",e.style.background="none",e.appendChild(f),function(a){return f.innerHTML='&shy;<style media="'+a+'"> #mq-test-1 { width: 42px; }</style>',c.insertBefore(e,d),b=42===f.offsetWidth,c.removeChild(e),{matches:b,media:a}}}(a.document)}(this),function(a){"use strict";function b(){u(!0)}var c={};a.respond=c,c.update=function(){};var d=[],e=function(){var b=!1;try{b=new a.XMLHttpRequest}catch(c){b=new a.ActiveXObject("Microsoft.XMLHTTP")}return function(){return b}}(),f=function(a,b){var c=e();c&&(c.open("GET",a,!0),c.onreadystatechange=function(){4!==c.readyState||200!==c.status&&304!==c.status||b(c.responseText)},4!==c.readyState&&c.send(null))};if(c.ajax=f,c.queue=d,c.regex={media:/@media[^\{]+\{([^\{\}]*\{[^\}\{]*\})+/gi,keyframes:/@(?:\-(?:o|moz|webkit)\-)?keyframes[^\{]+\{(?:[^\{\}]*\{[^\}\{]*\})+[^\}]*\}/gi,urls:/(url\()['"]?([^\/\)'"][^:\)'"]+)['"]?(\))/g,findStyles:/@media *([^\{]+)\{([\S\s]+?)$/,only:/(only\s+)?([a-zA-Z]+)\s?/,minw:/\([\s]*min\-width\s*:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/,maxw:/\([\s]*max\-width\s*:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/},c.mediaQueriesSupported=a.matchMedia&&null!==a.matchMedia("only all")&&a.matchMedia("only all").matches,!c.mediaQueriesSupported){var g,h,i,j=a.document,k=j.documentElement,l=[],m=[],n=[],o={},p=30,q=j.getElementsByTagName("head")[0]||k,r=j.getElementsByTagName("base")[0],s=q.getElementsByTagName("link"),t=function(){var a,b=j.createElement("div"),c=j.body,d=k.style.fontSize,e=c&&c.style.fontSize,f=!1;return b.style.cssText="position:absolute;font-size:1em;width:1em",c||(c=f=j.createElement("body"),c.style.background="none"),k.style.fontSize="100%",c.style.fontSize="100%",c.appendChild(b),f&&k.insertBefore(c,k.firstChild),a=b.offsetWidth,f?k.removeChild(c):c.removeChild(b),k.style.fontSize=d,e&&(c.style.fontSize=e),a=i=parseFloat(a)},u=function(b){var c="clientWidth",d=k[c],e="CSS1Compat"===j.compatMode&&d||j.body[c]||d,f={},o=s[s.length-1],r=(new Date).getTime();if(b&&g&&p>r-g)return a.clearTimeout(h),h=a.setTimeout(u,p),void 0;g=r;for(var v in l)if(l.hasOwnProperty(v)){var w=l[v],x=w.minw,y=w.maxw,z=null===x,A=null===y,B="em";x&&(x=parseFloat(x)*(x.indexOf(B)>-1?i||t():1)),y&&(y=parseFloat(y)*(y.indexOf(B)>-1?i||t():1)),w.hasquery&&(z&&A||!(z||e>=x)||!(A||y>=e))||(f[w.media]||(f[w.media]=[]),f[w.media].push(m[w.rules]))}for(var C in n)n.hasOwnProperty(C)&&n[C]&&n[C].parentNode===q&&q.removeChild(n[C]);n.length=0;for(var D in f)if(f.hasOwnProperty(D)){var E=j.createElement("style"),F=f[D].join("\n");E.type="text/css",E.media=D,q.insertBefore(E,o.nextSibling),E.styleSheet?E.styleSheet.cssText=F:E.appendChild(j.createTextNode(F)),n.push(E)}},v=function(a,b,d){var e=a.replace(c.regex.keyframes,"").match(c.regex.media),f=e&&e.length||0;b=b.substring(0,b.lastIndexOf("/"));var g=function(a){return a.replace(c.regex.urls,"$1"+b+"$2$3")},h=!f&&d;b.length&&(b+="/"),h&&(f=1);for(var i=0;f>i;i++){var j,k,n,o;h?(j=d,m.push(g(a))):(j=e[i].match(c.regex.findStyles)&&RegExp.$1,m.push(RegExp.$2&&g(RegExp.$2))),n=j.split(","),o=n.length;for(var p=0;o>p;p++)k=n[p],l.push({media:k.split("(")[0].match(c.regex.only)&&RegExp.$2||"all",rules:m.length-1,hasquery:k.indexOf("(")>-1,minw:k.match(c.regex.minw)&&parseFloat(RegExp.$1)+(RegExp.$2||""),maxw:k.match(c.regex.maxw)&&parseFloat(RegExp.$1)+(RegExp.$2||"")})}u()},w=function(){if(d.length){var b=d.shift();f(b.href,function(c){v(c,b.href,b.media),o[b.href]=!0,a.setTimeout(function(){w()},0)})}},x=function(){for(var b=0;b<s.length;b++){var c=s[b],e=c.href,f=c.media,g=c.rel&&"stylesheet"===c.rel.toLowerCase();e&&g&&!o[e]&&(c.styleSheet&&c.styleSheet.rawCssText?(v(c.styleSheet.rawCssText,e,f),o[e]=!0):(!/^([a-zA-Z:]*\/\/)/.test(e)&&!r||e.replace(RegExp.$1,"").split("/")[0]===a.location.host)&&("//"===e.substring(0,2)&&(e=a.location.protocol+e),d.push({href:e,media:f})))}w()};x(),c.update=x,c.getEmValue=t,a.addEventListener?a.addEventListener("resize",b,!1):a.attachEvent&&a.attachEvent("onresize",b)}}(this);
-		</script>
-	<![endif]-->
-</head>
-
-<!-- BODY -->
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png">
+<link rel="manifest" href="../assets/favicons/site.webmanifest">
+<link rel="mask-icon" href="../assets/favicons/safari-pinned-tab.svg" color="#06262d">
+<link rel="shortcut icon" href="../assets/favicons/favicon.ico">
+<meta name="msapplication-config" content="../assets/favicons/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Digital Transformation Agency Business case playbook">
+<meta name="description" content="The Digital Transform provides countries with information on how to develop business cases which support investment decisions in digital transformation and ICT.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Digital Transformation Agency Business case playbook">
+<meta name="twitter:description" content="he Digital Transform provides countries with information on how to develop business cases which support investment decisions in digital transformation and ICT.">
+<meta name="twitter:name" content="Digital Transformation Agency Business case playbook">
+<meta name="twitter:image" content="../assets/favicon/dta-business-case-playbook.jpg">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Homepage - Digital Transformation Agency Business case playbook">
+<meta property="og:site_name" content="Digital Transformation Agency Business case playbook">
+<meta property="og:description" content="he Digital Transform provides countries with information on how to develop business cases which support investment decisions in digital transformation and ICT.">
+<meta property="og:image" content="../assets/favicon/dta-business-case-playbook.jpg">
+<meta property="og:url" content="https://businesscaseplaybook.service.gov.au/">
+<title>Homepage - DTA Business case playbook</title>
+<link rel="icon" href="../assets/favicons/favicon.ico">
+<link type="text/css" rel="stylesheet" href="../css/main.css">
+<!--[if lte IE 9]>
+	<script src="../assets/js/html5shiv.js"></script>
+	<script src="../assets/js/respond.js"></script>
+<![endif]-->
 
 <body class="au-grid">
-	<main class="au-grid">
-		<!-- <div class="container"> -->
-		<div class="row ">
-			<!-- HEADER-->
-			<div class="col-1"></div>
-			<div class="col-10">
-				<header class="au-grid au-header au-header--dark" role="banner">
-					<div class="container">
-						<div class="container-fluid">
-							<div class="row">
-								<div>
-									<a class="au-header__brand" href="index.html">
-										<img class="au-header__brand-image imgheader" alt="Insert alternate text here"
-											src="../assets/img/header-logo-agov.png">
-										<div class="au-header__text">
-											<h1 class="au-header__heading calib-font"><b>Digital Transformation Agency</b></h1>
-											<div class="au-header__subline calib-font">Business case playbook</div>
-										</div>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</header>
-				<nav class="au-main-nav au-main-nav--dark" aria-label="main">
-						<div class="container">
-							<div class="container-fluid">
-								<div class="row">
-									<div>
-										<div id="main-nav-default" class="au-main-nav__content">
-											<button aria-controls="main-nav-default" aria-expanded="false"
-												class="au-main-nav__toggle au-main-nav__toggle--open"
-												onClick="return AU.mainNav.Toggle( this )">
-												Menu
-											</button>
-											<div class="au-main-nav__menu">
-												<div class="au-main-nav__menu-inner">
-													<div class="au-main-nav__focus-trap-top"></div>
-													<button aria-controls="main-nav-default"
-														class="au-main-nav__toggle au-main-nav__toggle--close"
-														onClick="return AU.mainNav.Toggle( this )">
-														Close
-													</button>
-													<ul class="au-link-list">
-														<li class='active'><a href="/index.html">About</a></li>
-														<li><a href="/contents.html">Fundamentals</a></li>
-														<li><a href="/playsTab.html">Plays</a></li>
-														<li><a href="/casestudies.html">Case Studies</a></li>
-														<li><a href="/linksandtemplates.html">Links</a></li>
-													</ul>
-													<div class="au-main-nav__focus-trap-bottom"></div>
-												</div>
-											</div>
-											<div class="au-main-nav__overlay" aria-controls="main-nav-default"
-												onClick="return AU.mainNav.Toggle( this )">
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</nav>
-			</div>
-			<div class="col-1"></div>
-		</div>
-		<!-- </div> -->
-
-		<!-- MAIN BODY -->
-
-		<!--CONTENT-->
-		<div class="container">
-			<section class="content">
-				<div class="container-fluid">
-					<br>
-					
-					
-					<!-- CONTENT BODY-->
-					<div class="row">
-						<div id="content">
-							<!-- Alpha version Heading Tag -->
-							<div class="grid-container-Alpha">
-								<div style="width:80px;height:30px;background-color:#135e70;color:white;text-align:center;
-									font-size:20px;font-family: Calibri, sans-serif;font-weight: lighter;">Alpha</div>
-								<div style="width:100%;height:30px;text-align:left;font-size:18px;font-family: Calibri, sans-serif;font-weight: lighter;">
-								This playbook is under active development and your feedback will help us improve it.</div>
-							</div>
-							<br>
-
-							<nav class="au-breadcrumbs" aria-label="breadcrumb">
-								<ul class="au-link-list au-link-list--inline">
-									<li></li>
-								</ul>
-							</nav>
-							<h1 class="h1title">ABOUT</h1>
-							<hr/>
-							<div class="grid-about-layout" style="margin-bottom: 50px;">
-								<div style="border-right-style: dotted; padding-right: 10px;">
-									<p>The purpose of this Playbook is to help countries develop business cases which support investment decisions in digital transformation and ICT. The Playbook explores what works, and what does not. It is based on the experiences of Australia, with contributions from Denmark, Canada, Estonia and the United Kingdom. The Playbook covers foundational concepts of a business case required to present a compelling argument for a digital or ICT investment. Each Play explores a core component of business case development, supported by helpful links.</p>
-									<p style="margin-bottom: 0px;"><b>What is a business case?</b></p>
-									<p style="margin-top: 0px;">A business case is a framework which captures the justification for initiating a program or project as well as options to solve the identified problems. A business case should give the decision-maker confidence the preferred option has undergone rigorous analysis to ensure it will achieve the intended outcomes.</p>
-									<p style="margin-bottom: 0px;"><b>Why are business cases important?</b></p>
-									<p style="margin-top: 0px;">There is no one-size-fits-all to digital transformation. Different organisations will be at different stages of their journey. How you invest in digital transformation will depend on where your organisation is in that journey, and how it fits with the broader plans of your government.<br> <br> A business case evaluates the benefits, costs and risks of alternative options, and provides the reasoning to ensure decision-makers have the right information to make the best decision about those options. To communicate the benefits of a digital or ICT investment, the business case should focus on the desired outcome rather than the technology being deployed to deliver the capability. For example, a software upgrade may provide improved systems performance. However, decision-makers will focus on the value to the organisation through improved services, process transformation, and increased productivity resulting from decreased processing times and cost savings.</p>
-								</div>
-								<div style="padding: 10px">
-									<h2>Next Steps</h2>
-									<div class="grid-about-NxtSteps">
-										<a href="contents.html"><span></span>
-											<img src="images/about_CSF_button.png" alt="about_CSF_button" class="center image-contents" style="width: auto;">
-										</a>
-										<a href="contents.html"><span></span>
-											<p class="margin-style">Uncover the <b style="color: #135E70;">Fundamentals</b></p>
-										</a>
-									</div>
-									<div class="grid-about-NxtSteps">
-										<a href="playsTab.html"><span></span>
-											<img src="images/about_Plays_Button.png" alt="about_Plays_Button" class="center image-contents" style="width: auto;">
-										</a>
-										<a href="playsTab.html"><span></span>
-											<p >Discover <b style="color: #135E70;">the plays</b></p>
-										</a>
-									</div>
-									<img src="images/about_quote.png" alt="about_quote" style="width: 100%; height: auto;">
-								</div>
-							</div>
-						</div>
-					</div>	
-				</div>
-			</section>
-			<!--END CONTENT-->
-	</main>
-	</div>
-	<!-- END MAIN BODY -->
-
-	<style>
-		.grid-about-layout {
-			display: grid;
-			grid-template-columns: 4fr 1fr;
-			grid-gap: 20px;
-		}
-		.grid-about-NxtSteps {
-			display: grid;
-			padding-bottom: 20px;
-			grid-gap: 10px;
-			grid-template-columns: 1fr 4fr;
-		}
-
-		a {
-			color: black;
-		}
-	</style>
-
-	<!--FOOTER -->
-	<footer class="au-footer au-footer--dark au-body au-body--dark" role="contentinfo" style='padding-left:5%'>
-		<div class="container-fluid">
-			<div class="row">
-				<nav class="col-md-12" aria-label="footer">
-				</nav>
-				<section class="col-sm-12">
-					<div class="au-footer__end">
-						<p>
-							© Commonwealth of Australia. With the exception of the Commonwealth Coat of Arms and where
-							otherwise noted, this work is licensed under the <a
-								href="https://github.com/govau/design-system-starter/blob/master/LICENSE"
-								rel="external">MIT license</a>
-						</p>
-					</div>
-				</section>
-			</div>
-	</footer>
-	<!-- The javascript from pancake to open and close side nav on desktop -->
-	<script type="text/javascript" src="../js/script.min.js"></script>
+    <div class="alpha-bar">
+        <div class="au-body container-fluid">
+            <div class="col-12">
+                <p>
+                    <span class="alpha-text">Alpha</span>
+                    This playbook is under active development and your feedback will help us improve it.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="header-wrapper">
+        <header class="au-grid au-header au-header--dark">
+            <div class="container-fluid">
+                <div class="row">
+                    <div>
+                        <a class="au-header__brand" href="index.html">
+                            <img class="au-header__brand-image imgheader" alt="Insert alternate text here" src="../assets/img/header-logo-agov.png">
+                            <div class="au-header__text">
+                                <h1 class="au-header__heading calib-font"><b>Digital Transformation Agency</b></h1>
+                                <div class="au-header__subline calib-font">Business case playbook</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav class="au-main-nav au-main-nav--dark" aria-label="main">
+            <div class="container-fluid">
+                <div class="row">
+                    <div>
+                        <div id="main-nav-default" class="au-main-nav__content">
+                            <button aria-controls="main-nav-default" aria-expanded="false" class="au-main-nav__toggle au-main-nav__toggle--open" onClick="return AU.mainNav.Toggle( this )">
+                                Menu
+                            </button>
+                            <div class="au-main-nav__menu">
+                                <div class="au-main-nav__menu-inner">
+                                    <div class="au-main-nav__focus-trap-top"></div>
+                                    <button aria-controls="main-nav-default" class="au-main-nav__toggle au-main-nav__toggle--close" onClick="return AU.mainNav.Toggle( this )">
+                                        Close
+                                    </button>
+                                    <ul class="au-link-list">
+                                        <li class='active'><a href="/index.html">About</a></li>
+                                        <li><a href="/contents.html">Fundamentals</a></li>
+                                        <li><a href="/playsTab.html">Plays</a></li>
+                                        <li><a href="/casestudies.html">Case Studies</a></li>
+                                        <li><a href="/linksandtemplates.html">Links</a></li>
+                                    </ul>
+                                    <div class="au-main-nav__focus-trap-bottom"></div>
+                                </div>
+                            </div>
+                            <div class="au-main-nav__overlay" aria-controls="main-nav-default" onClick="return AU.mainNav.Toggle( this )">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <main class="page-wrapper au-body">
+        <div class="tier hero-section banner">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="hero-img col-xs-12 col-sm-6 col-sm-push-6 col-md-5 col-md-push-7">
+                        <img src="../assets/img/hero-image.png" alt="A man and woman lean against a giant lightbulb, thinking about what is involved when creating a business case.">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-sm-pull-6 col-md-7 col-md-pull-5">
+                        <h1>Developing better business cases</h1>
+                        <p class="lead">The purpose of this Playbook is to help countries develop business cases which support investment decisions in digital transformation and ICT. <br />The Playbook explores what works, and what does not.</p>
+                        <div class="btn-cta-group">
+                            <a class="au-btn" href="/contents.html">Learn the Fundamentals</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner banner--alt">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Next Steps</h2>
+                        <div class="row">
+                            <ul class="au-card-list au-card-list--matchheight ">
+                                <li class="col-xs-12 col-sm-4">
+                                    <div class="au-card au-card au-body  au-card--shadow au-card--centred au-card--clickable">
+                                        <div class="au-card__inner ">
+                                            <h2 class="au-card__title au-display-lg"><a href="/contents.html" class="au-card--clickable__link ">Fundamentals</a></h2>
+                                            <p class="au-card__content">There are five key fundamentals for building a better business case.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-xs-12 col-sm-4">
+                                    <div class="au-card au-card au-body  au-card--shadow au-card--centred au-card--clickable">
+                                        <div class="au-card__inner ">
+                                            <h2 class="au-card__title au-display-lg"><a href="/playsTab.html" class="au-card--clickable__link ">Plays</a></h2>
+                                            <p class="au-card__content">The eight actions (called Plays) describe the essential elements of developing a business case.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-xs-12 col-sm-4">
+                                    <div class="au-card  au-card--shadow au-card--centred au-card--clickable au-card ">
+                                        <div class="au-card__inner ">
+                                            <h2 class="au-card__title au-display-lg"><a href="/casestudies.html" class="au-card--clickable__link ">Case studies</a></h2>
+                                            <p class="au-card__content">A collection of case studies showcasing successful elements of ICT business case development.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner au-body au-body--dark">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class=" col-xs-12 col-md-6">
+                        <div class="au-padding">
+                            <h2>What is a business case?
+                            </h2>
+                            <p>A business case is a framework which captures the justification for initiating a program or project as well as options to solve the identified problems.</p>
+                            <p> A business case should give the decision-maker confidence the preferred option has undergone rigorous analysis to ensure it will achieve the intended outcomes.</p>
+                            <div class="link-wrapper">
+                                <a href="/join-our-team" class="au-btn au-btn--secondary au-btn--dark">Learn about business cases</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="au-padding">
+                            <h2>Why is a business case important?
+                            </h2>
+                            <p>There is no one-size-fits-all to digital transformation. Different organisations will be at different stages of their journey. </p>
+                            <p>How you invest in digital transformation will depend on where your organisation is in that journey, and how it fits with the broader plans of your government.</p>
+                            <div class="link-wrapper">
+                                <a href="/join-our-team" class="au-btn au-btn--secondary au-btn--dark">Importance of business cases</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="au-callout ">
+                            <p class="lead">Develop clear business cases to sustain the funding and focused implementation of digital technologies projects."</p>
+                            <p>- OECD Recommendation on Digital Government Strategies</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="au-footer au-footer--dark au-body au-body--dark" role="contentinfo">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="au-footer__end">
+                        <p>
+                            © Commonwealth of Australia. With the exception of the Commonwealth Coat of Arms and where
+                            otherwise noted, this work is licensed under the <a href="https://github.com/govau/design-system-starter/blob/master/LICENSE" rel="external">MIT license</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/js/script.min.js"></script>
 </body>
 
 </html>
