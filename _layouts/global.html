@@ -1,0 +1,64 @@
+{% include head.html %}
+
+<body class="au-grid">
+    <div class="alpha-bar">
+        <div class="au-body container-fluid">
+            <div class="col-12">
+                <p>
+                    <span class="alpha-text">Alpha</span>
+                    This playbook is under active development and your feedback will help us improve it.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="header-wrapper">
+        <header class="au-grid au-header au-header--dark">
+            <div class="container-fluid">
+                <div class="row">
+                    <div>
+                        <a class="au-header__brand" href="/index.html">
+                            <img class="au-header__brand-image imgheader" alt="Insert alternate text here" src="/assets/img/header-logo-agov.png">
+                            <div class="au-header__text">
+                                <h1 class="au-header__heading calib-font"><b>Digital Transformation Agency</b></h1>
+                                <div class="au-header__subline calib-font">Business case playbook</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav class="au-main-nav au-main-nav--dark" aria-label="main">
+            <div class="container-fluid">
+                <div class="row">
+                    <div>
+                        <div id="main-nav-default" class="au-main-nav__content">
+                            <button aria-controls="main-nav-default" aria-expanded="false" class="au-main-nav__toggle au-main-nav__toggle--open" onClick="return AU.mainNav.Toggle( this )">
+                                Menu
+                            </button>
+                            <div class="au-main-nav__menu">
+                                <div class="au-main-nav__menu-inner">
+                                    <div class="au-main-nav__focus-trap-top"></div>
+                                    <button aria-controls="main-nav-default" class="au-main-nav__toggle au-main-nav__toggle--close" onClick="return AU.mainNav.Toggle( this )">
+                                        Close
+                                    </button>
+
+                                       {% include navigation.html %}
+
+                                    <div class="au-main-nav__focus-trap-bottom"></div>
+                                </div>
+                            </div>
+                            <div class="au-main-nav__overlay" aria-controls="main-nav-default" onClick="return AU.mainNav.Toggle( this )">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+ 
+
+    <main class="page-wrapper au-body">
+        {{ content }}
+    </main>
+    {% include footer.html %}

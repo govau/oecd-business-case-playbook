@@ -1,0 +1,345 @@
+// Dark theme overrides
+// $AU-colordark-foreground-text:   #ffffff;
+// $AU-colordark-foreground-action: #f9f9f9;
+// $AU-colordark-foreground-focus:  #13e241;
+// $AU-colordark-background:        #134169;
+
+// Light theme overrides
+// $AU-color-foreground-action: #134169;
+// $AU-color-foreground-focus:  #0C8927;
+
+//Main nav, set project specific breakpoint
+$AU-main-nav-breakpoint: sm;
+
+// UI-Kit
+@import './pancake/sass/pancake.scss';
+
+
+// Reset the body
+html, body {
+    padding: 0;
+    margin: 0;
+    background:#135e70;
+}
+.page-wrapper {
+    background:#fff;
+}
+
+// Increase the spacing for au-body elements inside main
+main>.au-body {
+    @include AU-space(padding, 2unit 0);
+
+}
+
+main>.banner {
+
+    @include AU-media(sm) {
+        @include AU-space(padding, 4unit 0);
+    }
+}
+
+
+// Slight grid changes for container fluid
+.au-grid .container-fluid {
+    @include AU-space(max-width, 80unit);
+
+    @include AU-media(sm) {
+        @include AU-space(padding-left, 2unit);
+        @include AU-space(padding-right, 2unit);
+    }
+}
+
+// Increase spacing between inline list items in footer
+.au-footer .au-link-list--inline li {
+    @include AU-space(padding-right, 1unit);
+}
+
+// The call to actions on the home page
+.btn-cta-group {
+    @include AU-space(margin-top, 1unit);
+
+    .au-btn {
+        @include AU-space(margin-top, 1unit);
+    }
+}
+
+// Mobile side nav spacing
+.au-side-nav {
+    @include AU-space(margin-bottom, 2unit);
+
+    @include AU-media(sm) {
+        margin-bottom: 0;
+    }
+}
+
+form {
+    @include AU-space(margin-top, 2unit);
+}
+
+.hide_content {
+    display: none;
+}
+
+//increase the space between form groups
+.au-form-group+.au-form-group {
+    @include AU-space('margin-top', 2unit)
+}
+
+.articles-cta {
+    @include AU-space('margin-top', 0.25unit);
+    text-align: right;
+
+    @include AU-media(md) {
+        @include AU-space('margin-top', 1unit);
+    }
+}
+
+
+.au-header .au-search {
+
+    width: 100%;
+
+    @include AU-media(xs) {
+        width: 75%;
+    }
+
+    @include AU-media(sm) {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+$padding-sm: 3rem;
+$padding-md: 4rem;
+
+$margin-sm: 3rem;
+
+
+
+@function parseInt($n) {
+    @return $n / ($n * 0 + 1);
+}
+
+//convert rem back to px
+@function rem-to-px($size) {
+    $value: parseInt($size) * 16px; //15px is the base size specified
+    @return round($value);
+}
+
+//font-size rem version
+@mixin font-size-rem($font-size-rem) {
+    font-size: rem-to-px($font-size-rem);
+    font-size: $font-size-rem;
+}
+
+/////////Use the above function when using rem units to cater for older browsers :)
+
+
+#content {
+
+    padding-bottom: 4rem;
+
+    h1 {
+        margin-bottom: 3rem;
+    }
+
+    .row + .row {margin-bottom:3rem;}
+}
+
+.pb-4 {
+    padding-bottom: $padding-sm;
+}
+
+.au-padding {
+    padding: rem-to-px($padding-sm);
+    padding: $padding-sm;
+}
+
+.alpha-bar {
+    background: #c91a78;
+
+    .au-body.container-fluid {
+        background: transparent;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+    }
+
+    p {
+        max-width: 100%;
+        color: #fff;
+    }
+
+    .alpha-text {
+
+        background: #000;
+        padding: 2px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+
+
+.lead {
+
+    @include font-size-rem(1rem);
+
+}
+
+a.active {
+    background-color: #135E70;
+}
+
+#breadcrumbs {
+    padding: 2rem 0;
+
+    a {text-transform: capitalize;}
+}
+
+.banner {
+    padding: rem-to-px($padding-sm);
+    padding: $padding-sm;
+
+    &.banner--alt {
+        background: #ebebeb;
+    }
+
+    &.hero-section {
+
+
+        h1 {
+            @include font-size-rem(3.5rem);
+        }
+
+        .au-btn {
+            @include font-size-rem(1.2rem);
+        }
+    }
+
+    &.au-body--dark {
+        background: #313131;
+    }
+
+    .au-card .au-card__inner {
+
+        padding: rem-to-px($padding-sm);
+        padding: $padding-sm;
+    }
+
+    .link-wrapper {
+        margin-top: rem-to-px($margin-sm);
+        margin-top: $margin-sm;
+    }
+
+}
+
+
+
+.image-contents {
+    height: auto;
+
+}
+
+.csf-grid-template {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+}
+
+.csf-grid-columns {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 8fr;
+}
+
+.header {
+    color: #135e70;
+}
+
+.circle-image {
+    position: absolute;
+    top: 250px;
+    left: 160px;
+    z-index: 2;
+}
+
+a {
+    color: blue;
+}
+
+
+.au-card-list {
+
+    list-style: none;
+    padding: 0;
+}
+
+.text-center {
+    text-align: center
+}
+
+.quote {
+
+    .author {}
+}
+
+.play-number {
+  background: #61daff;
+    border-radius: .8em;
+    -moz-border-radius: .8em;
+    -webkit-border-radius: .8em;
+    color: #00698f;
+    display: inline-block;
+    font-weight: 700;
+    line-height: 1.6em;
+    margin-right: 5px;
+    width: 1.6em;
+    font-size: 2rem;
+}
+
+
+.feature-container {
+    padding:4rem;
+     position: relative;
+ background: #eee;
+ 
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-width: 0 30px 30px 0;
+        border-style: solid;
+        border-color: #fff #fff #bbb #bbb;
+        display: block;
+        width: 0;
+    }
+}
+
+.lead {
+    font-size: 1.5rem;
+}
+
+
+.flex-row {
+    display: flex
+}
+
+.country {
+    display: block;
+    font-size: 1.2rem;
+    color: #696969;
+    font-weight: normal;
+}
+
+
+.links-list {
+
+    p {margin:2rem 0;}
+}

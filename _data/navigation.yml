@@ -1,0 +1,20 @@
+# This file generates the navigation across all pages so you don't have to edit every page each time you add a new link. 
+# It also helps automate things like setting an active class on the current navigation item.
+# To add a new link, just copy the existing pattern. For pages with subpages, take note of the Plays example and copy that.
+# IMPORTANT Make sure to keep the exact same formatting with colons, spaces, dashes etc.
+
+- title: Home
+  url: /
+- title: About
+  url: /about/
+- title: Fundamentals
+  url: /fundamentals/
+- title: Case Studies
+  url: /casestudies/
+- title: Plays
+  url: /plays/
+  subitems:
+    - title: Play 0
+      url: /plays/play0/
+- title: Links
+  url: /links/
