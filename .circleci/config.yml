@@ -4,97 +4,68 @@
 #
 version: 2
 jobs:
-  build-and-test:
-    docker:
-      - image: circleci/node:8.12.0
-    working_directory: ~/oecd
-    steps:
-      - run:
-          name: Set environment variables for build
-          command: |
-            echo 'export NODE_ENV=$CIRCLE_BRANCH' >> $BASH_ENV
-            source $BASH_ENV
-      - checkout
-      - run:
-          name: Install NodeJs dependencies
-          command: npm install
-      - run:
-          name: Generate static assets
-          command: npm run build
-      - persist_to_workspace:
-          root: ~/oecd
-          paths:
-            - site/
-            - .deploy/
 
   deploy-staging:
     docker:
       - image: govau/cf-cli
+    working_directory: ~/oecd
     steps:
-      - attach_workspace:
-          at: ~/oecd
+      - checkout
       - run:
-          name: Deploy staging to cloudgov.au
+          name: Deploy staging to cloud.gov.au
           command: |
             cd ~/oecd
-            cp .deploy/manifest-staging.yml site/
-            cd site/
+            cp .deploy/manifest-staging.yml _site/
+            cd _site/
             cf login -a $CF_API_STAGING -o $CF_ORG -s $CF_SPACE -u $CF_USERNAME -p $CF_PASSWORD_STAGING
             cf zero-downtime-push oecd -f manifest-staging.yml
 
   deploy-test:
     docker:
       - image: govau/cf-cli
+    working_directory: ~/oecd
     steps:
-      - attach_workspace:
-          at: ~/oecd
+      - checkout
       - run:
-          name: Deploy test to cloudgov.au
+          name: Deploy test to cloud.gov.au
           command: |
             cd ~/oecd
-            cp .deploy/manifest-test.yml site/
-            cd site/
+            cp .deploy/manifest-test.yml _site/
+            cd _site/
             cf login -a $CF_API_STAGING -o $CF_ORG -s $CF_SPACE -u $CF_USERNAME -p $CF_PASSWORD_STAGING
             cf zero-downtime-push oecd-$CIRCLE_BRANCH -f manifest-test.yml
 
   deploy-prod:
     docker:
       - image: govau/cf-cli
+    working_directory: ~/oecd
     steps:
-      - attach_workspace:
-          at: ~/oecd
+      - checkout
       - run:
-          name: Deploy prod to cloudgov.au
+          name: Deploy prod to cloud.gov.au
           command: |
             cd ~/oecd
-            cp .deploy/manifest-prod.yml site/
-            cd site/
+            cp .deploy/manifest-prod.yml _site/
+            cd _site/
             cf login -a $CF_API_PROD -o $CF_ORG -s $CF_SPACE -u $CF_USERNAME -p $CF_PASSWORD_PROD
             cf zero-downtime-push oecd -f manifest-prod.yml
 
 
 workflows:
   version: 2
-  deploy-starter:
+  deploy-oecd:
     jobs:
-      - build-and-test
       - deploy-staging: # run deploy staging
-          requires:
-            - build-and-test
           filters:
             branches:
               only: develop # and only on the `develop` branch
 
       - deploy-prod: # run deploy staging
-          requires:
-            - build-and-test
           filters:
             branches:
               only: master # and only on the `master` branch
 
-      - deploy-test: # run deploy staging
-          requires:
-            - build-and-test
+      - deploy-test: # run deploy text
           filters:
             branches:
-              only: /.*-test/ # and only on the `master` branch
+              only: /.*-test/ # and only on branches ending in -test

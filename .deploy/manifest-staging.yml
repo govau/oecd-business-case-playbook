@@ -8,4 +8,4 @@ env:
 
 applications:
 - name: oecd
-  path: .
+  path: ./
