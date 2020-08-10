@@ -12,10 +12,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
-<link rel="manifest" href="/assets/favicons/site.webmanifest">
 <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#06262d">
 <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
-<meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
 <meta name="robots" content="index, follow">
@@ -35,12 +33,15 @@
 <title>Home - DTA Business case playbook</title>
 <link rel="icon" href="/assets/favicons/favicon.ico">
 <link type="text/css" rel="stylesheet" href="/assets/css/main.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 <!--[if lte IE 9]>
     <script src="/assets/js/html5shiv.js"></script>
     <script src="/assets/js/respond.js"></script>
 <![endif]-->
+<script src="/assets/js/header.js"></script>
 
 <body class="au-grid">
+    <nav class="au-skip-link " aria-label="skip links navigation"><a class="au-skip-link__link " href="#main-nav">Skip to navigation</a><a class="au-skip-link__link " href="#content">Skip to content</a></nav>
     <div class="alpha-bar">
         <div class="au-body container-fluid">
             <div class="col-12">
@@ -55,7 +56,7 @@
         <header class="au-grid au-header au-header--dark">
             <div class="container-fluid">
                 <div class="row">
-                    <div>
+                    <div class="col-md-12">
                         <a class="au-header__brand" href="/index.html">
                             <img class="au-header__brand-image imgheader" alt="Insert alternate text here" src="/assets/img/header-logo-agov.png">
                             <div class="au-header__text">
@@ -68,62 +69,107 @@
             </div>
         </header>
         <nav class="au-main-nav au-main-nav--dark" aria-label="main">
-            <div class="container-fluid">
-                <div class="row">
-                    <div>
-                        <div id="main-nav-default" class="au-main-nav__content">
-                            <button aria-controls="main-nav-default" aria-expanded="false" class="au-main-nav__toggle au-main-nav__toggle--open" onClick="return AU.mainNav.Toggle( this )">
-                                Menu
-                            </button>
-                            <div class="au-main-nav__menu">
-                                <div class="au-main-nav__menu-inner">
-                                    <div class="au-main-nav__focus-trap-top"></div>
-                                    <button aria-controls="main-nav-default" class="au-main-nav__toggle au-main-nav__toggle--close" onClick="return AU.mainNav.Toggle( this )">
-                                        Close
-                                    </button>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="main-nav-default" class="au-main-nav__content">
+          <button
+            aria-controls="main-nav-default"
+            aria-expanded="false"
+            class="au-main-nav__toggle au-main-nav__toggle--open"
+            onClick="return AU.mainNav.Toggle( this )">
+            Menu
+          </button>
+          <div class="au-main-nav__menu">
+            <div class="au-main-nav__menu-inner">
+              <div class="au-main-nav__focus-trap-top"></div>
+              <button
+                aria-controls="main-nav-default"
+                class="au-main-nav__toggle au-main-nav__toggle--close"
+                onClick="return AU.mainNav.Toggle( this )">
+                Close
+              </button>
+            
 
-                                       <ul class="au-link-list">
+<ul id="main-nav" class="au-link-list">
   
-    <li class="active">
+    <li class="page-link-parent active">
       <a href="/">Home</a>
+       
+  	</li>
     </li>
 
-    <li class="">
-      <a href="/about/">About</a>
+    <li class="page-link-parent ">
+      <a href="/getting-started/">Getting Started</a>
+       
+  	</li>
     </li>
 
-    <li class="">
-      <a href="/fundamentals/">Fundamentals</a>
-    </li>
-
-    <li class="">
+    <li class="page-link-parent ">
       <a href="/casestudies/">Case Studies</a>
+       
+  	</li>
     </li>
 
-    <li class="">
-      <a href="/plays/">Plays</a>
+    <li class="page-link-parent ">
+      <a href="/plays/">Introduction to the Plays</a>
+       
+      <ul>
+        
+          <li class="page-link-child "><a href="/plays/establish-your-team/">Establish your team</a></li>
+        
+          <li class="page-link-child "><a href="/plays/engage-your-sponsors/">Engage your sponsors</a></li>
+        
+          <li class="page-link-child "><a href="/plays/scope-the-preliminary-work/">Scope the preliminary work</a></li>
+        
+          <li class="page-link-child "><a href="/plays/understand-the-problem/">Understand the problem</a></li>
+        
+          <li class="page-link-child "><a href="/plays/engage-stakeholders-early-and-often/">Engage stakeholders early and often</a></li>
+        
+          <li class="page-link-child "><a href="/plays/explore-options/">Explore options</a></li>
+        
+          <li class="page-link-child "><a href="/plays/define-options/">Define options</a></li>
+        
+          <li class="page-link-child "><a href="/plays/select-your-preferred-solution/">Select your preferred solution</a></li>
+        
+          <li class="page-link-child "><a href="/plays/draft-your-business-case/">Draft your business case</a></li>
+        
+          <li class="page-link-child "><a href="/plays/maintain-the-business-case/">Maintain the business case</a></li>
+        
+      </ul>
+       
+  	</li>
     </li>
 
-    <li class="">
-      <a href="/links/">Links</a>
+    <li class="page-link-parent ">
+      <a href="/suggested-resources/">Suggested Resources</a>
+       
+  	</li>
     </li>
 
 </ul>
-
-                                    <div class="au-main-nav__focus-trap-bottom"></div>
-                                </div>
-                            </div>
-                            <div class="au-main-nav__overlay" aria-controls="main-nav-default" onClick="return AU.mainNav.Toggle( this )">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              <div class="au-main-nav__focus-trap-bottom"></div>
             </div>
-        </nav>
+          </div>
+          <div
+            class="au-main-nav__overlay"
+            aria-controls="main-nav-default"
+            onClick="return AU.mainNav.Toggle( this )">
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+</nav>
 
- 
 
+
+
+
+
+
+
+    </div>
     <main class="page-wrapper au-body">
         <div class="tier hero-section banner">
     <div class="container-fluid">
@@ -133,10 +179,12 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-sm-pull-6 col-md-7 col-md-pull-5">
                 <h1>Developing better business cases</h1>
-                <p class="lead">The purpose of this Playbook is to help countries develop business cases which support investment decisions in digital transformation and ICT. <br />The Playbook explores what works, and what does not.</p>
-                <div class="btn-cta-group">
-                    <a class="au-btn" href="/contents.html">Learn the Fundamentals</a>
-                </div>
+                <p class="lead">The purpose of this Playbook is to help countries develop business cases which support investment
+                    decisions in digital transformation and ICT.</p>
+                <p>The Playbook explores what works, and what does not. It is based on the experiences of Australia, with contributions from Denmark, Canada, Estonia and the United Kingdom. <p>The Playbook covers foundational concepts of a business case required to present a compelling argument for a digital or ICT investment. Each Play explores a core component of business case development, supported by helpful links.</p>
+                    <div class="btn-cta-group">
+                        <a class="au-btn" href="/contents.html">Learn the Fundamentals</a>
+                    </div>
             </div>
         </div>
     </div>
@@ -188,7 +236,7 @@
                     <p>A business case is a framework which captures the justification for initiating a program or project as well as options to solve the identified problems.</p>
                     <p> A business case should give the decision-maker confidence the preferred option has undergone rigorous analysis to ensure it will achieve the intended outcomes.</p>
                     <div class="link-wrapper">
-                        <a href="/about" class="au-btn au-btn--secondary au-btn--dark">Learn about business cases</a>
+                        <a href="/getting-started" class="au-btn au-btn--secondary au-btn--dark">Learn about business cases</a>
                     </div>
                 </div>
             </div>
@@ -199,7 +247,7 @@
                     <p>There is no one-size-fits-all to digital transformation. Different organisations will be at different stages of their journey. </p>
                     <p>How you invest in digital transformation will depend on where your organisation is in that journey, and how it fits with the broader plans of your government.</p>
                     <div class="link-wrapper">
-                        <a href="/about" class="au-btn au-btn--secondary au-btn--dark">Importance of business cases</a>
+                        <a href="/getting-started" class="au-btn au-btn--secondary au-btn--dark">Importance of business cases</a>
                     </div>
                 </div>
             </div>
@@ -218,7 +266,6 @@
         </div>
     </div>
 </div>
-
     </main>
     <footer class="au-footer au-footer--dark au-body au-body--dark" role="contentinfo">
     <div class="container-fluid">
@@ -234,7 +281,13 @@
         </div>
     </div>
 </footer>
-<script src="./assets/js/script.min.js"></script>
-
+<script src="/assets/js/script.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+<script>
+    if ($("li.page-link-child.active").length ) {
+        $("li.page-link-child.active").closest(".page-link-parent").addClass("active");
+        console.log("added");
+    }
+</script>
 </body>
 </html>

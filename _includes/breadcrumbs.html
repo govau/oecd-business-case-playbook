@@ -31,19 +31,3 @@
 </ul>
 </nav>
 
-<script>
-
-	( function( $ ) {
-	$( document ).ready( function() {
-		$.each( $( '.#breadcrumbs a' ), function( index, value ) {
-			var breadcrumb = $( value ).html();
-			if ( breadcrumb !== 'Home' ) {
-				breadcrumb = decodeURI( breadcrumb );
-				breadcrumb = breadcrumb.replace( /[^a-zA-Z0-9 ]/g,' ' );
-				breadcrumb = breadcrumb.replace( /\s\s+/g, ' ' );
-				$( value ).html( breadcrumb );
-			}
-		} );
-	} );
-} )( jQuery );
-</script>

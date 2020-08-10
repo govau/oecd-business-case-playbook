@@ -1,0 +1,18 @@
+<div id="sidebar" class="col-xs-12 col-md-3">
+    <aside class="layout-sidebar-first au-body" role="complementary">
+        <div>
+            <nav role="navigation" aria-labelledby="block-mainnavigation-3-menu" id="block-mainnavigation-3">
+                <h2 class="visually-hidden" id="block-mainnavigation-3-menu">Section navigation</h2>
+                {% for item in site.data.navigation %}
+                {% if item.subitems != null %}
+                <ul class="child-menu">
+                    {% for item in item.subitems %}
+                    <li class="{{ item.title }} page-link-child {% if item.url == page.url %}active{% endif %}"><a href="{{ item.url }}">{{ item.title }}</a></li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+                {% endfor %}
+            </nav>
+        </div>
+    </aside>
+</div>

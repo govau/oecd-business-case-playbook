@@ -5,16 +5,32 @@
 
 - title: Home
   url: /
-- title: About
-  url: /about/
-- title: Fundamentals
-  url: /fundamentals/
+- title: Getting Started
+  url: /getting-started/
 - title: Case Studies
   url: /casestudies/
-- title: Plays
+- title: Introduction to the Plays
   url: /plays/
   subitems:
-    - title: Play 0
-      url: /plays/play0/
-- title: Links
-  url: /links/
+    - title: Establish your team
+      url: /plays/establish-your-team/
+    - title: Engage your sponsors
+      url: /plays/engage-your-sponsors/
+    - title: Scope the preliminary work
+      url: /plays/scope-the-preliminary-work/
+    - title: Understand the problem
+      url: /plays/understand-the-problem/
+    - title: Engage stakeholders early and often
+      url: /plays/engage-stakeholders-early-and-often/
+    - title: Explore options
+      url: /plays/explore-options/
+    - title: Define options
+      url: /plays/define-options/
+    - title: Select your preferred solution
+      url: /plays/select-your-preferred-solution/  
+    - title: Draft your business case
+      url: /plays/draft-your-business-case/ 
+    - title: Maintain the business case
+      url: /plays/maintain-the-business-case/     
+- title: Suggested Resources
+  url: /suggested-resources/

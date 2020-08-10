@@ -16,13 +16,53 @@ $AU-main-nav-breakpoint: sm;
 
 
 // Reset the body
-html, body {
+html,
+body {
     padding: 0;
     margin: 0;
-    background:#135e70;
+    background: #135e70;
 }
+
+.au-body {
+
+    i.fa {
+        font-style: normal !important
+    }
+
+
+    .pagination {
+        text-align: right;
+
+        a.prev {
+            margin-right: 1rem;
+        }
+
+        a.next {
+            margin-left: 1rem;
+        }
+
+    }
+}
+
+.has-side-nav {
+    h1 {
+        margin-top: 0;
+    }
+}
+
+
+.visually-hidden {
+    position: absolute !important;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    width: 1px;
+    height: 1px;
+    word-wrap: normal;
+}
+
+
 .page-wrapper {
-    background:#fff;
+    background: #fff;
 }
 
 // Increase the spacing for au-body elements inside main
@@ -37,7 +77,6 @@ main>.banner {
         @include AU-space(padding, 4unit 0);
     }
 }
-
 
 // Slight grid changes for container fluid
 .au-grid .container-fluid {
@@ -109,16 +148,9 @@ form {
 }
 
 
-
-
-
-
-
 $padding-sm: 3rem;
 $padding-md: 4rem;
-
 $margin-sm: 3rem;
-
 
 
 @function parseInt($n) {
@@ -139,6 +171,99 @@ $margin-sm: 3rem;
 
 /////////Use the above function when using rem units to cater for older browsers :)
 
+#main-nav {
+
+    li ul {
+        display: none
+    }
+}
+
+.au-main-nav .au-main-nav__toggle,
+.au-main-nav a {
+    @media (min-width: 768px) {
+        font-size: 16px;
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-right: 3rem;
+        padding: 1rem 0;
+    }
+}
+
+
+.au-main-nav {
+
+
+    a {
+        @media (min-width: 768px) {
+
+            border-bottom: .5rem solid #61daff;
+            margin-bottom: -.5rem;
+            font-weight: 400;
+        }
+    }
+}
+
+
+.au-main-nav.au-main-nav--dark .au-main-nav__toggle,
+.au-main-nav.au-main-nav--dark a {
+
+    &:focus,
+    &:hover {
+        color: #fff;
+        background: transparent;
+        border-bottom: .5rem solid #135e70;
+    }
+}
+
+
+#sidebar {
+
+    ul.au-link-list>li.page-link-parent {
+
+        >a {
+            font-size: 1.2rem;
+            text-decoration: none;
+            padding: 1rem;
+            display: block
+        }
+
+        &.active {
+            >a {
+                color: #fff;
+                background: #135e70;
+
+            }
+        }
+    }
+
+    ul.child-menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        border-left: 0.5rem solid #61daff;
+
+        a {
+            text-decoration: none;
+            padding: 1rem;
+            display: block
+        }
+
+        li {
+            border-top: 1px solid #ddd;
+
+            &.active,
+            &:hover,
+            &:active {
+                >a {
+                    color: #fff;
+                    background: #135e70;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
 
 #content {
 
@@ -148,11 +273,17 @@ $margin-sm: 3rem;
         margin-bottom: 3rem;
     }
 
-    .row + .row {margin-bottom:3rem;}
+    .row+.row {
+        margin-bottom: 3rem;
+    }
+
+
+    &.play {
+        h1 {
+        margin-bottom: 0!important;
+    }
 }
 
-.pb-4 {
-    padding-bottom: $padding-sm;
 }
 
 .au-padding {
@@ -191,14 +322,13 @@ $margin-sm: 3rem;
 
 }
 
-a.active {
-    background-color: #135E70;
-}
 
 #breadcrumbs {
     padding: 2rem 0;
 
-    a {text-transform: capitalize;}
+    a {
+        text-transform: capitalize;
+    }
 }
 
 .banner {
@@ -238,43 +368,7 @@ a.active {
 
 }
 
-
-
-.image-contents {
-    height: auto;
-
-}
-
-.csf-grid-template {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 1fr;
-}
-
-.csf-grid-columns {
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: 1fr 8fr;
-}
-
-.header {
-    color: #135e70;
-}
-
-.circle-image {
-    position: absolute;
-    top: 250px;
-    left: 160px;
-    z-index: 2;
-}
-
-a {
-    color: blue;
-}
-
-
 .au-card-list {
-
     list-style: none;
     padding: 0;
 }
@@ -289,7 +383,7 @@ a {
 }
 
 .play-number {
-  background: #61daff;
+    background: #61daff;
     border-radius: .8em;
     -moz-border-radius: .8em;
     -webkit-border-radius: .8em;
@@ -303,11 +397,25 @@ a {
 }
 
 
+.play-intro {
+
+    p {
+        margin-bottom: 32px;
+        margin-bottom: 2rem;
+        font-size: 20px;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        color: #636363;
+        margin-top: 36px;
+        margin-top: 2.25rem;
+    }
+}
+
 .feature-container {
-    padding:4rem;
-     position: relative;
- background: #eee;
- 
+    padding: 4rem;
+    position: relative;
+    background: #eee;
+
 
     &:before {
         content: "";
@@ -322,10 +430,6 @@ a {
     }
 }
 
-.lead {
-    font-size: 1.5rem;
-}
-
 
 .flex-row {
     display: flex
@@ -338,8 +442,37 @@ a {
     font-weight: normal;
 }
 
-
 .links-list {
+    p {
+        margin: 2rem 0;
+    }
+}
 
-    p {margin:2rem 0;}
+.play-cards {
+
+    .au-card {
+
+        .au-card__title {
+            margin: 1rem 0;
+        }
+    }
+
+}
+
+.au-callout {
+    font-size: 1.2rem;
+}
+
+.call-out-margin {
+    margin: 2rem 0;
+}
+
+
+
+.author {
+
+    padding-top: 1rem;
+    text-align: right;
+    max-width: 100% !important;
+    font-size: 0.8rem
 }

@@ -12,7 +12,13 @@
         </div>
     </div>
 </footer>
-<script src="./assets/js/script.min.js"></script>
-
+<script src="/assets/js/script.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+<script>
+    if ($("li.page-link-child.active").length ) {
+        $("li.page-link-child.active").closest(".page-link-parent").addClass("active");
+        console.log("added");
+    }
+</script>
 </body>
 </html>

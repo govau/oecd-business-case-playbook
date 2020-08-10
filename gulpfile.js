@@ -85,6 +85,7 @@ function watch() {
       '*.html',
       '_layouts/*.html',
       '_pages/*',
+      '_pages/*/*',
       '_includes/*',
       'assets/scripts/*.js',
       'assets/img/*.*',
