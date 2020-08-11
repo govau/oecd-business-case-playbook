@@ -25,7 +25,9 @@ body {
 
 .au-body {
 
-    i.fa {
+    i.fa,
+    i.fab,
+    i.fas {
         font-style: normal !important
     }
 
@@ -211,6 +213,7 @@ $margin-sm: 3rem;
     &:hover {
         color: #fff;
         background: transparent;
+        text-decoration: underline;
         border-bottom: .5rem solid #135e70;
     }
 }
@@ -280,9 +283,19 @@ $margin-sm: 3rem;
 
     &.play {
         h1 {
-        margin-bottom: 0!important;
+            margin-bottom: 0 !important;
+
+        }
+
+        > span {
+margin-right:10px;
+            + h1 {
+
+            display: inline-block;
+            vertical-align: middle;
+            
+        }}
     }
-}
 
 }
 
@@ -360,6 +373,7 @@ $margin-sm: 3rem;
         padding: rem-to-px($padding-sm);
         padding: $padding-sm;
     }
+
 
     .link-wrapper {
         margin-top: rem-to-px($margin-sm);
@@ -452,8 +466,15 @@ $margin-sm: 3rem;
 
     .au-card {
 
+        .icon-play-card {
+            padding: 1rem 0 0 0;
+            text-align: center;
+        }
+
+
         .au-card__title {
             margin: 1rem 0;
+            text-align: center;
         }
     }
 
