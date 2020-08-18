@@ -9,6 +9,17 @@
 // $AU-color-foreground-focus:  #0C8927;
 
 //Main nav, set project specific breakpoint
+
+
+$foundations: #28B715;
+$discovery: #ED7D3A;
+
+$test: #68538D;
+$iterate: #8F2D56;
+
+
+
+
 $AU-main-nav-breakpoint: sm;
 
 // UI-Kit
@@ -219,7 +230,105 @@ $margin-sm: 3rem;
 }
 
 
+
+
+
+.label {
+    background: #eee;
+    border-radius: 3px 0 0 3px;
+    color: #fff;
+    font-weight:bold;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 20px 0 23px;
+    position: relative;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    -webkit-transition: color 0.2s;
+
+    &:before {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+        content: '';
+        height: 6px;
+        left: 10px;
+        position: absolute;
+        width: 6px;
+        top: 10px;
+    }
+
+    &:after {
+        background: #fff;
+        border-bottom: 13px solid transparent;
+        border-left: 10px solid #eee;
+        border-top: 13px solid transparent;
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+
+    &.Foundations {
+        background: $foundations;
+
+        &:after {
+            border-left-color: $foundations;
+        }
+    }
+
+    &.Discovery {
+        background: $discovery;
+
+        &:after {
+            border-left-color: $discovery;
+        }
+    }
+
+    &.Iterate {
+        background: $iterate;
+
+        &:after {
+            border-left-color: $iterate;
+        }
+    }
+
+
+
+    &.Test {
+        background: $test;
+
+        &:after {
+            border-left-color: $test;
+        }
+    }
+
+}
+
+
+
+
 #sidebar {
+
+
+    h2 {
+        font-size: 1.2rem;
+
+        text-decoration: none;
+        padding: 1rem;
+        display: block;
+        margin: 0;
+        border-left: .5rem solid transparent;
+
+        a {
+            //  text-decoration: none
+        }
+    }
+
+
+
 
     ul.au-link-list>li.page-link-parent {
 
@@ -239,28 +348,58 @@ $margin-sm: 3rem;
         }
     }
 
+
+
+
+
+
     ul.child-menu {
         list-style: none;
         padding: 0;
         margin: 0;
-        border-left: 0.5rem solid #61daff;
+        //border-left: 0.5rem solid #61daff;
 
         a {
             text-decoration: none;
-            padding: 1rem;
-            display: block
+
+            display: block;
+            border-left: 0.5rem solid #61daff;
+
+            span {
+                display: block;
+                padding: 1rem;
+
+
+
+            }
+
         }
 
         li {
+
+
             border-top: 1px solid #ddd;
+
+
+
+
+            &:first-child {}
 
             &.active,
             &:hover,
             &:active {
+
+
+
                 >a {
                     color: #fff;
-                    background: #135e70;
+                    border-left: 0.5rem solid #135e70;
                     text-decoration: underline;
+
+                    span {
+                        background: #135e70;
+                    }
+
                 }
             }
         }
@@ -287,14 +426,16 @@ $margin-sm: 3rem;
 
         }
 
-        > span {
-margin-right:10px;
-            + h1 {
+        >span {
+            margin-right: 10px;
 
-            display: inline-block;
-            vertical-align: middle;
-            
-        }}
+            +h1 {
+
+                display: inline-block;
+                vertical-align: middle;
+
+            }
+        }
     }
 
 }
@@ -331,7 +472,7 @@ margin-right:10px;
 
 .lead {
 
-    @include font-size-rem(1rem);
+    @include font-size-rem(1.2rem);
 
 }
 
@@ -343,6 +484,13 @@ margin-right:10px;
         text-transform: capitalize;
     }
 }
+
+.au-btn.au-btn--large {
+
+    font-size: 1.2rem !important;
+    padding: .5rem 2.5rem;
+}
+
 
 .banner {
     padding: rem-to-px($padding-sm);
@@ -385,6 +533,11 @@ margin-right:10px;
 .au-card-list {
     list-style: none;
     padding: 0;
+
+    .label {
+
+        border-radius: 0;
+    }
 }
 
 .text-center {
@@ -466,9 +619,66 @@ margin-right:10px;
 
     .au-card {
 
+        a {color:#222;}
+
+
+        &.Foundations {
+            background: lighten($foundations, 55%);
+
+            .label {
+
+                &:after {
+                    background: lighten($foundations, 55%);
+                }
+            }
+
+        }
+
+        &.Discovery {
+            background: lighten($discovery, 35%);
+
+
+            .label {
+
+                &:after {
+                    background: lighten($discovery, 35%);
+                }
+            }
+        }
+
+        &.Iterate {
+            background: lighten($iterate, 55%);
+
+            .label {
+
+                &:after {
+                    background: lighten($iterate, 55%);
+                }
+            }
+
+        }
+
+
+
+        &.Test {
+            background: lighten($test, 45%);
+
+            .label {
+
+                &:after {
+                    background: lighten($test, 45%);
+                }
+            }
+
+        }
+
+
         .icon-play-card {
             padding: 1rem 0 0 0;
             text-align: center;
+
+    
+
         }
 
 
@@ -479,6 +689,36 @@ margin-right:10px;
     }
 
 }
+
+        .fa-circle {
+
+                &.Foundations {
+                    color: $foundations;
+
+
+                }
+
+                &.Discovery {
+                    color: $discovery;
+
+
+                }
+
+                &.Iterate {
+                    color: $iterate;
+
+
+                }
+
+
+
+                &.Test {
+                    color: $test;
+
+
+                }
+
+            }
 
 .au-callout {
     font-size: 1.2rem;

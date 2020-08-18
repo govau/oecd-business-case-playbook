@@ -5,11 +5,13 @@
 
 - title: Home
   url: /
-- title: Getting Started
-  url: /getting-started/
+- title: Get Started
+  url: /get-started/
 - title: Case Studies
   url: /casestudies/
-- title: Introduction to the Plays
+- title: Introduction to Plays
+  url: /plays-introduction/
+- title: Plays
   url: /plays/
   subitems:
     - title: Establish your team
@@ -28,9 +30,9 @@
       url: /plays/define-options/
     - title: Select your preferred solution
       url: /plays/select-your-preferred-solution/  
-    - title: Draft your business case
-      url: /plays/draft-your-business-case/ 
-    - title: Maintain the business case
-      url: /plays/maintain-the-business-case/     
+    - title: Draft the business case
+      url: /plays/draft-the-business-case/  
+    - title: Reveal and Refresh
+      url: /plays/reveal-and-refresh/      
 - title: Suggested Resources
   url: /suggested-resources/

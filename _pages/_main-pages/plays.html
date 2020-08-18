@@ -1,37 +1,32 @@
 ---
-layout: content-page-play
-title: Introduction to the Plays
+layout: content-page
+title: Plays
 ---
 <style>
     #content > span.icon-play {display:none;}
 </style>
 
-<p>Developing a business case is an iterative process. You may start with a clear idea of how you think the problem can be solved, only to discover there are better alternatives through collecting evidence and exploring options. The policy environment may also change, which could be outside of your control, leading to new issues, and new solutions. A new technology or product might offer innovative opportunities to resolve the problem.</p>
-<p>These nine actions (called <strong><em>Plays</em></strong>) describe the essential processes, components and actions of developing a business case to support investment in digital transformation and new ICT capability.</p>
-<p>The Plays will help you describe the value your proposal brings to the users of your service, and its broader economic, social and policy benefits.</p>
-<p><strong>Establish your team, Engage your sponsors, and Scope the preliminary work</strong> set the <strong>foundations</strong> for your work. They will help you establish your team, plan your approach, and engage with the senior people responsible for sponsoring the business case.</p>
-<p><strong>Understand the problem, Engage stakeholders early and often, and Explore options</strong> will help you undertake <strong>discovery</strong> - define the problem in context and understand what change would look like for your users and stakeholders.</p>
-<p><strong>Define options and Select your preferred option</strong> help you develop and <strong>test</strong> practicable solutions to the problem.</p>
-<p><strong>Draft your business case </strong>will help you make a convincing argument and plan for change.</p>
-<p><strong>Maintain your business case</strong> will explain how to keep your business case an up-to-date element that helps you implement the solution to your business problem.</p>
-<p>Remember, developing a business case is not a linear process. You will need to refer to each Play at multiple points as you draft and refine your business case.</p>
+
+<p>Developing a business case is not a linear process. You will need to refer to each Play at multiple points as you draft and refine your business case.</p>
 <p>Each Play consists of four parts:</p>
 <ul>
-    <li>A <strong>discussion</strong> of the purpose and key steps in the Play</li>
-    <li>A <strong>description</strong> of the key activities for the Play;</li>
-    <li><strong>Questions</strong> to help you consider the issues; and </li>
-    <li>Links to further <strong>information and resources</strong>, such as examples of how other countries tackle the components of the Play.</li>
+<li>A <strong>discussion</strong> of the purpose and key steps in the Play.</li>
+<li>A <strong>description</strong> of the key activities for the Play.</li>
+<li><strong>Questions</strong> to help you consider the issues.</li>
+<li><strong>Links</strong> to further information and resources, such as examples of how other countries tackle the components of the Play.</li>
 </ul>
-<h2>Click on each tile to view more information.</h2>
+<h2>Explore the Plays</h2>
 <div class="row">
     <ul class="play-cards au-card-list au-card-list--matchheight">
         {% for play in site.plays %}
+
         <li class="col-sm-4 col-xs-6">
-            <div class="au-card au-body au-card--shadow au-card--clickable">
+            <div class="au-card {{play.label}} au-body au-card--shadow au-card--clickable">
+                        <div class="label {{play.label}}">{{play.label}}</div>
                 <div class="icon-play-card">
                     <span class="fa-stack fa-2x icon-play">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fas fa-{{ play.icon }} fa-stack-1x fa-inverse"></i>
+                        <i class="fas fa-circle fa-stack-2x {{play.label}}"></i>
+                        <i class="fas fa-{{ play.icon }}  fa-stack-1x fa-inverse"></i>
                     </span>
                 </div>
                 <div class="au-card__inner">

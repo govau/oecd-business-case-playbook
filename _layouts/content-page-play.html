@@ -40,10 +40,15 @@
             <div class="row">
                 {% include side-navigation.html %}
                 <div id="content" class="play has-side-nav col-xs-12 col-md-8 col-md-offset-1">
-                    <span class="fa-stack fa-2x icon-play">
-                        <i class="fas fa-circle fa-stack-2x"></i>
+                    <div class="label-heading">
+                      <div class="label {{page.label}}">{{page.label}}</div>
+                  </div>
+                    <span class="fa-stack fa-2x icon-play ">
+                        <i class="fas fa-circle fa-stack-2x {{page.label}}"></i>
                         <i class="fas fa-{{ page.icon }} fa-stack-1x fa-inverse"></i>
-                    </span><h1>{{page.title}}</h1>
+                    </span>
+                  
+                    <h1>{{page.title}}</h1>
                     
                     {{ content }}
                     {% include play-pagination.html %}
