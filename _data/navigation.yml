@@ -7,8 +7,6 @@
   url: /
 - title: Get Started
   url: /get-started/
-- title: Case Studies
-  url: /casestudies/
 - title: Introduction to Plays
   url: /plays-introduction/
 - title: Plays
@@ -32,7 +30,7 @@
       url: /plays/select-your-preferred-solution/  
     - title: Draft the business case
       url: /plays/draft-the-business-case/  
-    - title: Reveal and Refresh
-      url: /plays/reveal-and-refresh/      
+    - title: Review and Refresh
+      url: /plays/review-and-refresh/      
 - title: Suggested Resources
   url: /suggested-resources/
