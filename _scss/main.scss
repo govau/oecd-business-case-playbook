@@ -496,6 +496,13 @@ $margin-sm: 3rem;
     padding: rem-to-px($padding-sm);
     padding: $padding-sm;
 
+
+.au-callout.au-callout--dark {
+    color: #fff;
+    border:0;
+    background-color: #222;
+}
+
     &.banner--alt {
         background: #ebebeb;
     }
@@ -727,7 +734,6 @@ $margin-sm: 3rem;
 .call-out-margin {
     margin: 2rem 0;
 }
-
 
 
 .author {
