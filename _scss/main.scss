@@ -312,7 +312,7 @@ $margin-sm: 3rem;
 
 #sidebar {
 
-
+padding-bottom:3rem;
     h2 {
         font-size: 1.2rem;
 
@@ -409,7 +409,7 @@ $margin-sm: 3rem;
 
 #content {
 
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
 
     h1 {
         margin-bottom: 3rem;
@@ -472,7 +472,15 @@ $margin-sm: 3rem;
 
 .lead {
 
-    @include font-size-rem(1.2rem);
+
+        margin-bottom: 32px;
+    margin-bottom: 2rem;
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #636363;
+    margin-top: 36px;
+    margin-top: 2.25rem;
 
 }
 
@@ -617,6 +625,10 @@ $margin-sm: 3rem;
     }
 }
 
+.footer__legal-links {
+    padding-bottom:3rem!important
+}
+
 .play-cards {
 
     .au-card {
@@ -724,6 +736,11 @@ $margin-sm: 3rem;
 
 .au-callout {
     font-size: 1.2rem;
+}
+
+.au-callout--dark {
+
+    .lead {color:#fff;}
 }
 
 .call-out-margin {
