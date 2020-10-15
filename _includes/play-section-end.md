@@ -5,7 +5,7 @@
 </div>
 
 {% elsif include.section-title == "introduction" %}
-{% include play-navigation.html %}    
+{% include play-navigation.md %}    
 </div>
 </div>
 </div>

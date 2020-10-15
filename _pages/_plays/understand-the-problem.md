@@ -5,7 +5,7 @@ icon: compass
 label: Discovery
 ---
 <!--start include wraps the section in starting HTML for styling purposes -->
-{% include play-section-start.html section-title="introduction" %}
+{% include play-section-start.md section-title="introduction" %}
 
 <p>This process ensures you can define the future state that you are trying to achieve.</p>
 
@@ -13,12 +13,12 @@ label: Discovery
 
 <p>You want your reader to understand why this problem deserves attention.</p>
 <!--end include -->
-{% include play-section-end.html section-title="introduction" %}
+{% include play-section-end.md section-title="introduction" %}
 
 
 
 <!--start include wraps the section in starting HTML for styling purposes -->
-{% include play-section-start.html section-title="playDescription" %}
+{% include play-section-start.md section-title="playDescription" %}
 <p>Outline the problem the business case seeks to resolve. You should fill gaps in your knowledge as they appear and identify factors that impact the problem. Think about how the problem relates to your current environment, and how it sits within a broader context. Analyse the problem against the backdrop of your organisation and your government’s priorities.</p>
 <p>Understand how the business problem interacts with user needs and experience. You should keep users at the centre of your solution design and delivery. Conduct user research to identify existing pain points. Use these insights to design effective options. You should use surveys and quantitative and qualitative research methods interviews to identify user needs and inform your business case options. User research and engagement should happen throughout the development of the business case.</p>
 <p>You need to retest your understanding of the users&rsquo; pain points and experience as you develop and consider different solutions to the business problem.</p>
@@ -27,12 +27,12 @@ label: Discovery
 <p>Keep in mind that your understanding of the future state design will evolve as you develop and refine your options.</p>
 <p>You want your reader to understand why this problem deserves attention.</p>
 <!--end include -->
-{% include play-section-end.html section-title="playDescription" %}
+{% include play-section-end.md section-title="playDescription" %}
 
 
 
 <!--start include wraps the section in starting HTML for styling purposes -->
-{% include play-section-start.html section-title="keyActivities" %}
+{% include play-section-start.md section-title="keyActivities" %}
 <h4>Put the problem in context</h4>
 <p>Identify how the business problem came about and what factors impact the problem. This will help you understand the potential complexity of the problem. You also need to identify the priorities for your organisation. Think about how resolving the business problem might align with these priorities.</p>
 <h4>Understand user needs and the reason for change</h4>
@@ -45,13 +45,13 @@ label: Discovery
 <p>There are various ways you can create a positive experience for your users. Think about how you can change functions across your organisation to meet the needs of the user. This includes functions relating to people, processes and technology.</p>
 <p>Understand and identify what evidence and data would be available for you to measure the change.&nbsp;</p>
 <!--end include -->
-{% include play-section-end.html section-title="keyActivities" %}
+{% include play-section-end.md section-title="keyActivities" %}
 
 
 
 
 <!--start include wraps the section in starting HTML for styling purposes -->
-{% include play-section-start.html section-title="questionsToConsider" %}
+{% include play-section-start.md section-title="questionsToConsider" %}
 <ul>
 <li>What government outcomes is your organisation delivering?</li>
 <li>What is the strategic direction of government?</li>
@@ -70,13 +70,13 @@ label: Discovery
 <li>What do your people, process and technology need to look like to enable the future user experience?</li>
 </ul>
 <!--end include -->
-{% include play-section-end.html section-title="questionsToConsider" %}
+{% include play-section-end.md section-title="questionsToConsider" %}
 
 
 
 
 <!--start include wraps the section in starting HTML for styling purposes -->
-{% include play-section-start.html section-title="resources" %}
+{% include play-section-start.md section-title="resources" %}
 <p><a href="conhttps://www.tbs-sct.gc.ca/pol-cont/doc/32593-eng.docx">Concept Case (</a><a href="conhttps://www.tbs-sct.gc.ca/pol-cont/doc/32593-eng.docx">Canada)</a> &ndash; This document is used to describe a business problem or opportunity and the conceptual future state and intended outcome(s) that could result from a potential digital project</p>
 <p><a href="https://dtaplaybook.z24.web.core.windows.net/play1/EstoniaBusinessCase.pdf">Business Case Canvas</a><a href="https://dtaplaybook.z24.web.core.windows.net/play1/EstoniaBusinessCase.pdf"> (Estonia)</a> &ndash; Estonia has adopted a business canvas approach for reviewing and prioritising Digital and ICT projects. This presents the key element of the business case in a one-page (A4) format.</p>
 <p><a href="https://en.digst.dk/ict-portfolio-management/business-case-model/">Business case model (Denmark)</a> &ndash; Denmark has established a governance framework around business cases that includes an independent <a href="https://en.digst.dk/ict-portfolio-management/the-danish-council-for-ict/">Council&nbsp;for&nbsp;ICT</a> undertaking an annual assessment of ICT projects on a variety of parameters as part of a <a href="https://en.digst.dk/ict-portfolio-management/ict-project-model/">portfolio management</a> approach.</p>
@@ -85,4 +85,4 @@ label: Discovery
 
 <p><a href="https://www.gov.uk/service-manual/user-research">User research (United Kingdom)</a> – A guide to help you understand user needs: plan research, prepare for sessions, share and analyse findings.</p>
 <!--end include -->
-{% include play-section-end.html %}
+{% include play-section-end.md %}

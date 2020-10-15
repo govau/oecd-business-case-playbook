@@ -6,32 +6,32 @@ label: Foundations
 ---
 
 <!--start include wraps the section in starting HTML for styling purposes -->
-{% include play-section-start.html section-title="introduction" %}
+{% include play-section-start.md section-title="introduction" %}
 
 
 <p>A diverse, multidisciplinary team helps ensure that you fully consider the business problem and canvass practicable options.</p>
 <!--end include -->
-{% include play-section-end.html section-title="introduction" %}
+{% include play-section-end.md section-title="introduction" %}
 
 
 
 
 
 <!--start include wraps the section in starting HTML for styling purposes -->
-{% include play-section-start.html section-title="playDescription" %}
+{% include play-section-start.md section-title="playDescription" %}
 
 <p>Pull together a multidisciplinary team of the right people to develop the business case.</p>
 <p>Traditionally, organisations have divided capabilities across functional areas. In contrast, a multidisciplinary team draws members from a range of disciplines.</p>
 <p>People with expert skills will need to join your team to help manage specific components, such as costings or risk assessments. The team could expand to include people from complementary agencies or external contractors for intense bursts of effort.</p>
 
 <!--end include -->
-{% include play-section-end.html section-title="playDescription" %}
+{% include play-section-end.md section-title="playDescription" %}
 
 
 
 
 <!--start include wraps the section in starting HTML for styling purposes -->
-{% include play-section-start.html section-title="keyActivities" %}
+{% include play-section-start.md section-title="keyActivities" %}
 <h4>Identify the skills you need</h4>
 <p>An effective multidisciplinary team is built on a diverse mix of skills&nbsp;.</p>
 <p>Consider the type of skills you need to help you develop the business case. You may require generalist policy advisers, as well as subject matter specialists, business architects, or content designers. The people who you expect will implement or deliver the solution should also be involved.</p>
@@ -49,13 +49,13 @@ label: Foundations
 <p>Consider how the team members maintain relationships with the usual work areas while participating in the multidisciplinary team.</p>
 
 <!--end include -->
-{% include play-section-end.html section-title="keyActivities" %}
+{% include play-section-end.md section-title="keyActivities" %}
 
 
 
 
 <!--start include wraps the section in starting HTML for styling purposes -->
-{% include play-section-start.html section-title="questionsToConsider" %}
+{% include play-section-start.md section-title="questionsToConsider" %}
 <ul>
 <li>Who do you need in your multi-disciplinary team to ensure that it represents the key players to deliver an effective business case?</li>
 <li>What capability and experience do you need in the people who will contribute to the business case?</li>
@@ -65,13 +65,13 @@ label: Foundations
 <li>How will you structure your work patterns to make the best use of the skills and experience of your team members? Do you need specialist skills (such as an Agile coach) to assist you?</li>
 </ul>
 <!--end include -->
-{% include play-section-end.html section-title="questionsToConsider" %}
+{% include play-section-end.md section-title="questionsToConsider" %}
 
 
 
 
 <!--start include wraps the section in starting HTML for styling purposes -->
-{% include play-section-start.html section-title="resources" %}
+{% include play-section-start.md section-title="resources" %}
 <p><a href="https://www.dta.gov.au/blogs/thinking-and-acting-digitally-little-book-digital">The Little Book of Digital</a> (Australia) &ndash; This handbook describes some basic concepts and shares some ideas on the best ways to start digital transformation in your organisation including establishing a multidisciplinary team and adopting user-centred design to create better results.</p>
 <p><a href="https://www.atlassian.com/team-playbook">Team Playbook</a> &ndash; a series of workshop resources developed by software company Atlassian for addressing common team challenges and starting important conversations.</p>
 
@@ -81,7 +81,7 @@ label: Foundations
 
 
 <!--end include -->
-{% include play-section-end.html section-title="resources" %}
+{% include play-section-end.md section-title="resources" %}
 
 
 

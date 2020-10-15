@@ -5,17 +5,17 @@ icon: drafting-compass
 label: Iterate
 ---
 <!--start include wraps the section in starting HTML for styling purposes -->
-{% include play-section-start.html section-title="introduction" %}
+{% include play-section-start.md section-title="introduction" %}
 <p>Your analysis of the preferred option should form the beginnings of a more detailed implementation and risk management plan.</p>
 <p>Ensure that the business problem and outcomes you discuss here are reflected throughout the business case consistently.</p>
 
 <!--end include -->
-{% include play-section-end.html section-title="introduction" %}
+{% include play-section-end.md section-title="introduction" %}
 
 
 
 <!--start include wraps the section in starting HTML for styling purposes -->
-{% include play-section-start.html section-title="playDescription" %}
+{% include play-section-start.md section-title="playDescription" %}
 <p>This is the phase where you take the evidence and your experience in considering potential solutions to the business problem and pull it all together as a compelling story.</p>
 <p>Explain how your preferred option compares to the other options and highlight the key benefits. Explain why the other options are not preferred.</p>
 <p>Make sure that your readers can clearly understand the scope of the business problem you are trying to resolve, and what would be the outcomes of successful change. Your business case should explain how the preferred option delivers on these outcomes and how it aligns to the organisation&rsquo;s and government&rsquo;s policy objectives.</p>
@@ -24,12 +24,12 @@ label: Iterate
 <p>The implementation approach will vary based on factors such as the complexity of the proposed digital or ICT solution and your government&rsquo;s requirements.</p>
 <p>You should consider adopting agile approaches that will increase the likelihood of success and deliver early value to users. For example, developing a Minimum Viable Product that meets user needs, and allows for early learning, delivers value quickly. This approach of iterative and incremental delivery, coupled with continuous learning and improvement, gives you confidence that the solution adapts and responds to evolving user needs over time.</p>
 <!--end include -->
-{% include play-section-end.html section-title="playDescription" %}
+{% include play-section-end.md section-title="playDescription" %}
 
 
 
 <!--start include wraps the section in starting HTML for styling purposes -->
-{% include play-section-start.html section-title="keyActivities" %}
+{% include play-section-start.md section-title="keyActivities" %}
 <h4>Break up the work into manageable pieces</h4>
 <p>Choose the appropriate delivery method for the project (e.g. agile, waterfall or blended). For a delivery method like agile, your plan will need to explain how you will incorporate and adapt to changes in the specifications. Plan out the key milestones and how and when they will be achieved. You will also need to consider how risks and dependencies will be managed. For example, the completion of related projects.</p>
 <h4>Determine the organisational capacity and capability</h4>
@@ -43,12 +43,12 @@ label: Iterate
 <h4>Have a plan for change</h4>
 <p>A new digital or ICT capability will change processes and people. Develop a plan to prepare and support people to embrace the change. This will include training, communication, and transition activities. This plan will be critical in minimising the risk and disruption associated with the change whilst also helping to achieve outcomes.</p>
 <!--end include -->
-{% include play-section-end.html section-title="keyActivities" %}
+{% include play-section-end.md section-title="keyActivities" %}
 
 
 
 <!--start include wraps the section in starting HTML for styling purposes -->
-{% include play-section-start.html section-title="questionsToConsider" %}
+{% include play-section-start.md section-title="questionsToConsider" %}
 <ul>
 <li>What delivery method allows you to manage risk and stakeholder expectations effectively?</li>
 <li>What internal and external factors may impact implementation?</li>
@@ -64,12 +64,12 @@ label: Iterate
 <li>Who will have influence over the success of the project?</li>
 </ul>
 <!--end include -->
-{% include play-section-end.html section-title="questionsToConsider" %}
+{% include play-section-end.md section-title="questionsToConsider" %}
 
 
 
 <!--start include wraps the section in starting HTML for styling purposes -->
-{% include play-section-start.html section-title="resources" %}
+{% include play-section-start.md section-title="resources" %}
 <p><a href="https://www.finance.gov.au/government/assurance-reviews-risk-assessment/assurance-reviews-process-overview">Assurance Reviews Process Overview (Australia)</a> &ndash; This is a guide on assurance practices that help capture important considerations in program delivery.</p>
 
 <p><a href="https://www.finance.gov.au/sites/default/files/2019-11/ICT_Business_Case_Guide.pdf">ICT Business Case Guide (Australia)</a> &ndash; Guidance to assist Australian Public Service entities to develop sound business cases when seeking to make significant ICT investments</p>
@@ -81,4 +81,4 @@ label: Iterate
 
 
 <!--end include -->
-{% include play-section-end.html section-title="resources" %}
+{% include play-section-end.md section-title="resources" %}

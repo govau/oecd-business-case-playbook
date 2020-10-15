@@ -28,32 +28,9 @@
                 </div>
             </div>
         </header>
-        {% include navigation.html %}
+        {% include navigation.md %}
     </div>
     <main class="page-wrapper au-body">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xs-12">
-                    {% include breadcrumbs.html %}
-                </div>
-            </div>
-            <div class="row">
-                {% include side-navigation.html %}
-                <div id="content" class="play has-side-nav col-xs-12 col-md-8 col-md-offset-1">
-                    <div class="label-heading">
-                      <div class="label {{page.label}}">{{page.label}}</div>
-                  </div>
-                    <span class="fa-stack fa-2x icon-play ">
-                        <i class="fas fa-circle fa-stack-2x {{page.label}}"></i>
-                        <i class="fas fa-{{ page.icon }} fa-stack-1x fa-inverse"></i>
-                    </span>
-                  
-                    <h1>{{page.title}}</h1>
-                    
-                    {{ content }}
-                    {% include play-pagination.html %}
-                </div>
-            </div>
-        </div>
+        {{ content }}
     </main>
-    {% include footer.html %}
+    {% include footer.md %}

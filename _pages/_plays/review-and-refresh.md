@@ -5,7 +5,7 @@ icon: heartbeat
 label: Iterate
 ---
 <!--start include wraps the section in starting HTML for styling purposes -->
-{% include play-section-start.html section-title="introduction" %}
+{% include play-section-start.md section-title="introduction" %}
 
 <p>Congratulations. The decision-makers have considered the options in your business case and agreed to a way forward.</p>
 
@@ -13,12 +13,12 @@ label: Iterate
 
 <p>This Play will help ensure that the business case is always up to date and relevant to the proposal&rsquo;s implementation. It will help you prepare to implement the solution to your business problem, and successfully deliver a solution that adapts to changing needs.</p>
 <!--end include -->
-{% include play-section-end.html section-title="introduction" %}
+{% include play-section-end.md section-title="introduction" %}
 
 
 
 <!--start include wraps the section in starting HTML for styling purposes -->
-{% include play-section-start.html section-title="playDescription" %}
+{% include play-section-start.md section-title="playDescription" %}
 
 <p>Once it has been approved, the business case becomes the basis for implementing change and a key tool for managing that change.</p>
 <p>The business case is also a living document. It should be kept up to date reflect the reality of the implementation of your product or service.</p>
@@ -29,12 +29,12 @@ label: Iterate
 <p>Your governance and assurance arrangements are also important in ensuring you stay on track.</p>
 <p>Maintaining line of sight to the objectives set out in your business case is assisted by ensuring your governance bodies are presented with information which clearly sets out progress towards achieving the stated objectives.</p>
 <!--end include -->
-{% include play-section-end.html section-title="playDescription" %}
+{% include play-section-end.md section-title="playDescription" %}
 
 
 
 <!--start include wraps the section in starting HTML for styling purposes -->
-{% include play-section-start.html section-title="keyActivities" %}
+{% include play-section-start.md section-title="keyActivities" %}
 <h4>Establish appropriate oversight and governance</h4>
 <p>Establish internal and external governance mechanisms and processes that are appropriate for the scale, complexity, and risk profile of the project. These will have been outlined in the implementation components of the business case.</p>
 <p>For high risk/high value investments it can be helpful to engage independent assurance to ensure delivery teams remain alert to possible optimism bias around achieving objectives. Independent assurance can also help teams effectively manage key risks to successful delivery.</p>
@@ -47,13 +47,13 @@ label: Iterate
 <p>In a conventional waterfall-managed project, you might review the business case at the end of a project phase.</p>
 <p>You might consider aligning formal review of the business case to formal implementation and funding reviews, scheduled at the conclusion of a phase of the implementation or release of a specific product or service.</p>
 <!--end include -->
-{% include play-section-end.html section-title="keyActivities" %}
+{% include play-section-end.md section-title="keyActivities" %}
 
 
 
 
 <!--start include wraps the section in starting HTML for styling purposes -->
-{% include play-section-start.html section-title="questionsToConsider" %}
+{% include play-section-start.md section-title="questionsToConsider" %}
 <ul>
 <li>At what points in your work will you review your progress against the business case?</li>
 <li>At what points would it be appropriate to review and refresh the business case?</li>
@@ -64,14 +64,14 @@ label: Iterate
 <li>How will you formally agree and document any changes to the business case?</li>
 </ul>
 <!--end include -->
-{% include play-section-end.html section-title="questionsToConsider" %}
+{% include play-section-end.md section-title="questionsToConsider" %}
 
 
 
 
 <!--start include wraps the section in starting HTML for styling purposes -->
-{% include play-section-start.html section-title="resources" %}
+{% include play-section-start.md section-title="resources" %}
 <p><a href="https://www.finance.gov.au/government/assurance-reviews-risk-assessment/assurance-reviews-process-overview">Assurance Reviews Process Overview (Australia)</a> - This is a guide on assurance practices that help capture important considerations in program delivery.</p>
 <p><a href="https://www.finance.gov.au/government/assurance-reviews-risk-assessment/gateway-reviews-process">Gateway Reviews Process (Australia)</a> &ndash; The Gateway Review is a series of short, intensive reviews are conducted at critical points across a proposal&rsquo;s implementation lifecycle (normally over several years).</p>
 <!--end include -->
-{% include play-section-end.html %}
+{% include play-section-end.md %}

@@ -28,9 +28,13 @@
                 </div>
             </div>
         </header>
-        {% include navigation.html %}
+        {% include navigation.md %}
     </div>
     <main class="page-wrapper au-body">
-        {{ content }}
+        <div id="content" class="container-fluid">
+            {% include breadcrumbs.html %}
+            <h1>{{page.title}}</h1>
+            {{ content }}
+        </div>
     </main>
-    {% include footer.html %}
+    {% include footer.md %}

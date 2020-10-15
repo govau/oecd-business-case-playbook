@@ -5,28 +5,28 @@ icon: clipboard-list
 label: Test
 ---
 <!--start include wraps the section in starting HTML for styling purposes -->
-{% include play-section-start.html section-title="introduction" %}
+{% include play-section-start.md section-title="introduction" %}
 <p>Your examination of the costs, benefits and risks of each option forms the core argument of your business case.</p>
 <p>The decision-makers should be able to understand the comparative advantages, costs and weaknesses of each option, assessed against the organisation&rsquo;s capability to deliver the solution.</p>
 <p>Your conclusion and recommended option should be clearly supported by this evidence.</p>
 <!--end include -->
-{% include play-section-end.html section-title="introduction" %}
+{% include play-section-end.md section-title="introduction" %}
 
 
 
 <!--start include wraps the section in starting HTML for styling purposes -->
-{% include play-section-start.html section-title="playDescription" %}
+{% include play-section-start.md section-title="playDescription" %}
 <p>Explore viable options in detail and assess how they will achieve the desired outcomes. Assess each option against the desired outcomes to identify strengths and weaknesses. Consider the comparative costs, benefits, and risks of each solution. Different options may deliver different benefits and costs for similar outcomes. Accurately calculating the costs and benefits of each option will help decision-makers compare the different options presented in the business case. It is important to be clear how you will measure the costs and benefits for each option.</p>
 <p>Similarly, assessing the risks of each option make them easier to compare. You need to consider risks based on how they may impact the desired outcomes, the organisation, and the government. There may be some risks which are common across all options, while the impact of the risk may be different.</p>
 <p>Test the viability of implementing each option. You should consider the capability of your organisation to implement each option. You should also consider if other government organisations or the private sector need to be engaged in developing or implementing a solution. You may need to approach the market to identify whether there is an existing solution to the business problem, or to clarify the costs of implementing a solution.</p>
 
 <!--end include -->
-{% include play-section-end.html section-title="playDescription" %}
+{% include play-section-end.md section-title="playDescription" %}
 
 
 
 <!--start include wraps the section in starting HTML for styling purposes -->
-{% include play-section-start.html section-title="keyActivities" %}
+{% include play-section-start.md section-title="keyActivities" %}
 <h3>Understanding the costs and benefits</h3>
 <h4>Decide how you will calculate the costs of the proposal</h4>
 <p>There are many methods available for generating costings depending on the experience of those preparing the business case. There is no universally recognised single best approach for developing costs, but other government agencies such as your Finance or Treasury Department (or equivalent) may guide you. The size, complexity and type of initiative may determine whether you use an agile or waterfall funding model. For example, waterfall project management approaches may be appropriate when updating ICT infrastructure. More agile approaches may be more useful to help you build services that meet complex user needs, or to deliver value quickly.</p>
@@ -49,12 +49,12 @@ label: Test
 <h4>Plan how you will manage risk</h4>
 <p>Use a risk management approach which works for your organisation. There may be existing tools and templates available from your organisation to help guide you. As part of your implementation approach (refer to <a href="/plays/draft-the-business-case/">Draft the business case</a>), define a process to continually identity and manage risks. Give specific consideration on how cyber security and privacy risks will be managed.</p>
 <!--end include -->
-{% include play-section-end.html section-title="keyActivities" %}
+{% include play-section-end.md section-title="keyActivities" %}
 
 
 
 <!--start include wraps the section in starting HTML for styling purposes -->
-{% include play-section-start.html section-title="questionsToConsider" %}
+{% include play-section-start.md section-title="questionsToConsider" %}
 <h3>Understanding the costs and benefits</h3>
 <ul>
 <li>Who can help with developing costing models?</li>
@@ -80,12 +80,12 @@ label: Test
 <li>Have you considered the legal risks that might affect the options in your business case?</li>
 </ul>
 <!--end include -->
-{% include play-section-end.html section-title="questionsToConsider" %}
+{% include play-section-end.md section-title="questionsToConsider" %}
 
 
 
 <!--start include wraps the section in starting HTML for styling purposes -->
-{% include play-section-start.html section-title="resources" %}
+{% include play-section-start.md section-title="resources" %}
 <p><a href="https://www.finance.gov.au/government/commonwealth-investment-framework/commonwealth-investments-toolkit/cost-estimation">Cost Estimation Guide (Australia)</a> &ndash; This is a guide to allow robust costing to occur as there are a number of principles that should be covered when they are estimated.</p>
 <p><a href="https://www.pmc.gov.au/resource-centre/regulation/cost-benefit-analysis-guidance-note">Cost-Benefit analysis document (Australia)</a> &ndash; Guidance on why cost-benefit analysis is important.</p>
 <p><a href="https://www.pmc.gov.au/sites/default/files/publications/cost-benefit-analysis_0.pdf">Cost-benefit analysis document (Australia)</a> &ndash; Detailed guidance on how to use cost-benefit analysis to assess proposals.</p>
@@ -94,6 +94,6 @@ label: Test
 <p><a href="https://www.iso.org/standard/65694.html">ISO 31000:2018 Risk management &mdash; Guidelines</a> &ndash; The International Standard provides guidelines on managing risk faced by organizations. You can customise&nbsp;these guidelines to apply to any organization and its context.</p>
 <p><a href="https://www.gov.uk/service-manual/agile-delivery">Agile delivery (United Kingdom)</a> ‑ How to work in an agile way: principles, tools and governance.</p>
 <!--end include -->
-{% include play-section-end.html section-title="resources"%}
+{% include play-section-end.md section-title="resources"%}
 
 

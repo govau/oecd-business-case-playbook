@@ -5,25 +5,25 @@ icon: user-check
 label: Foundations
 ---
 <!--start include wraps the section in starting HTML for styling purposes -->
-{% include play-section-start.html section-title="introduction" %}
+{% include play-section-start.md section-title="introduction" %}
 <p>Engaging the sponsor to actively drive, support and provide guidance on developing the business case will help ensure that it addresses the needs of the decision-makers.</p>
 <!--end include -->
-{% include play-section-end.html section-title="introduction" %}
+{% include play-section-end.md section-title="introduction" %}
 
 
 
 <!--start include wraps the section in starting HTML for styling purposes -->
-{% include play-section-start.html section-title="playDescription" %}
+{% include play-section-start.md section-title="playDescription" %}
 <p>Engage with the senior executive responsible for the business case to be the sponsor. Work with the sponsor to arrange fit-for-purpose governance in the context of your organisation and government.</p>
 <p>Your sponsor sets the vision for the overall service and their commitment is crucial to its success.</p>
 <p>Ensure the sponsor has time to commit to supporting the business case. Your sponsor will also be a good source of stakeholder connections and will be able to facilitate links to people and information that are vital to undertaking your business case.</p>
 <!--end include -->
-{% include play-section-end.html section-title="playDescription" %}
+{% include play-section-end.md section-title="playDescription" %}
 
 
 
 <!--start include wraps the section in starting HTML for styling purposes -->
-{% include play-section-start.html section-title="keyActivities" %}
+{% include play-section-start.md section-title="keyActivities" %}
 <h3>Establish a relationship with your sponsor</h3>
 <p>Confirm and engage with the executive sponsor to secure their strong commitment. This will provide top down support that ensures decisions relating to the business case are made by the right people, at the right time.</p>
 <h3>Understand your sponsor&rsquo;s work preferences and needs</h3>
@@ -35,12 +35,12 @@ label: Foundations
 <p>Consider how the internal governance is organised to review and approve the development of the business case. Also consider the external governance structures that will assess the business case and make the final decision.</p>
 <p>Ensure the business case is developed appealing to the requirements of both sets of decision-makers.</p>
 <!--end include -->
-{% include play-section-end.html section-title="keyActivities" %}
+{% include play-section-end.md section-title="keyActivities" %}
 
 
 
 <!--start include wraps the section in starting HTML for styling purposes -->
-{% include play-section-start.html section-title="questionsToConsider" %}
+{% include play-section-start.md section-title="questionsToConsider" %}
 <ul>
    	<li>Who needs to sponsor and review your business case?</li>
 	<li>Who do you need input from?</li>
@@ -50,13 +50,13 @@ label: Foundations
 	<li>How can your sponsor assist in engaging other key stakeholders?</li>
 </ul>
 <!--end include -->
-{% include play-section-end.html section-title="questionsToConsider"%}
+{% include play-section-end.md section-title="questionsToConsider"%}
 
 
 
 <!--start include wraps the section in starting HTML for styling purposes -->
-{% include play-section-start.html section-title="resources" %}
+{% include play-section-start.md section-title="resources" %}
 <p><a href="https://www.dta.gov.au/blogs/thinking-and-acting-digitally-little-book-digital">The Little Book of Digital</a> (Australia) &ndash; This handbook describes some basic concepts and shares some ideas on the best ways to start digital transformation in your organisation including establishing a multidisciplinary team and adopting user-centred design to create better results.</p>
 
 <!--end include -->
-{% include play-section-end.html section-title="resources" %}
+{% include play-section-end.md section-title="resources" %}
