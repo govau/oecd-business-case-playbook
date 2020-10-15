@@ -3,4 +3,5 @@ node_modules
 .sass-cache
 _auds.scss
 pancake
+.jekyll-cache
 vsCodeWorkspace.code-workspace

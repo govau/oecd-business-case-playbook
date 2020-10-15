@@ -34,7 +34,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-12">
-                    {% include breadcrumbs.html %}
+                    {% include breadcrumbs.md %}
                 </div>
             </div>
             <div class="row">
@@ -51,7 +51,7 @@
                     <h1>{{page.title}}</h1>
                     
                     {{ content }}
-                    {% include play-pagination.html %}
+                    {% include play-pagination.md %}
                 </div>
             </div>
         </div>

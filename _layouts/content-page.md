@@ -32,7 +32,7 @@
     </div>
     <main class="page-wrapper au-body">
         <div id="content" class="container-fluid">
-            {% include breadcrumbs.html %}
+            {% include breadcrumbs.md %}
             <h1>{{page.title}}</h1>
             {{ content }}
         </div>
