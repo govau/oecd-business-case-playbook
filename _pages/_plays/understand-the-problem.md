@@ -1,6 +1,7 @@
 ---
 layout: content-page-play
 title: Understand the problem
+menus: understand-the-problem
 icon: compass
 label: Discovery
 ---

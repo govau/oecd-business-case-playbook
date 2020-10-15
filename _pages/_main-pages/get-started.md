@@ -1,6 +1,7 @@
 ---
 layout: content-page
 title: Get Started
+menus: get-started
 ---
 <nav class="au-inpage-nav-links" aria-label="in page navigation">
     <h2 class="au-inpage-nav-links__heading">Contents</h2>

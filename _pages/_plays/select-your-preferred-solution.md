@@ -1,6 +1,7 @@
 ---
 layout: content-page-play
 title: Select your preferred solution
+menus: select-your-preferred-solution
 icon: clipboard-check
 label: Test
 ---

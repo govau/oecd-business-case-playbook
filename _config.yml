@@ -41,5 +41,6 @@ markdown: kramdown
 exclude: ["_pages/plays", "node_modules", "gulpfile.js", "package.json","package-lock.json", "pancake", "vsCodeWorkspace.code-workspace","LICENSE","README.md"]
 plugins:
     - jekyll-minifier
+    - jekyll-menus
 jekyll-minifier:
   exclude: ["assets/css/*.css","*.min.*","assets/js/*.js","manifest.yml", "Staticfile"]
