@@ -4,6 +4,10 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: jekyll-posts
+  label: Pages collection
+  create: documents
+  match: "**/*"
 - type: jekyll-pages
   label: Home page
   create: all
@@ -16,7 +20,7 @@ sections:
   path: _plays
   label: Plays
   create: all
-  match: "**/*"
+  match: "*"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
