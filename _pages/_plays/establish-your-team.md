@@ -1,7 +1,6 @@
 ---
 layout: content-page-play
 title: Establish your team
-menus: establish-your-team
 icon: users
 label: Foundations
 ---

@@ -21,25 +21,21 @@
               </button>
             
 
-
 <ul id="main-nav" class="au-link-list">
-{% for item in site.menus.header %}
-  <li class="page-link-parent menu-item-{{ loop.index }} {% if item.url == page.url %}active{% endif %}">
-    <a href="{{ item.url }}">{{ item.title }}</a>
-    {% if item.children %}
-      <ul class="sub-menu">
-      {% for item in item.children %}
-        <li class="page-link-child menu-item-{{ loop.index }} {% if item.url == page.url %}active{% endif %}">
-          <a href="{{ item.url }}">{{ item.title }}</a>
-        </li>
-      {% endfor %}
+  {% for item in site.data.navigation %}
+    <li class="page-link-parent {% if item.url == page.url %}active{% endif %}">
+      <a href="{{ item.url }}">{{ item.title }}</a>
+       {% if item.subitems != null %}
+      <ul>
+        {% for item in item.subitems %}
+          <li class="page-link-child {% if item.url == page.url %}active{% endif %}"><a href="{{ item.url }}">{{ item.title }}</a></li>
+        {% endfor %}
       </ul>
-    {% endif %}
-  </li>
+       {% endif %}
+  	</li>
+    </li>
 {% endfor %}
 </ul>
-
-
               <div class="au-main-nav__focus-trap-bottom"></div>
             </div>
           </div>

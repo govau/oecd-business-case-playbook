@@ -1,7 +1,6 @@
 ---
 layout: content-page-play
 title: Engage stakeholders early and often
-menus: engage-stakeholders-early-and-often
 icon: hands-helping
 label: Discovery
 ---

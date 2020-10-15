@@ -1,7 +1,6 @@
 ---
 layout: content-page
 title: About
-menus: about
 ---
 <h2>About E-Leaders</h2>
 <p>
