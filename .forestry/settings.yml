@@ -5,7 +5,7 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: jekyll-pages
-  label: Pages
+  label: Home page
   create: all
 - type: directory
   path: _main-pages
