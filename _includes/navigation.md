@@ -23,7 +23,7 @@
 
 
 <ul id="main-nav" class="au-link-list">
-{% for item in site.menu.header %}
+{% for item in site.menus.header %}
   <li class="page-link-parent menu-item-{{ loop.index }} {% if item.url == page.url %}active{% endif %}">
     <a href="{{ item.url }}">{{ item.title }}</a>
     {% if item.children %}
