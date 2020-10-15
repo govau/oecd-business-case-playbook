@@ -12,6 +12,8 @@ sections:
   label: Main pages
   create: documents
   match: "*.md"
+  templates:
+  - page
 - type: directory
   path: _pages/_plays
   label: Plays
