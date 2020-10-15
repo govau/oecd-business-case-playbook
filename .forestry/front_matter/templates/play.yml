@@ -5,6 +5,8 @@ fields:
 - type: text
   name: layout
   label: layout
+  default: content-page-play
+  hidden: true
 - type: text
   name: title
   label: title
