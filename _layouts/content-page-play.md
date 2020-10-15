@@ -1,4 +1,4 @@
-{% include head.html %}
+{% include head.md %}
 
 <body class="au-grid">
     <nav class="au-skip-link " aria-label="skip links navigation"><a class="au-skip-link__link " href="#main-nav">Skip to navigation</a><a class="au-skip-link__link " href="#content">Skip to content</a></nav>
