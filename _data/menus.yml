@@ -1,0 +1,5 @@
+---
+home:
+- url: google.com
+  weight: 2
+  title: test
