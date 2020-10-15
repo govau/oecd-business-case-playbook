@@ -8,15 +8,15 @@ sections:
   label: Home page
   create: all
 - type: directory
-  path: _main-pages
+  path: _pages/_main-pages
   label: Main pages
-  create: all
-  match: "**/*"
+  create: documents
+  match: "*.md"
 - type: directory
-  path: _plays
+  path: _pages/_plays
   label: Plays
-  create: all
-  match: "**/*"
+  create: documents
+  match: "*.md"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
