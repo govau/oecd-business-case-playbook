@@ -9,6 +9,7 @@ title: Home
 The Playbook is based on the experience of Australia, and other OECD members, including Canada, Denmark, Estonia, and the United Kingdom. It builds upon previous work, including the report from the OECD Thematic Group on Business Cases presented by Denmark at the E‑Leaders Meeting in October 2018.</p>
 
 <p>The Playbook covers the foundational concepts of a business case required to present a compelling argument for a digital or ICT investment. Each Play explores a core component of business case development, supported by helpful links.</p>
+
 <div class="btn-cta-group">
 <a class="au-btn" href="/get-started/">Get Started</a>
 </div>
@@ -16,6 +17,7 @@ The Playbook is based on the experience of Australia, and other OECD members, in
 </div>
 </div>
 </div>
+
 <div class="banner banner--alt">
 <div class="container-fluid">
 <div class="row">
@@ -53,6 +55,7 @@ The Playbook is based on the experience of Australia, and other OECD members, in
 </div>
 </div>
 </div>
+
 <div class="banner au-body au-body--dark">
 <div class="container-fluid">
 <div class="row">
@@ -60,14 +63,13 @@ The Playbook is based on the experience of Australia, and other OECD members, in
 <div style="padding:4rem">
 <div class="au-callout au-callout--dark ">
 <p class="lead">Digital transformation is about delivering improvements to policy, process and technology to better meet user needs. Increasingly, governments are using digital technologies to find more agile ways of delivering services to people, business, and communities.</p>
-<p> </p>
+
 <p>The Organisation for Economic Co-operation and Development (OECD) Recommendation on <a href="https://www.oecd.org/gov/digital-government/recommendation-on-digital-government-strategies.htm">Digital Government Strategies</a> highlights the importance of the business case ‘to sustain the funding and focused implementation of digital technologies projects’.</p>
 
-                        <p>Learn more <a href="/about">about the work of the OECD E-Leaders</a>.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+<p>Learn more <a href="/about">about the work of the OECD E-Leaders</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>  
 </div>
