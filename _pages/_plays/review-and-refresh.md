@@ -1,7 +1,7 @@
 ---
 layout: content-page-play
 title: Review and Refresh
-menus: sidenav
+menus: side-nav
 icon: heartbeat
 label: Iterate
 ---

@@ -6,47 +6,46 @@
 header:
 - url: /
   title: Home
-  identifier: home
+  identifier: main-nav
 - url: /get-started/
   title: Get Started
-  identifier: get-started
+  identifier: main-nav
 - url: /plays-introduction/
   title: Introduction to Plays
-  identifier: introduction-to-plays
+  identifier: main-nav
+- url: /suggested-resources/
+  title: Suggested Resources
+  identifier: main-nav
 - url: /plays/
   title: Plays
-  identifier: plays
-  children:
-    - url: /plays/establish-your-team/
-      title: Establish your team
-      identifier: establish-your-team
-    - url: /plays/engage-your-sponsors/
-      title: Engage your sponsors
-      identifier: engage-your-sponsors
-    - url: /plays/scope-the-preliminary-work/
-      title: Scope the preliminary work
-      identifier: scope-the-preliminary-work
-    - url: /plays/understand-the-problem/
-      title: Understand the problem
-      identifier: understand-the-problem
-    - url: /plays/engage-stakeholders-early-and-often/
-      title: Engage stakeholders early and often
-      identifier: engage-stakeholders-early-and-often
-    - url: /plays/explore-options/
-      title: Explore options
-      identifier: explore-options
-    - url: /plays/define-options/
-      title: Define options
-      identifier: define-options
-    - url: /plays/select-your-preferred-solution/  
-      title: Select your preferred solution
-      identifier: select-your-preferred-solution
-    - url: /plays/draft-the-business-case/
-      title: Draft the business case
-      identifier: draft-the-business-case  
-    - url: /plays/review-and-refresh/ 
-      title: Review and Refresh
-      identifier: review-and-refresh    
-- title: Suggested Resources
-  url: /suggested-resources/
-  identifier: suggested-resources
+  identifier: main-nav
+- url: /plays/establish-your-team/
+  title: Establish your team
+  identifier: side-nav
+- url: /plays/engage-your-sponsors/
+  title: Engage your sponsors
+  identifier: side-nav
+- url: /plays/scope-the-preliminary-work/
+  title: Scope the preliminary work
+  identifier: side-nav
+- url: /plays/understand-the-problem/
+  title: Understand the problem
+  identifier: side-nav
+- url: /plays/engage-stakeholders-early-and-often/
+  title: Engage stakeholders early and often
+  identifier: side-nav
+- url: /plays/explore-options/
+  title: Explore options
+  identifier: side-nav
+- url: /plays/define-options/
+  title: Define options
+  identifier: side-nav
+- url: /plays/select-your-preferred-solution/  
+  title: Select your preferred solution
+  identifier: side-nav
+- url: /plays/draft-the-business-case/
+  title: Draft the business case
+  identifier: side-nav 
+- url: /plays/review-and-refresh/ 
+  title: Review and Refresh
+  identifier: side-nav

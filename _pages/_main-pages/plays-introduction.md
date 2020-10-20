@@ -1,7 +1,10 @@
 ---
 layout: content-page
 title: Introduction to Plays
-menus: header
+menus:
+  header:
+    title: Introduction to Plays
+    weight: 3
 ---
 
 <p>Developing a business case is an iterative process. You may start with a&nbsp;clear idea of how you think the problem can be solved, only to discover there are better alternatives through collecting evidence and&nbsp;exploring options. The policy environment may also change, which could be outside of your control, leading to new issues, and new solutions. A new technology or product might offer innovative opportunities to resolve the problem.</p>

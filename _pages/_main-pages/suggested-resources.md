@@ -1,7 +1,10 @@
 ---
 layout: content-page
 title: Suggested Resources
-menus: header
+menus:
+  header:
+    title: Suggested Resources
+    weight: 5
 ---
 
 <div class="label Foundations">Foundations</div>

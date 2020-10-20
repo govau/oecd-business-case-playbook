@@ -1,7 +1,7 @@
 ---
 layout: content-page-play
 title: Draft the business case
-menus: sidenav
+menus: side-nav
 icon: drafting-compass
 label: Iterate
 ---

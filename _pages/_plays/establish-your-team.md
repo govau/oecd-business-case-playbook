@@ -1,9 +1,12 @@
 ---
 layout: content-page-play
 title: Establish your team
-menus: sidenav
 icon: users
 label: Foundations
+menus:
+  side:
+    title: Engage your sponsors
+    weight: 4
 ---
 
 <!--start include wraps the section in starting HTML for styling purposes -->

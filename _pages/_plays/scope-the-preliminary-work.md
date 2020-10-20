@@ -1,7 +1,7 @@
 ---
 layout: content-page-play
 title: Scope the preliminary work
-menus: plays
+menus: side-nav
 icon: map
 label: Foundations
 ---

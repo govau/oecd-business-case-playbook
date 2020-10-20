@@ -1,9 +1,12 @@
 ---
 layout: content-page-play
 title: Engage your sponsors
-menus: sidenav
 icon: user-check
 label: Foundations
+menus:
+  side:
+    title: Engage your sponsors
+    weight: 4
 ---
 <!--start include wraps the section in starting HTML for styling purposes -->
 {% include play-section-start.md section-title="introduction" %}
