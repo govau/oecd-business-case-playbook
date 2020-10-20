@@ -2,7 +2,7 @@
 layout: home-page
 title: Home
 menu:
-  home:
+  header:
     weight: 1
 
 ---
