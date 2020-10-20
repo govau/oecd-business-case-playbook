@@ -1,6 +1,7 @@
 ---
 layout: content-page-play
 title: Select your preferred solution
+menus: plays
 icon: clipboard-check
 label: Test
 ---

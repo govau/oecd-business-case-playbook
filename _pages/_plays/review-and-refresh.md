@@ -1,6 +1,7 @@
 ---
 layout: content-page-play
 title: Review and Refresh
+menus: plays
 icon: heartbeat
 label: Iterate
 ---

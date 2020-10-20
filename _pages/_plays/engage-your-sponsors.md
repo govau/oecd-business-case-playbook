@@ -1,6 +1,7 @@
 ---
 layout: content-page-play
 title: Engage your sponsors
+menus: plays
 icon: user-check
 label: Foundations
 ---

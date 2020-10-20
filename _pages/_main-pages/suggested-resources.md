@@ -1,6 +1,7 @@
 ---
 layout: content-page
 title: Suggested Resources
+menus: header
 ---
 
 <div class="label Foundations">Foundations</div>

@@ -1,6 +1,7 @@
 ---
 layout: content-page-play
 title: Define options
+menus: plays
 icon: clipboard-list
 label: Test
 ---
