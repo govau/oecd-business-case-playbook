@@ -1,7 +1,7 @@
 ---
 layout: content-page-play
 title: Select your preferred solution
-menus: plays
+menus: sidenav
 icon: clipboard-check
 label: Test
 ---

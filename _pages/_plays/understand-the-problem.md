@@ -1,7 +1,7 @@
 ---
 layout: content-page-play
 title: Understand the problem
-menus: plays
+menus: sidenav
 icon: compass
 label: Discovery
 ---

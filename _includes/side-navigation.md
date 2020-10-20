@@ -5,7 +5,7 @@
                 
  
 <ul class="child-menu">
-{% for item in site.menus.side %}
+{% for item in site.menus.sidenav %}
     <li class="{{ item.title }} page-link-child {% if item.url == page.url %}active{% endif %}">
         <a href="{{ item.url }}"><span>{{ item.title }}</span></a>
     </li>
