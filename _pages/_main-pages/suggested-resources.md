@@ -1,12 +1,11 @@
 ---
 layout: content-page
 title: Suggested Resources
-menus:
+menu:
   header:
-    title: Suggested Resources
     weight: 5
----
 
+---
 <div class="label Foundations">Foundations</div>
 <h2 class="mt-0">Foundations</h2>
 <div class="links-list mb-3">

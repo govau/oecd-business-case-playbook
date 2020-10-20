@@ -1,12 +1,11 @@
 ---
 layout: content-page
 title: Introduction to Plays
-menus:
+menu:
   header:
-    title: Introduction to Plays
     weight: 3
----
 
+---
 <p>Developing a business case is an iterative process. You may start with a&nbsp;clear idea of how you think the problem can be solved, only to discover there are better alternatives through collecting evidence and&nbsp;exploring options. The policy environment may also change, which could be outside of your control, leading to new issues, and new solutions. A new technology or product might offer innovative opportunities to resolve the problem.</p>
 <p>These ten actions (called <strong><em>Plays</em></strong>) describe the essential processes, components and actions of developing a business case to support investment in digital transformation and new ICT capability.&nbsp;</p>
 <p>The Plays will help you describe the value your proposal brings to the users of your service, and its broader economic, social and policy benefits.&nbsp;</p>
