@@ -3,7 +3,7 @@ layout: content-page
 title: Get Started
 menu:
   header:
-    weight: 1
+    weight: 2
 
 ---
 <nav class="au-inpage-nav-links" aria-label="in page navigation">

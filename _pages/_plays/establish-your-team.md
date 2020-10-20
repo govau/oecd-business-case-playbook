@@ -5,8 +5,8 @@ icon: users
 label: Foundations
 menus:
   side:
-    title: Engage your sponsors
-    weight: 4
+    title: Establish your team
+    weight: 6
 ---
 
 <!--start include wraps the section in starting HTML for styling purposes -->

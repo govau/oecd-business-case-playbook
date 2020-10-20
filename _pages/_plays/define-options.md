@@ -3,11 +3,10 @@ layout: content-page-play
 title: Define options
 icon: clipboard-list
 label: Test
-menu:
-  header:
-    weight: 1
-    parent: item_wk4z9tn
-
+menus:
+  side:
+    title: Define options
+    weight: 2
 ---
 <!--start include wraps the section in starting HTML for styling purposes -->
 {% include play-section-start.md section-title="introduction" %}

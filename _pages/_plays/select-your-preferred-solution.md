@@ -1,9 +1,12 @@
 ---
 layout: content-page-play
 title: Select your preferred solution
-menus: side-nav
 icon: clipboard-check
 label: Test
+menus:
+  side:
+    title: Select your preferred solution
+    weight: 9
 ---
 <!--start include wraps the section in starting HTML for styling purposes -->
 {% include play-section-start.md section-title="introduction" %}
