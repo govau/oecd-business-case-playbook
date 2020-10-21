@@ -20,9 +20,8 @@ sections:
   create: documents
   match: "*.md"
 - type: document
-  path: https://github.com/govau/oecd-business-case-playbook/tree/master/_data/menus.yml
+  path: _data/menus.yml
   label: Menus
-  match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
