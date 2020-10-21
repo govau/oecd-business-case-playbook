@@ -4,52 +4,35 @@
 # IMPORTANT Make sure to keep the exact same formatting with colons, spaces, dashes etc.
 
 header:
-- url: 
+- url: /
   title: Home
-  identifier: home
 - url: /get-started/
   title: Get Started
-  identifier: get-started
 - url: /plays-introduction/
   title: Introduction to Plays
-  identifier: introduction-to-plays
 - url: /plays/
   title: Plays
-  identifier: plays
 - title: Suggested Resources
   url: /suggested-resources/
-  identifier: suggested-resources
-- title: Suggested Resources
-  url: /suggested-resources/
-  identifier: suggested-resources
 side:
 - url: /plays/explore-options/
   title: Explore options
-  identifier: explore-options
+  weight: 1
 - url: /plays/define-options/
   title: Define options
-  identifier: define-options
 - url: /plays/draft-the-business-case/
   title: Draft the business case
-  identifier: draft-the-business-case
 - url: /plays/engage-stakeholders-early-and-often/
   title: Engage stakeholders early and often
-  identifier: engage-stakeholders-early-and-often 
 - url: /plays/engage-your-sponsors/
   title: Engage your sponsors
-  identifier: engage-your-sponsors
 - url: /plays/establish-your-team/
   title: Establish your team
-  identifier: establish-your-team
 - url: /plays/review-and-refresh/ 
-  title: Review and Refresh
-  identifier: review-and-refresh    
+  title: Review and Refresh 
 - url: /plays/scope-the-preliminary-work/
   title: Scope the preliminary work
-  identifier: scope-the-preliminary-work
 - url: /plays/select-your-preferred-solution/  
   title: Select your preferred solution
-  identifier: select-your-preferred-solution
 - url: /plays/understand-the-problem/
   title: Understand the problem
-  identifier: understand-the-problem
