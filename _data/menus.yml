@@ -1,23 +1,36 @@
-# This file generates the navigation across all pages so you don't have to edit every page each time you add a new link. 
-# It also helps automate things like setting an active class on the current navigation item.
-# To add a new link, just copy the existing pattern. For pages with subpages, take note of the Plays example and copy that.
-# IMPORTANT Make sure to keep the exact same formatting with colons, spaces, dashes etc.
-
-header:
-- url: /
-  title: Home
-- url: /get-started/
-  title: Get Started
-- url: /plays-introduction/
-  title: Introduction to Plays
-- url: /plays/
-  title: Plays
-- title: Suggested Resources
-  url: /suggested-resources/
+---
 side:
-- url: /plays/explore-options/
+- url: "/plays/understand-the-problem/"
+  title: Understand the problem
+  weight: 10
+- url: "/plays/select-your-preferred-solution/"
+  title: Select your preferred solution
+  weight: 9
+- url: "/plays/scope-the-preliminary-work/"
+  title: Scope the preliminary work
+  weight: 8
+- url: "/plays/review-and-refresh/"
+  title: Review and Refresh
+  weight: 7
+- url: "/plays/establish-your-team/"
+  title: Establish your team
+  weight: 6
+- url: "/plays/engage-your-sponsors/"
+  title: Engage your sponsors
+  weight: 5
+- url: "/plays/engage-stakeholders-early-and-often/"
+  title: Engage stakeholders early and often
+  weight: 4
+- url: "/plays/draft-the-business-case/"
+  title: Draft the business case
+  weight: 3
+- url: "/plays/define-options/"
+  title: Define options
+  weight: 2
+- url: "/plays/explore-options/"
   title: Explore options
   weight: 1
+<<<<<<< HEAD
 - url: /plays/define-options/
   title: Define options
   weight: 2
@@ -45,3 +58,21 @@ side:
 - url: /plays/understand-the-problem/
   title: Understand the problem
   weight: 10
+=======
+header:
+- title: Suggested Resources
+  url: "/suggested-resources/"
+  weight: 5
+- url: "/plays/"
+  title: Plays
+  weight: 4
+- url: "/plays-introduction/"
+  title: Introduction to Plays
+  weight: 3
+- url: "/get-started/"
+  title: Get Started
+  weight: 2
+- url: "/"
+  title: Home
+  weight: 1
+>>>>>>> 20145874ed0fdb7684684c0b14a141025c7452cc
