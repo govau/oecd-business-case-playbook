@@ -19,6 +19,9 @@ sections:
   label: Plays
   create: documents
   match: "*.md"
+- type: document
+  path: _data/menus.yml
+  label: Menus
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
