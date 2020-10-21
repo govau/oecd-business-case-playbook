@@ -1,9 +1,6 @@
 ---
 layout: home-page
 title: Home
-menus:
-  header:
-    weight: 1
 ---
 <div class="tier hero-section banner"> <div class="container-fluid"> <div class="row"> <div class="hero-img col-xs-12 col-sm-6 col-sm-push-6 col-md-5 col-md-push-7"> <img src="../assets/img/hero-image.png" alt="A man and woman lean against a giant lightbulb, thinking about what is involved when creating a business case."> </div> <div class="col-xs-12 col-sm-6 col-sm-pull-6 col-md-7 col-md-pull-5"> <h1>Developing better business cases.</h1> <p> The purpose of this Playbook is to help countries develop business cases which support investment decisions in digital transformation and ICT.</p> <p>The Playbook explores what works, and what does not.</p>
 
