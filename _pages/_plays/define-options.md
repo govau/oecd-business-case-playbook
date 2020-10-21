@@ -3,10 +3,6 @@ layout: content-page-play
 title: Define options
 icon: clipboard-list
 label: Test
-menus:
-  side:
-    title: Define options
-    weight: 2
 ---
 <!--start include wraps the section in starting HTML for styling purposes -->
 {% include play-section-start.md section-title="introduction" %}
@@ -99,3 +95,5 @@ menus:
 <p><a href="https://www.gov.uk/service-manual/agile-delivery">Agile delivery (United Kingdom)</a> ‑ How to work in an agile way: principles, tools and governance.</p>
 <!--end include -->
 {% include play-section-end.md section-title="resources"%}
+
+

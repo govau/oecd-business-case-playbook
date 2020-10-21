@@ -3,10 +3,6 @@ layout: content-page-play
 title: Review and Refresh
 icon: heartbeat
 label: Iterate
-menus:
-  side:
-    title: Review and Refresh
-    weight: 7
 ---
 <!--start include wraps the section in starting HTML for styling purposes -->
 {% include play-section-start.md section-title="introduction" %}

@@ -3,10 +3,6 @@ layout: content-page-play
 title: Scope the preliminary work
 icon: map
 label: Foundations
-menus:
-  side:
-    title: Scope the preliminary work
-    weight: 8
 ---
 <!--start include wraps the section in starting HTML for styling purposes -->
 {% include play-section-start.md section-title="introduction" %}
