@@ -5,6 +5,10 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: document
+  path: https://github.com/govau/oecd-business-case-playbook/tree/master/_data/menus.yml
+  label: Menus
+  match: "**/*"
+- type: document
   path: index.md
   label: Home
 - type: directory
