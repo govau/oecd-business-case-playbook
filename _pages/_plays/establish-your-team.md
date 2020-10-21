@@ -3,10 +3,7 @@ layout: content-page-play
 title: Establish your team
 icon: users
 label: Foundations
-menus:
-  side:
-    title: Establish your team
-    weight: 6
+menus: sidenav
 ---
 
 <!--start include wraps the section in starting HTML for styling purposes -->

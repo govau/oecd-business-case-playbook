@@ -1,9 +1,7 @@
 ---
 layout: content-page
 title: Get Started
-menu:
-  header:
-    weight: 2
+menus: header
 
 ---
 <nav class="au-inpage-nav-links" aria-label="in page navigation">

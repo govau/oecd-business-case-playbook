@@ -3,10 +3,7 @@ layout: content-page-play
 title: Understand the problem
 icon: compass
 label: Discovery
-menus:
-  side:
-    title: Understand the problem
-    weight: 10
+menus: sidenav
 ---
 <!--start include wraps the section in starting HTML for styling purposes -->
 {% include play-section-start.md section-title="introduction" %}
