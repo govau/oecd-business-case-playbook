@@ -3,7 +3,7 @@ layout: content-page-play
 title: Draft the business case
 icon: drafting-compass
 label: Iterate
-menus: sidenav
+
 ---
 <!--start include wraps the section in starting HTML for styling purposes -->
 {% include play-section-start.md section-title="introduction" %}
