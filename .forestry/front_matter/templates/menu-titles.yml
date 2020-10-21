@@ -1,4 +1,14 @@
 ---
 label: Menu titles
 hide_body: true
-fields: []
+fields:
+- name: menu_title
+  type: text
+  config:
+    required: false
+  label: Menu title
+- name: url
+  type: text
+  config:
+    required: false
+  label: URL
