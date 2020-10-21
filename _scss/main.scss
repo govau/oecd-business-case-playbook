@@ -52,13 +52,8 @@ body {
     }
 }
 
-.mb-3 {
-    margin-bottom: 3rem;
-}
-
-.mt-0 {
-    margin-top: 0;
-}
+.mt-0 {margin-top:0!important}
+.mb-3 {margin-bottom:3rem!important}
 
 .has-side-nav {
     h1 {
@@ -75,7 +70,6 @@ body {
     height: 1px;
     word-wrap: normal;
 }
-
 
 .page-wrapper {
     background: #fff;

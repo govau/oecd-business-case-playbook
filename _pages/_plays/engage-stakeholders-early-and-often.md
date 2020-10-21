@@ -3,6 +3,10 @@ layout: content-page-play
 title: Engage stakeholders early and often
 icon: hands-helping
 label: Discovery
+menus:
+  side:
+    title: Engage stakeholders early and often
+    weight: 4
 ---
 <!--start include wraps the section in starting HTML for styling purposes -->
 {% include play-section-start.md section-title="introduction" %}
