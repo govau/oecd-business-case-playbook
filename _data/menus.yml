@@ -20,19 +20,28 @@ side:
   weight: 1
 - url: /plays/define-options/
   title: Define options
+  weight: 2
 - url: /plays/draft-the-business-case/
   title: Draft the business case
+  weight: 3
 - url: /plays/engage-stakeholders-early-and-often/
   title: Engage stakeholders early and often
+  weight: 4
 - url: /plays/engage-your-sponsors/
   title: Engage your sponsors
+  weight: 5
 - url: /plays/establish-your-team/
   title: Establish your team
+  weight: 6
 - url: /plays/review-and-refresh/ 
   title: Review and Refresh 
+  weight: 7
 - url: /plays/scope-the-preliminary-work/
   title: Scope the preliminary work
+  weight: 8
 - url: /plays/select-your-preferred-solution/  
   title: Select your preferred solution
+  weight: 9
 - url: /plays/understand-the-problem/
   title: Understand the problem
+  weight: 10
