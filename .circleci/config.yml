@@ -16,7 +16,7 @@ jobs:
           command: bundle exec jekyll build
       - run:
           name: Check files
-          command: ls ~/oecd/_site
+          command: ls -lh ~/oecd/_site
       - persist_to_workspace:
           root: ~/oecd
           paths:
@@ -32,7 +32,7 @@ jobs:
           at: ~/oecd
       - run:
           name: Check files
-          command: ls ~/oecd/_site
+          command: ls -lh ~/oecd/_site
       - run:
           name: Deploy staging to cloud.gov.au
           command: |
@@ -47,9 +47,11 @@ jobs:
       - image: govau/cf-cli
     working_directory: ~/oecd
     steps:
+      - attach_workspace:
+          at: ~/oecd
       - run:
           name: Check files
-          command: ls ~/oecd/_site
+          command: ls -lh ~/oecd/_site
       - run:
           name: Deploy test to cloud.gov.au
           command: |
@@ -64,9 +66,11 @@ jobs:
       - image: govau/cf-cli
     working_directory: ~/oecd
     steps:
+      - attach_workspace:
+          at: ~/oecd
       - run:
           name: Check files
-          command: ls ~/oecd/_site
+          command: ls -lh ~/oecd/_site
       - run:
           name: Deploy prod to cloud.gov.au
           command: |
