@@ -1,16 +1,38 @@
-# Javascript Node CircleCI 2.0 configuration file
-#
-# Check https://circleci.com/docs/2.0/language-javascript/ for more details
-#
-version: 2
+version: 2.1
+orbs:
+  ruby: circleci/ruby@1.1.2 
+  node: circleci/node@4.1.0
+
 jobs:
+  build:
+    docker:
+      - image: cimg/ruby:2.7-node
+    working_directory: ~/oecd
+    steps:
+      - checkout
+      - ruby/install-deps 
+      - run:
+          name: Jekyll build
+          command: bundle exec jekyll build
+      - run:
+          name: Check files
+          command: ls -lh ~/oecd/_site
+      - persist_to_workspace:
+          root: ~/oecd
+          paths:
+            - _site/
+            - .deploy/
 
   deploy-staging:
     docker:
       - image: govau/cf-cli
     working_directory: ~/oecd
     steps:
-      - checkout
+      - attach_workspace:
+          at: ~/oecd
+      - run:
+          name: Check files
+          command: ls -lh ~/oecd/_site
       - run:
           name: Deploy staging to cloud.gov.au
           command: |
@@ -25,7 +47,11 @@ jobs:
       - image: govau/cf-cli
     working_directory: ~/oecd
     steps:
-      - checkout
+      - attach_workspace:
+          at: ~/oecd
+      - run:
+          name: Check files
+          command: ls -lh ~/oecd/_site
       - run:
           name: Deploy test to cloud.gov.au
           command: |
@@ -40,7 +66,11 @@ jobs:
       - image: govau/cf-cli
     working_directory: ~/oecd
     steps:
-      - checkout
+      - attach_workspace:
+          at: ~/oecd
+      - run:
+          name: Check files
+          command: ls -lh ~/oecd/_site
       - run:
           name: Deploy prod to cloud.gov.au
           command: |
@@ -55,17 +85,24 @@ workflows:
   version: 2
   deploy-oecd:
     jobs:
+      - build
       - deploy-staging: # run deploy staging
+          requires:
+            - build
           filters:
             branches:
               only: develop # and only on the `develop` branch
 
       - deploy-prod: # run deploy staging
+          requires:
+            - build
           filters:
             branches:
               only: master # and only on the `master` branch
 
       - deploy-test: # run deploy text
+          requires:
+            - build
           filters:
             branches:
               only: /.*-test/ # and only on branches ending in -test
