@@ -4,13 +4,39 @@
 #
 version: 2
 jobs:
+  build:
+    docker:
+      - image: govau/cf-cli
+    working_directory: ~/oecd
+    steps:
+      - checkout
+      - restore_cache:
+         keys:
+            - rubygems-v1-{{ checksum "Gemfile.lock" }}
+            - rubygems-v1-fallback
+      - run:
+          name: Bundle Install
+          command: bundle check || bundle install
+      - save_cache:
+          key: rubygems-v1-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+      - run:
+          name: Jekyll build
+          command: bundle exec jekyll build
+      - persist_to_workspace:
+          root: ~/oecd
+          paths:
+            - _site/
+            - .deploy/
 
   deploy-staging:
     docker:
       - image: govau/cf-cli
     working_directory: ~/oecd
     steps:
-      - checkout
+      - attach_workspace:
+          at: ~/oecd
       - run:
           name: Deploy staging to cloud.gov.au
           command: |
@@ -25,7 +51,6 @@ jobs:
       - image: govau/cf-cli
     working_directory: ~/oecd
     steps:
-      - checkout
       - run:
           name: Deploy test to cloud.gov.au
           command: |
@@ -40,7 +65,6 @@ jobs:
       - image: govau/cf-cli
     working_directory: ~/oecd
     steps:
-      - checkout
       - run:
           name: Deploy prod to cloud.gov.au
           command: |
@@ -55,17 +79,24 @@ workflows:
   version: 2
   deploy-oecd:
     jobs:
+      - build
       - deploy-staging: # run deploy staging
+          requires:
+            - build
           filters:
             branches:
               only: develop # and only on the `develop` branch
 
       - deploy-prod: # run deploy staging
+          requires:
+            - build
           filters:
             branches:
               only: master # and only on the `master` branch
 
       - deploy-test: # run deploy text
+          requires:
+            - build
           filters:
             branches:
               only: /.*-test/ # and only on branches ending in -test
