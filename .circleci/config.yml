@@ -1,29 +1,16 @@
-# Javascript Node CircleCI 2.0 configuration file
-#
-# Check https://circleci.com/docs/2.0/language-javascript/ for more details
-#
-version: 2
+version: 2.1
+orbs:
+  ruby: circleci/ruby@1.1.2 
+  node: circleci/node@4.1.0
+
 jobs:
   build:
     docker:
-      - image: circleci/ruby:2.6
+      - image: cimg/ruby:2.7-node
     working_directory: ~/oecd
     steps:
       - checkout
-      - restore_cache:
-         keys:
-            - rubygems-v1-{{ checksum "Gemfile.lock" }}
-            - rubygems-v1-fallback
-      - run:
-          name: Install bundler
-          command: gem install bundler
-      - run:
-          name: Bundle Install
-          command: bundle check || bundle install
-      - save_cache:
-          key: rubygems-v1-{{ checksum "Gemfile.lock" }}
-          paths:
-            - vendor/bundle
+      - ruby/install-deps 
       - run:
           name: Jekyll build
           command: bundle exec jekyll build
