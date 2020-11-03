@@ -33,16 +33,16 @@ side:
 header:
 - title: Suggested Resources
   url: "/suggested-resources/"
-  weight: 1
+  weight: 5
 - url: "/plays/"
-  title: Plays.
-  weight: 2
+  title: Plays
+  weight: 4
 - url: "/plays-introduction/"
   title: Introduction to Plays
   weight: 3
 - url: "/get-started/"
   title: Get Started
-  weight: 4
+  weight: 2
 - url: "/"
   title: Home
-  weight: 5
+  weight: 1
