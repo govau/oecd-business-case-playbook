@@ -1,48 +1,51 @@
 ---
 side:
-- url: "/plays/understand-the-problem/"
+- url: "/plays/1understand-the-problem/"
   title: Understand the problem
-  weight: 10
+  weight: "1"
+- url: "/plays/2explore-options/"
+  title: Explore options
+  weight: "10"
+- url: "/plays/3engage-stakeholders-early-and-often/"
+  title: Engage stakeholders early and often
+  weight: "4"
+- url: "/plays/4scope-the-preliminary-work/"
+  title: Scope the preliminary work
+  weight: "8"
+- url: "/plays/5establish-your-team/"
+  title: Establish your team
+  weight: "6"
 - url: "/plays/select-your-preferred-solution/"
   title: Select your preferred solution
-  weight: 9
-- url: "/plays/scope-the-preliminary-work/"
-  title: Scope the preliminary work
-  weight: 8
+  weight: "9"
 - url: "/plays/review-and-refresh/"
   title: Review and Refresh
-  weight: 7
-- url: "/plays/establish-your-team/"
-  title: Establish your team
-  weight: 6
+  weight: "7"
 - url: "/plays/engage-your-sponsors/"
   title: Engage your sponsors
-  weight: 5
-- url: "/plays/engage-stakeholders-early-and-often/"
-  title: Engage stakeholders early and often
-  weight: 4
+  weight: "5"
 - url: "/plays/draft-the-business-case/"
   title: Draft the business case
-  weight: 3
+  weight: "3"
 - url: "/plays/define-options/"
   title: Define options
-  weight: 2
+  weight: "2"
 - url: "/plays/explore-options/"
   title: Explore options
-  weight: 1
+  weight: "1"
 header:
 - title: Suggested Resources
   url: "/suggested-resources/"
-  weight: 5
+  weight: "5"
 - url: "/plays/"
   title: Plays
-  weight: 4
+  weight: "4"
 - url: "/plays-introduction/"
   title: Introduction to Plays
-  weight: 3
+  weight: "3"
 - url: "/get-started/"
   title: Get Started
-  weight: 2
+  weight: "2"
 - url: "/"
   title: Home
-  weight: 1
+  weight: "1"
