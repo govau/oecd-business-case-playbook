@@ -38,7 +38,7 @@ label: Discovery
 <h4>Understand user needs and the reason for change</h4>
 <p>Conduct research with users to understand how people interact with your service or product, and why the current state is not working. Summarise why the change is required and how an investment in technology, processes and people could support this change.</p>
 <h4>Explain &lsquo;why now&rsquo;</h4>
-<p>Describe why the problem needs to be addressed now, and not later. Help the decision-maker understand why this is a priority and what will happen if the current situation continues. A clear description of the current situation will form an important part of the <a href="/plays/explore-options/">&ldquo;No Change&rdquo;</a> option.</p>
+<p>Describe why the problem needs to be addressed now, and not later. Help the decision-maker understand why this is a priority and what will happen if the current situation continues. A clear description of the current situation will form an important part of the <a href="/plays/2explore-options/">&ldquo;No Change&rdquo;</a> option.</p>
 <h4>Design with the user at the centre</h4>
 <p>Design the future state with the user at the centre of the solution. in mind. The business case should identify who are the users and what they need. Engage with the people who will be using the service.</p>
 <h4>Define the future experience</h4>
