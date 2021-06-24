@@ -47,7 +47,7 @@ label: Test
 <p>There are actions that can be taken to reduce risks to an acceptable level (or risk mitigation activities).</p>
 <p>Think about different ways to avoid or minimise the risk. Look to include different approaches to reduce the probability and impact of the risk occurring.&nbsp;Your options can also be supported by including risk ratings before, and after mitigation, to assist decision-makers in their evaluation of the proposal.</p>
 <h4>Plan how you will manage risk</h4>
-<p>Use a risk management approach which works for your organisation. There may be existing tools and templates available from your organisation to help guide you. As part of your implementation approach (refer to <a href="/plays/draft-the-business-case/">Draft the business case</a>), define a process to continually identity and manage risks. Give specific consideration on how cyber security and privacy risks will be managed.</p>
+<p>Use a risk management approach which works for your organisation. There may be existing tools and templates available from your organisation to help guide you. As part of your implementation approach (refer to <a href="/plays/9draft-the-business-case/">Draft the business case</a>), define a process to continually identity and manage risks. Give specific consideration on how cyber security and privacy risks will be managed.</p>
 <!--end include -->
 {% include play-section-end.md section-title="keyActivities" %}
 
