@@ -29,7 +29,7 @@ side:
   weight: "9"
 - url: "/plays/review-and-refresh/"
   title: Review and Refresh
-  weight: "7"
+  weight: "10"
 header:
 - title: Suggested Resources
   url: "/suggested-resources/"
