@@ -29,7 +29,7 @@ label: Test
 <h3>Compare your options</h3>
 <p>Identify what represents value for money. Remember, value for money may not necessarily be the cheapest option. Your business problem and context may determine the value placed on benefits, risks, costs and timeframes. Summarise and compare your options with these factors in mind. Be aware of the way your decision-maker assigns value to these factors.</p>
 <h3>Justify your preferred option</h3>
-<p>Determine which option provides the best outcome and value for money. Summarise where it stands out specifically against the other options and highlight the key benefits. Explain why the other options are not preferred. You may need to complete a more detailed analysis of the costs, benefits and implementation approach for your preferred option (Refer to <a href="/plays/define-options/">Define options</a>). Align your preferred option with the broader context.</p>
+<p>Determine which option provides the best outcome and value for money. Summarise where it stands out specifically against the other options and highlight the key benefits. Explain why the other options are not preferred. You may need to complete a more detailed analysis of the costs, benefits and implementation approach for your preferred option (Refer to <a href="/plays/7define-options/">Define options</a>). Align your preferred option with the broader context.</p>
 <p>Explain how the preferred option delivers on the outcomes and how it aligns to the organisation’s and government’s policy objectives.</p>
 
 <!--end include -->
