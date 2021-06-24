@@ -37,7 +37,7 @@ label: Iterate
 <h4>Factor in technology procurement</h4>
 <p>Determine how you will source your technology capabilities. This can be complex depending on your government and legal requirements. Working with suppliers external to your organisation is a large undertaking. Speak with the relevant people in your organisation to ensure you include references to the appropriate policies.</p>
 <h4>Set up governance frameworks to manage risk</h4>
-<p>Identify who will be responsible for how key decisions will be made and how issues will be resolved. You may have already identified who these people are as part of setting up governance for decisions related to the business case. Refer to <a href="https://businesscaseplaybook.service.gov.au/plays/define-options/">Define options</a> for more detail on managing risks.</p>
+<p>Identify who will be responsible for how key decisions will be made and how issues will be resolved. You may have already identified who these people are as part of setting up governance for decisions related to the business case. Refer to <a href="https://businesscaseplaybook.service.gov.au/plays/7define-options/">Define options</a> for more detail on managing risks.</p>
 <h4>Define and measure success</h4>
 <p>Define measurement criteria which will be used to determine the success of the project. Establish checkpoints to ensure the project is on track to deliver the agreed outcomes. This will provide confidence to the decision-makers that outcomes and benefits will be closely monitored.&nbsp;</p>
 <h4>Have a plan for change</h4>
