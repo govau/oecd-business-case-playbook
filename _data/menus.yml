@@ -8,13 +8,13 @@ side:
   weight: "2"
 - url: "/plays/3engage-stakeholders-early-and-often/"
   title: Engage stakeholders early and often
-  weight: "4"
+  weight: "3"
 - url: "/plays/4scope-the-preliminary-work/"
   title: Scope the preliminary work
-  weight: "8"
+  weight: "4"
 - url: "/plays/5establish-your-team/"
   title: Establish your team
-  weight: "6"
+  weight: "5"
 - url: "/plays/select-your-preferred-solution/"
   title: Select your preferred solution
   weight: "9"
