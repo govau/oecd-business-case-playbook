@@ -5,7 +5,7 @@ side:
   weight: "1"
 - url: "/plays/2explore-options/"
   title: Explore options
-  weight: "10"
+  weight: "2"
 - url: "/plays/3engage-stakeholders-early-and-often/"
   title: Engage stakeholders early and often
   weight: "4"
