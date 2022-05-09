@@ -2,20 +2,15 @@
 
 <body class="au-grid">
     <nav class="au-skip-link " aria-label="skip links navigation"><a class="au-skip-link__link " href="#main-nav">Skip to navigation</a><a class="au-skip-link__link " href="#content">Skip to content</a></nav>
-    <div class="alpha-bar">
-        <div class="au-body container-fluid">
-            <div class="col-12">
-                <p>
-                    <span class="alpha-text">Alpha</span>
-                    This playbook is under active development and your feedback will help us improve it.
-                </p>
-            </div>
-        </div>
-    </div>
     <div class="header-wrapper">
         <header class="au-grid au-header au-header--dark">
             <div class="container-fluid">
                 <div class="row">
+                    <div class="col-md-12 decommission-msg-container">
+                        <div class="au-body au-page-alerts au-page-alerts--warning">
+                            The Australian Government Business Case Playbook site has been decommissioned and will be taken down from 31 May 2022. For further information please contact <a href="mailto:info@dta.gov.au">info@dta.gov.au</a>.
+                        </div>
+                    </div>
                     <div class="col-md-12">
                         <a class="au-header__brand" href="/index.html">
                             <img class="au-header__brand-image imgheader" alt="Insert alternate text here" src="/assets/img/header-logo-agov.png">
