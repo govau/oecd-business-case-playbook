@@ -443,30 +443,9 @@ $margin-sm: 3rem;
     padding: $padding-sm;
 }
 
-.alpha-bar {
-    background: #c91a78;
-
-    .au-body.container-fluid {
-        background: transparent;
-        padding-top: 5px;
-        padding-bottom: 5px;
-
-    }
-
-    p {
-        max-width: 100%;
-        color: #fff;
-    }
-
-    .alpha-text {
-
-        background: #000;
-        padding: 2px;
-        text-transform: uppercase;
-        font-weight: bold;
-    }
+.decommission-msg-container {
+    margin-bottom: 2em;
 }
-
 
 .lead {
 
